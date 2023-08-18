@@ -30,8 +30,11 @@ You will:
 Click on the embedded project.
 
 What happens if you roll/tilt the micro:bit to the right or left?
+
 What happens if you click the A button?
+
 What happens if you click the B button?
+
 What happens if you click the A+B button?
 
 <div style="position:relative;height:0;padding-bottom:125%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_ERv3LD8bT1DC" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
