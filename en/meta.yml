@@ -12,7 +12,7 @@ steps:
 - title: Track and display
   completion:
     - engaged
-- title: Start and reset
+- title: Push to reset
 - title: Change brightness
 - title: Show some Zs
   completion:

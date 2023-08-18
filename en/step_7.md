@@ -16,6 +16,7 @@ Change the Zs message
 Change the number of max events
 Display an overall rating rather than a number of events
 Log sleep events using v2
+Power save - turn LEDs brightness on and off with tilt up and down
 
 
 --- collapse ---
