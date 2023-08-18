@@ -52,8 +52,6 @@ You can delete the 'forever' block now by dragging it to the menu panel.
 
 --- /task ---
 
-</p>
-
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 In this step you will program the micro:bit to sense when it moves and make the LEDs light up more as it senses more movement.
@@ -70,6 +68,8 @@ The micro:bit uses a sensor called an accelerometer to sense when it has been ti
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 
 <span style="color: #0faeb0">Accelerometers</span> are used in many devices. They can tell if we're moving, like when we run or jump, and they help our tablets and smartphones know which way they're being held. These clever sensors make games more fun, letting you control how a character moves by tilting a controller. So next time you play a game, remember that accelerometers are making it super cool!
+
+</p>
 
 ### Gestures
 
