@@ -1,21 +1,29 @@
 ---
-title: explore-project-template
+title: Sleep tracker
 hero_image: images/banner.png
-description: explore-project-template description
+description: 
+  Monitor your sleep to see how rested you were.
 version: 4
 listed: false
 copyedit: false
-last_tested: '2021-03-26'
+last_tested: '2023-08-18'
 steps:
-- title: Introduction
-- title: Step title
-- title: Step title
-- title: Step title
-- title: Reflection
+- title: You will make
+- title: Track and display
+  completion:
+    - engaged
+- title: Start and reset
+- title: Change brightness
+- title: Show some Zs
+  completion:
+    - internal
+- title: Quick quiz
   knowledge_quiz:
     path: quiz1
     version: 1
     questions: 3
     passing_score: 3
+  completion:
+      - external
 - title: Upgrade your project
 - title: What next?
