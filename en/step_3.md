@@ -62,7 +62,43 @@ From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <c
 
 From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">movements</code> block and place it over the `0` in the <code style="background-color: #d400d4">show number</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_bh7Lw76vDhJx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_bh7Lw76vDhJx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+We now need to reset the movements variable back to 0, ready to track again.
+
+--- task ---
+
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">set movements</code> block and place it under the <code style="background-color: #d400d4">show number</code> block.
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_eHpTW3Xy0Jpt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+To show the sleep tracker is ready, you can show an animation. As this is a sleep tracker, we will create an animation of some Zs.
+
+--- task ---
+
+From the <code style="background-color: #1E90FF">Basic</code>menu, drag out `three` <code style="background-color: #1E90FF">show leds</code> blocks and place them under the <code style="background-color: #DC143C">set movements</code> block.
+
+Click the squares on each one to create these patterns:
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_AaDf7mJwE52H" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+**Tip** If you hold down the mouse, you can select multiple LEDs as you move.
+
+--- /task ---
+
+To create an animation, you can put the show LED blocks in a loop.
+
+--- task ---
+
+From the <code style="background-color: #00AA00">Loops</code> menu, drag a <code style="background-color: #00AA00">repeat</code> block and place it around the three <code style="background-color: #1E90FF">show leds</code> blocks.
+
+Change the number of repeats from `4` to `2`.
+
+![Animation showing the 'repeat' block taken from the Loops menu. The 'repeat' block is then held over the top 'show leds' block and released, making the three 'show leds' blocks snap inside it. The number is then changed from a '4' to a '2'.](images/repeat-around-leds.gif)
 
 --- /task ---
 
