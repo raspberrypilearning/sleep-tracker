@@ -16,7 +16,9 @@ You'll also make a special sleepy animation to know your sleep tracker is all se
 </div>
 </div>
 
-The micro:bit has two buttons, the `A` button and the `B` button. You can program something to happen when only `A` is pressed, only `B` is pressed, or `A+B` are pressed together.
+The micro:bit has two buttons, the `A` button and the `B` button. 
+
+You can program something to happen when only `A` is pressed, only `B` is pressed, or `A+B` are pressed together.
 
 ### Show the total movements
 
@@ -104,11 +106,12 @@ Change the number of repeats from `4` to `2`.
 
 When you make a change to a code block in the code editor panel, the simulator will restart.
 
-**Test** When the program runs, move over the left and right of the micro:bit to record some movements. 
+**Test** 
+When the program runs, move over the left and right of the micro:bit to record some movements. 
 
-Next, press the `A+B`` button. 
+Next, press the `A+B` button. 
 
-The word 'Movements' will scroll across the display and the number of movement will be shown. The zZ animation will then loop twice.
+The word 'Movements' will scroll across the display and the number of movements will be shown. The zZ animation will then loop twice.
 
 ![Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z.](images/reset-test.gif)
 
