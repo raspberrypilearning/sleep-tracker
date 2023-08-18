@@ -112,7 +112,7 @@ Place the block inside the <code style="background-color: #D400D4">on tilt left<
 
 --- /task ---
 
-You can use the LEDs on the micro:bit to display how many movements there have been.
+You can use the LEDs on the micro:bit to display how many sleep movements there have been.
 
 --- task ---
 
@@ -126,8 +126,42 @@ From the <code style="background-color: #dc143c">Variables</code> menu, grab the
 
 Place it inside the first `0` on the <code style="background-color: #5C2D91">plot bar graph of</code> block.
 
-Change the second `0` to `10` on the <code style="background-color: #5C2D91">plot bar graph of</code> block.
+Change the second `0` to `10`. This value is the high value.
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+
+The LEDs will light all the way to the top when <code style="background-color: #dc143c">movements</code> reaches the <span style="color: #0faeb0">high value</span> of `10`. For each single increase up to 10, the LEDs will light up 1/10th of the way. If the high value was 15, then the LEDs will light up 1/15th of the way, etc.
+</p>
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_22PFRwfcCJzU" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
+
+Now you have programmed a movement to be recorded when the micro:bit senses a left tilt, you can do the same when it senses a right tilt.
+
+--- task ---
+
+Right-click on the entire <code style="background-color: #D400D4">on tilt left</code> block and click `Duplicate`.
+
+There will now be two <code style="background-color: #D400D4">on tilt left</code> blocks on the code editor panel.
+
+--- /task ---
+
+--- task ---
+
+Click on the arrow next to `tilt left` on the duplicated block. 
+
+A drop down menu will open.
+
+Choose <code style="background-color: #D400D4">tilt right</code>.
+
+--- /task ---
+
+When you make a change to a code block in the code editor panel, the simulator will restart.
+
+**Test** When the program runs, move over the right and left of the micro:bit. 
+The LEDs will light up in ten stages (because you set the high value to `10`).
+
+![Animation showing the LEDs lighting up in stages, starting from the bottom row, as the micro:bit simulator is tilted left and right.](images/tilt-test.gif)
+
+Next you are going to use the `A` button and `B` button to change the brightness of the LEDs!
