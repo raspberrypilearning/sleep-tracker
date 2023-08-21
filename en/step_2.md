@@ -183,23 +183,6 @@ Place the block inside the <code style="background-color: #00A4A6">if</code> blo
 
 --- /task ---
 
-
-
-
-
---- task ---
-
-
-
---- /task ---
-
-
-
-
-
-
-
-
 Use the dropdown to change the less than symbol (`<`) to a greater than (`>`) symbol. 
 
 ![A demo of clicking the drop down and changing the < symbol to a > symbol in the condition.](images/changing-condition.gif)
@@ -207,17 +190,9 @@ Use the dropdown to change the less than symbol (`<`) to a greater than (`>`) sy
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_MtYUvfg1RT9a" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 
-
-
-
-
-
-
 Place it inside the `true` space in the `if..true..then` block. 
 
 Change the <code style="background-color: #00A4A6"><</code> to a <code style="background-color: #00A4A6">></code>
-
---- /task ---
 
 
 
