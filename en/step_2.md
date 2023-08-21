@@ -42,28 +42,19 @@ Give your new project the name `Sleep tracker` and click **Create**.
 
 [[[makecode-tour]]]
 
-In this project, you will make use of the 'on start' block but not the 'forever' block. 
-
---- task ---
-
-You can delete the 'forever' block now by dragging it to the menu panel.
-
-![Animation showing the forever block being deleted](images/delete-forever.gif)
-
---- /task ---
-
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will program the micro:bit to sense when it moves and make the LEDs light up more as it senses more movement.
+In this step you will program the micro:bit to sense if it moves and make the LEDs light if it does.
 </div>
 <div>
 
-![Animation showing the LEDs lighting up in stages, starting from the bottom row, as the micro:bit simulator is tilted left and right](images/tilt-test.gif)
+![TODO: Replace animation]()
+![Animation showing the LEDs turning on, as the micro:bit simulator is tilted left and right](images/tilt-test.gif)
 
 </div>
 </div>
 
-The micro:bit uses a sensor called an accelerometer to sense when it has been tilted.
+The micro:bit uses a sensor called an accelerometer to sense when it has been rolled.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 
@@ -71,13 +62,178 @@ The micro:bit uses a sensor called an accelerometer to sense when it has been ti
 
 </p>
 
-### Gestures
+### Roll
 
-If the accelerometer on the micro:bit has sensed a tilt right or left, we will assume there has been movement during sleep.
+We need to check **if** the micro:bit has been rolled right **or** left. 
 
-We will use 'gesture' blocks for this.
+If this happens, we will assume there has been movement during sleep.
 
 --- task ---
+
+From the <code style="background-color: #00A4A6">Logic</code> menu, drag out an <code style="background-color: #00A4A6">if</code> block and place it inside the <code style="background-color: #1E90FF">forever</code> block.
+
+<img src="images/if-block-location.png" alt="The Logic menu, with the 'if .. then' block highlighted" width="350"/>
+
+--- /task ---
+
+--- task ---
+
+Open the <code style="background-color: #00a4a6">Logic</code> menu again and take an <code style="background-color: #00a4a6">or</code> block. 
+
+<img src="images/or-block-location.png" alt="The bottom part of the Logic menu, showing the location of the 'or' block in the 'Boolean' section" width="250"/>
+
+Place it in the `true` section of the <code style="background-color: #00a4a6">if</code> block. 
+
+![TODO: Replace embed]()
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_WLaErMYLvHpo" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+Now you need to add the **two** conditions either side of the **or**. 
+
+This will mean that the code inside your <code style="background-color: #00a4a6">if</code> block will run **either** condition is met.
+
+--- task ---
+
+From the <code style="background-color: #00A4A6">Logic</code> menu, drag out the <code style="background-color: #00a4a6">0 < 0</code> comparison block.
+
+Place it on the left side of the <code style="background-color: #00a4a6">or</code> block.
+
+![TODO: Replace embed]()
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_XXXXXXXX" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+--- task ---
+
+From the <code style="background-color: #D400D4">Input ... more</code> menu, drag out a <code style="background-color: #D400D4">rotation</code> block.
+
+<img src="images/rotation-location.png" alt="The 'Input ... more' menu, with the 'rotation' block highlighted" width="350"/>
+
+Place it inside the first `0` in the <code style="background-color: #00a4a6">0 < 0</code> comparison block.
+
+Use the dropdown to change <code style="background-color: #D400D4">pitch</code> to <code style="background-color: #D400D4">roll</code>. 
+
+Change the other `0` to `-10`.
+
+![TODO: Replace embed]()
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_XXXXXXXX" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+**Debug** Check you have:
++ Clicked on the Input **more** menu, not the normal Input menu.
++ Changed the second value from `0` to **`-10`**, not `10`.
+
+--- task ---
+
+Right click on the <code style="background-color: #00a4a6">0 < 0</code> comparison block and select Duplicate.
+
+You will now have two comparison blocks.
+
+Drag the duplicated comparison block on the right of the <code style="background-color: #00a4a6">or</code> block.
+
+Use the dropdown to change the less than symbol (`<`) to a greater than (`>`) symbol. 
+
+Change the `-10` to `10`.
+
+![A demo of clicking the drop down and changing the < symbol to a > symbol in the condition.](images/duplicting-rotation-comparison.gif)
+
+![TODO: Replace embed]()
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_XXXXXXXX" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+When either condition is met, the micro:bit will have been rolled left or right.
+
+We need to:
++ Light the LEDs
++ Record that there has been a movement
+
+To keep a count of sleep movements, we will use a variable.
+
+--- task ---
+
+Open the <code style="background-color: #dc143c">Variables</code> menu and click `Make a Variable`.
+
+<img src="images/variable-menu.png" alt="The Variables block menu, open with the 'Make a variable' button highlighted" width="350"/>
+
+--- /task ---
+
+--- task ---
+
+Name your new variable `movements`. 
+
+<img src="images/movements-variable-name.png" alt="The 'New variable name' window, with the name 'movements' written in the box" width="350"/>
+
+--- /task ---
+
+We will increase the movements variable by `1` each time a movement is detected.
+
+--- task ---
+
+From the <code style="background-color: #dc143c">Variables</code> menu, grab the <code style="background-color: #dc143c">change movements</code> block. 
+
+<img src="images/change-movements.png" alt="The Variables menu with the 'change movements by 1' block highlighted" width="350"/>
+
+Place the block inside the <code style="background-color: #00A4A6">if</code> block.
+
+![TODO: Replace embed]()
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_XXXXXXXX" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+
+
+
+
+--- task ---
+
+
+
+--- /task ---
+
+
+
+
+
+
+
+
+Use the dropdown to change the less than symbol (`<`) to a greater than (`>`) symbol. 
+
+![A demo of clicking the drop down and changing the < symbol to a > symbol in the condition.](images/changing-condition.gif)
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_MtYUvfg1RT9a" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+
+
+
+
+
+
+
+Place it inside the `true` space in the `if..true..then` block. 
+
+Change the <code style="background-color: #00A4A6"><</code> to a <code style="background-color: #00A4A6">></code>
+
+--- /task ---
+
+
+
+We will use a 'rotation' block.
+
+--- task ---
+
+From the <code style="background-color: #D400D4">Input ... more</code> menu, drag out a <code style="background-color: #D400D4">rotation</code> block and place it inside the <code style="background-color: #D400D4">on button</code> block.
+
+<img src="images/set-brightness-location.png" alt="The 'Input ... more' menu, with the 'set brightness' block highlighted" width="350"/>
+
+**Debug** Check you have clicked on the Input **more** menu, not the normal Input menu.
+
+
+
+
 
 From the <code style="background-color: #D400D4">Input</code> menu, drag out an <code style="background-color: #D400D4">on shake</code> block and place it on the code editor panel.
 
