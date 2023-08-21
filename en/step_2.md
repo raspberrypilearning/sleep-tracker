@@ -84,7 +84,6 @@ Open the <code style="background-color: #00a4a6">Logic</code> menu again and tak
 
 Place it in the `true` section of the <code style="background-color: #00a4a6">if</code> block. 
 
-![TODO: Replace embed]()
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_d6KcohD3RCjK" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
@@ -114,8 +113,6 @@ Place it inside the first `0` in the <code style="background-color: #00a4a6">0 <
 Use the dropdown to change <code style="background-color: #D400D4">pitch</code> to <code style="background-color: #D400D4">roll</code>. 
 
 Change the `0` to `-10`.
-
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_U7HHWi9szggX" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -175,7 +172,7 @@ From the <code style="background-color: #dc143c">Variables</code> menu, grab the
 
 Place it inside the <code style="background-color: #00A4A6">if</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_iT2FmD3d7TE2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_iT2FmD3d7TE2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -189,21 +186,23 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code
 
 <img src="images/show-icon-location.png" alt="The Basic menu, open with the 'show icon' block highlighted" width="350"/>
 
-Place it inside the <code style="background-color: #00A4A6">if</code> block, under the <code style="background-color: #dc143c">change movements</code> block.
+Place it under the <code style="background-color: #dc143c">change movements</code> block.
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">Pause</code> block.
+From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">pause</code> block.
 
-Place it inside the <code style="background-color: #00A4A6">if</code> block, under the <code style="background-color: #1E90FF">show icon</code> block.
+Place it under the <code style="background-color: #1E90FF">show icon</code> block.
 
 From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">clear screen</code> block.
 
-Place it inside the <code style="background-color: #00A4A6">if</code> block, under the <code style="background-color: #1E90FF">pause</code> block.
+Place it under the <code style="background-color: #1E90FF">pause</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_7sJMVLRrWdLA" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_UL1DcWbiR5Ey" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 When you make a change to a code block in the code editor panel, the simulator will restart.
+
+--- task ---
 
 **Test** your program:
 
@@ -214,6 +213,8 @@ The LEDs will light up and show a heart icon.
 + Move away from the micro:bit 
 
 The LEDs will continue to flash until the micro:bit is at a level position.
+
+--- /task ---
 
 ### Dealing with different resting head positions
 
@@ -247,9 +248,9 @@ From the <code style="background-color: #dc143c">Variables</code> menu, grab the
 
 Place it in the first `0` on the left of the <code style="background-color: #9400D3">0 - 0</code> block. 
 
-Change the `0` to the right with `10`.
+Change the `0` to the right of the <code style="background-color: #9400D3">-</code> with `10`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_i6zFuRE2K8ew" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_i6zFuRE2K8ew" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -263,11 +264,11 @@ Change the <code style="background-color: #9400D3">-</code> to a <code style="ba
 
 From the <code style="background-color: #dc143c">Variables</code> menu, grab another <code style="background-color: #dc143c">restingPosition</code> block. 
 
-Place it in the first `0` on the left of the <code style="background-color: #9400D3">0 + 0</code> block. 
+Place it in the first `0` on the left of the <code style="background-color: #9400D3">0 + 0</code> block.
 
-Change the `0` to the right of the with `10`.
+Change the `0` to the right of the <code style="background-color: #9400D3">+</code> with `10`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_hmmgeHXfb5xH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_hmmgeHXfb5xH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -279,11 +280,11 @@ We will use a new variable to set the resting position.
 
 From the <code style="background-color: #dc143c">Variables</code> menu, grab the <code style="background-color: #dc143c">set</code> block. 
 
-Place it inside the <code style="background-color: #00A4A6">if</code> block, under the <code style="background-color: #1E90FF">pause</code> block.
+Place it under the <code style="background-color: #1E90FF">pause</code> block.
 
 Duplicate the <code style="background-color: #D400D4">rotation</code> block and place it in the `0` of the <code style="background-color: #DC143C">set</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_VooFR6cseED5" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_VooFR6cseED5" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -307,6 +308,6 @@ Change the value in <code style="background-color: #1E90FF">pause</code> from `1
 
 This gives enough time for the micro:bit to come to rest before storing the new <code style="background-color: #DC143C">restingPosition</code> to the variable.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_Aqgc2mHrw529" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Aqgc2mHrw529" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 Next you are going to use the `A+B` button press event to reset your sleep tracker!
