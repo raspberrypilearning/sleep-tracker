@@ -11,7 +11,6 @@ You'll also make a special sleepy animation to know your sleep tracker is all se
 </div>
 <div>
 
-![TODO: Replace animation and alt text]()
 ![Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z.](images/reset-test.gif)
 
 </div>
@@ -114,7 +113,11 @@ When the program runs, move over the left and right of the micro:bit to record s
 
 Next, press the `A+B` button. 
 
-The word 'Movements' will scroll across the display and the number of movements will be shown. The zZ animation will then loop twice.
+The word 'Movements' will scroll across the display.
+
+The number of movements will then be shown.
+
+The zZ animation will then loop twice.
 
 <img src="images/reset-test.gif" alt="Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z." width="350"/>
 

@@ -48,7 +48,6 @@ In this step you will program the micro:bit to sense if it moves and make the LE
 </div>
 <div>
 
-![TODO: Replace animation]()
 ![Animation showing the LEDs turning on, as the micro:bit simulator is tilted left and right](images/tilt-test.gif)
 
 </div>

@@ -46,7 +46,6 @@ Click the Functions menu and then click `Make a Function`.
 
 Name the function `zZ`.
 
-![TODO: Redo the gif]()
 ![Animation showing how to make a function.](images/make-a-function.gif)
 
 --- /task ---
@@ -67,7 +66,7 @@ Now, when a `call zZ` block is executed, it calls the code in the `zZ function` 
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(800px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_25fh4yKf3eMe" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(800px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_14Lib71CCP0F" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- task ---
 
