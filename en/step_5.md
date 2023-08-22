@@ -12,9 +12,9 @@ In this step, you will display the zZs animation again when the program starts a
 
 ### Re-using code
 
-We have not yet put any code to run in the <code style="background-color: #1E90FF">on start</code> block.
+The animation is a large group of code blocks. 
 
-We can copy the animation code there, re-using it.
+We can reuse the animation code.
 
 --- task ---
 
@@ -34,11 +34,7 @@ Drag the duplicated <code style="background-color: #00AA00">repeat</code> block 
 
 ### Tidy with a function
 
-The animation is a large group of code blocks. 
-
-Repeating it makes our code untidy.
-
-We may want to re-use this animation code again.
+Repeating the large group of blocks used for the animation makes our code untidy.
 
 If you need to re-use code, it is sometimes better to put it in a function and then 'call' the function to run. 
 
@@ -50,6 +46,7 @@ Click the Functions menu and then click `Make a Function`.
 
 Name the function `zZ`.
 
+![TODO: Redo the gif]()
 ![Animation showing how to make a function.](images/make-a-function.gif)
 
 --- /task ---
@@ -60,9 +57,9 @@ From the <code style="background-color: #D400D4">on button A+B</code> block, dra
 
 Delete the code inside the <code style="background-color: #1E90FF">on start</code> block.
 
-From the Advanced > Functions menu, drag out a 'call zZ' block and place it inside the <code style="background-color: #1E90FF"> on start</code> block.
+From the Advanced > Functions menu, drag out a `call zZ` block and place it inside the <code style="background-color: #1E90FF"> on start</code> block.
 
-Drag out another 'call zZ' block and place it inside the <code style="background-color: #D400D4">on button A+B</code> block, under the <code style="background-color: #DC143C">set movements</code> block.
+Drag out another `call zZ` block and place it inside the <code style="background-color: #D400D4">on button A+B</code> block, under the <code style="background-color: #DC143C">set movements</code> block.
 
 --- /task ---
 

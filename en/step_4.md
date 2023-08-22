@@ -15,7 +15,8 @@ To sleep better, try not to be around really <span style="color: #0faeb0">bright
 </div>
 <div>
 
-![Animation showing the LEDs lit up about half way. When the A button is pressed, the brightness decreases. When the B button is pressed, the brightness increases.](images/brightness-change.gif)
+![TODO: Replace gif]()
+![Animation showing that when the the A button is pressed, the LED display brightness decreases and when the B button is pressed, the LED display brightness increases.](images/brightness-change.gif)
 
 </div>
 </div>
@@ -60,6 +61,8 @@ This will set the brightness to whatever value it currently is, divided by 2.
 
 --- /task ---
 
+### Brightness up
+
 Now we will set up the B button to turn the brightness up.
 
 --- task ---
@@ -96,19 +99,20 @@ You will now have these blocks for the A button and the B button:
 
 When you make a change to a code block in the code editor panel, the simulator will restart.
 
-**Test** When the program runs, click the `A` button until the LEDs go out fully. 
+**Test** your program: 
++ Click the `A` button until the LEDs go out fully. 
 
-Then click the `B` button and see what happens.
++ Click the `B` button and see what happens.
 
 If you have pressed the `A` button enough times, pressing the `B` button will not turn the LEDs back on.
 
 This is because the brightness value has reached `0`.
 
-When you multiply `0` by `2` you get.... `0`, so it is not possible to see LEDs. You can press the `B` button as many times as you want, but you will keep setting bright ness to `0 × 2`, which is always `0`!
+When you multiply `0` by `2` you get.... `0`. You can press the `B` button as many times as you want, but you will keep setting the brightness to `0 × 2`, which is **always** `0`!
 
 So, we need to stop the brightness value from being set to `0`.
 
-To do this, we will use a Logic block to only halve the brightness value `if` the brightness level is more than 10.
+To do this, we will use a Logic block to only halve the brightness value **if** the brightness level is **more than 10**.
 
 --- task ---
 
@@ -126,7 +130,7 @@ Change the <code style="background-color: #00A4A6"><</code> to a <code style="ba
 
 --- task ---
 
-From the <code style="background-color: #5C2D91">Led ... more</code> menu, drag out a <code style="background-color: #5C2D91">set brightness</code> block and place it inside the first `0` in the <code style="background-color: #00A4A6">0 > 0</code> block.
+From the <code style="background-color: #5C2D91">Led ... more</code> menu, drag out a <code style="background-color: #5C2D91">brightness</code> block and place it inside the first `0` in the <code style="background-color: #00A4A6">0 > 0</code> block.
 
 Change the second `0` to `10`.
 
@@ -152,6 +156,7 @@ The display should get less bright.
 
 The display should get brighter.
 
+![TODO: Replace gif]()
 ![Animation showing the LEDs lit up about half way. When the A button is pressed, the brightness decreases. When the B button is pressed, the brightness increases.](images/brightness-change.gif)
 
 Next you are going to set the sleepy zZ animation to run when the program starts and organise your code using a function!
