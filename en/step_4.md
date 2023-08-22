@@ -15,7 +15,6 @@ To sleep better, try not to be around really <span style="color: #0faeb0">bright
 </div>
 <div>
 
-![TODO: Replace gif]()
 ![Animation showing that when the the A button is pressed, the LED display brightness decreases and when the B button is pressed, the LED display brightness increases.](images/brightness-change.gif)
 
 </div>
@@ -156,7 +155,6 @@ The display should get less bright.
 
 The display should get brighter.
 
-![TODO: Replace gif]()
-![Animation showing the LEDs lit up about half way. When the A button is pressed, the brightness decreases. When the B button is pressed, the brightness increases.](images/brightness-change.gif)
+![Animation showing that when the the A button is pressed, the LED display brightness decreases and when the B button is pressed, the LED display brightness increases.](images/brightness-change.gif)
 
 Next you are going to set the sleepy zZ animation to run when the program starts and organise your code using a function!
