@@ -11,6 +11,7 @@ You'll also make a special sleepy animation to know your sleep tracker is all se
 </div>
 <div>
 
+![TODO: Replace animation and alt text]()
 ![Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z.](images/reset-test.gif)
 
 </div>
