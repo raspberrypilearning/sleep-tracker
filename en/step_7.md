@@ -5,20 +5,23 @@
 Great work! You have created your micro:bit sleep tracker. Here are some ideas to upgrade your project and create a more advanced sleep tracker:
 
 ![TODO: Update these and include V2 options]()
-+ Snoring - microphone v2 upgrade
-+ Track the time 
-+ Change the Zs message
-+ Change the number of max events
-+ Display an overall rating rather than a number of events
-+ Log sleep events using v2
-+ Power save - turn LEDs brightness on and off with tilt up and down
-
-![TODO: Decide about adding a 'play' icon when play melody called (and stop when first shake)]()
++ Use a the microphone to detect snoring (v2). If you have a v1 then you could detect the light level
++ Change the sleepy (Zs) animation
++ Plot the number of movements on the LEDs instead of showing the number value
++ Use Logic to display an overall sleep rating rather than a number of events
++ Log sleep events (v2)
++ Power save - turn the LED brightness down on start
 
 </div>
 </div>
 
-![TODO: Add upgrade embed]()
+Click on the embedded project.
+
++ Compare the brightness level on start with the base project
++ Drag the yellow sound level up to 165 or above and see what happens on the LEDs. 
++ Press the A or B buttons to see the number of movements and snores detected and an overall sleep rating:
+
+<div style="position:relative;height:0;padding-bottom:125%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_chL9qP1xvF6D" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
 
 --- collapse ---
 
@@ -26,6 +29,6 @@ Great work! You have created your micro:bit sleep tracker. Here are some ideas t
 title: Completed project
 ---
 
-You can view the [completed project here](https://makecode.microbit.org/_25fh4yKf3eMe){:target="_blank"}.
+You can view the [completed project here](https://makecode.microbit.org/_chL9qP1xvF6D){:target="_blank"}.
 
 --- /collapse ---
