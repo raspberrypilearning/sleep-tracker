@@ -73,7 +73,7 @@ Your code should look like this:
 **Test** your program: 
 
 + Check that your zZ animation plays when the simulator starts
-+ Check that your zZ animation also plays when the `A+B` button is pressed
++ Check that your zZ animation also plays when the `A+B` button is pressed (after the number of movements is displayed)
 
 --- /task ---
 

@@ -98,7 +98,10 @@ You will now have these blocks for the A button and the B button:
 
 When you make a change to a code block in the code editor panel, the simulator will restart.
 
+--- task ---
+
 **Test** your program: 
+
 + Click the `A` button until the LEDs go out fully. 
 
 + Click the `B` button and see what happens.
@@ -109,13 +112,15 @@ This is because the brightness value has reached `0`.
 
 When you multiply `0` by `2` you get.... `0`. You can press the `B` button as many times as you want, but you will keep setting the brightness to `0 × 2`, which is **always** `0`!
 
-So, we need to stop the brightness value from being set to `0`.
+--- /task ---
+
+We need to stop the brightness value from being set to `0`.
 
 To do this, we will use a Logic block to only halve the brightness value **if** the brightness level is **more than 10**.
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag out a <code style="background-color: #00A4A6">if</code> block and place it around the <code style="background-color: #5C2D91">set brightness</code> block in the <code style="background-color: #D400D4">on button A</code> block.
+From the <code style="background-color: #00A4A6">Logic</code> menu, drag out an <code style="background-color: #00A4A6">if</code> block and place it around the <code style="background-color: #5C2D91">set brightness</code> block in the <code style="background-color: #D400D4">on button A</code> block.
 
 --- /task ---
 
@@ -137,23 +142,23 @@ Change the second `0` to `10`.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_8RWA44daDH1K" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
---- /task ---
-
 **Tip** There is no need to do this for the `on button B` block as the maximum value the LEDs can be set to is `255`.
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+--- /task ---
 
 --- task ---
 
 **Test** your program: 
 
-+ Move over the left and right of the micro:bit to record and display some movements. 
++ Move over the edges of the micro:bit to record and display some movements
 
-+ Press the `A` button a few times. 
++ Press the `A+B` button
+
++ Press the `A` button a few times
 
 The display should get less bright.
 
-+ Press the `B` button a few times. 
++ Press the `B` button a few times
 
 The display should get brighter.
 

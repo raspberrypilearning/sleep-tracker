@@ -56,13 +56,13 @@ Now it is time to display the total number of sleep movements recorded.
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">show number</code> block and place it inside the <code style="background-color: #d400d4">on button</code> block under the <code style="background-color: #d400d4">show string</code> block. 
+From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">show number</code> block and place it inside the <code style="background-color: #d400d4">on button</code> block under the <code style="background-color: #1E90FF">show string</code> block. 
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">movements</code> block and place it over the `0` in the <code style="background-color: #d400d4">show number</code> block.
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">movements</code> block and place it over the `0` in the <code style="background-color: #1E90FF">show number</code> block.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_bh7Lw76vDhJx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -72,7 +72,7 @@ We now need to reset the movements variable back to 0, ready to track again.
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">set movements</code> block and place it under the <code style="background-color: #d400d4">show number</code> block.
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">set movements</code> block and place it under the <code style="background-color: #1E90FF">show number</code> block.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:85%;height:85%;" src="https://makecode.microbit.org/---codeembed#pub:_eHpTW3Xy0Jpt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -82,7 +82,7 @@ To show the sleep tracker is ready, you can show an animation. As this is a slee
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code>menu, drag out `three` <code style="background-color: #1E90FF">show leds</code> blocks and place them under the <code style="background-color: #DC143C">set movements</code> block.
+From the <code style="background-color: #1E90FF">Basic</code>menu, drag out **three** <code style="background-color: #1E90FF">show leds</code> blocks and place them under the <code style="background-color: #DC143C">set movements</code> block.
 
 Click the squares on each one to create these patterns:
 
@@ -92,7 +92,7 @@ Click the squares on each one to create these patterns:
 
 --- /task ---
 
-To create an animation, you can put the show LED blocks in a loop.
+To create an animation, you can put the 'show leds' blocks in a loop.
 
 --- task ---
 

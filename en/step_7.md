@@ -4,7 +4,6 @@
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 Great work! You have created your micro:bit sleep tracker. Here are some ideas to upgrade your project and create a more advanced sleep tracker:
 
-![TODO: Update these and include V2 options]()
 + Use a the microphone to detect snoring (v2). If you have a v1 then you could detect the light level
 + Change the sleepy (Zs) animation
 + Plot the number of movements on the LEDs instead of showing the number value
