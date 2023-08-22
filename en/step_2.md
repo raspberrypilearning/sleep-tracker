@@ -267,7 +267,7 @@ Place it in the first `0` on the left of the <code style="background-color: #940
 
 Change the `0` to the right of the <code style="background-color: #9400D3">+</code> with `10`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_hmmgeHXfb5xH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:120%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_hmmgeHXfb5xH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -283,7 +283,7 @@ Place it under the <code style="background-color: #1E90FF">pause</code> block.
 
 Duplicate the <code style="background-color: #D400D4">rotation</code> block and place it in the `0` of the <code style="background-color: #DC143C">set</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_VooFR6cseED5" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:120%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_VooFR6cseED5" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -313,7 +313,7 @@ We should give the micro:bit some time to come to rest before setting the new <c
 
 Change the value in <code style="background-color: #1E90FF">pause</code> from `100` to `5 seconds`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Aqgc2mHrw529" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:120%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Aqgc2mHrw529" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 

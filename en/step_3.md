@@ -86,7 +86,7 @@ From the <code style="background-color: #1E90FF">Basic</code>menu, drag out `thr
 
 Click the squares on each one to create these patterns:
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:120%;" src="https://makecode.microbit.org/---codeembed#pub:_AaDf7mJwE52H" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:120%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_AaDf7mJwE52H" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 **Tip** If you hold down the mouse, you can select multiple LEDs as you move.
 
