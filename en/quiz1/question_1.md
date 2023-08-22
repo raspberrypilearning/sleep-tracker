@@ -1,10 +1,8 @@
-## Reflection
+## Quick quiz
 
-Well done, you have learned a lot! Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Answer the three questions below to reflect on what you've learned.
-
-After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+When you have answered each question, click on **Check my answer**.
 
 Have fun!
 
@@ -14,30 +12,37 @@ Have fun!
 legend: Question 1 of 3
 ---
 
+Which one of these is the sensor the micro:bit uses to detect movement?
 
 --- choices ---
 
-- ( )
-
-  --- feedback ---
-
-  --- /feedback ---
-
-- ( )
-
-  --- feedback ---
-
-  --- /feedback ---
-
 - (x) 
 
+Accelerometer
+
   --- feedback ---
+
+  Awesome! You have answered correctly, the accelerometer detects when the micro:bit has been moved by sensing changes in speed.
 
   --- /feedback ---
 
 - ( ) 
 
+Logic
+
   --- feedback ---
+  
+  Logic is a type of block that can be used to check **if** something is True or False. It is not a sensor.
+
+  --- /feedback ---
+
+- ( )
+
+LED
+
+  --- feedback ---
+
+  LEDs are used to display text, numbers or images.
 
   --- /feedback ---
 
