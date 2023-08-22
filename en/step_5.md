@@ -12,8 +12,6 @@ In this step, you will display the zZs animation again when the program starts a
 
 ### Re-using code
 
-The animation is a large group of code blocks. 
-
 We can reuse the animation code.
 
 --- task ---
@@ -34,7 +32,9 @@ Drag the duplicated <code style="background-color: #00AA00">repeat</code> block 
 
 ### Tidy with a function
 
-Repeating the large group of blocks used for the animation makes our code untidy.
+The animation is a large group of code blocks. 
+
+Repeating large group of blocks makes our code untidy.
 
 If you need to re-use code, it is sometimes better to put it in a function and then 'call' the function to run. 
 
