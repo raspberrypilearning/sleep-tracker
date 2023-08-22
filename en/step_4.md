@@ -143,6 +143,8 @@ Change the second `0` to `10`.
 
 When you make a change to a code block in the code editor panel, the simulator will restart.
 
+--- task ---
+
 **Test** your program: 
 
 + Move over the left and right of the micro:bit to record and display some movements. 
@@ -156,5 +158,7 @@ The display should get less bright.
 The display should get brighter.
 
 ![Animation showing that when the the A button is pressed, the LED display brightness decreases and when the B button is pressed, the LED display brightness increases.](images/brightness-change.gif)
+
+--- /task ---
 
 Next you are going to set the sleepy zZ animation to run when the program starts and organise your code using a function!

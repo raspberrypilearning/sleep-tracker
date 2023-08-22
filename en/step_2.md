@@ -290,6 +290,8 @@ Duplicate the <code style="background-color: #D400D4">rotation</code> block and 
 
 When you make a change to a code block in the code editor panel, the simulator will restart.
 
+--- task ---
+
 **Test** your program:
 + Move from the centre of the micro:bit to the right or left. 
 
@@ -302,12 +304,18 @@ The LEDs will light up and stay on for a short time.
 
 Repeat this process to see how the LEDs will turn on only when there is movement away from the resting position.
 
+--- /task ---
+
 ### Letting the micro:bit come to rest
+
+We should give the micro:bit some time to come to rest before setting the new <code style="background-color: #DC143C">restingPosition</code> to the variable.
+
+--- task ---
 
 Change the value in <code style="background-color: #1E90FF">pause</code> from `100` to `5 seconds`.
 
-This gives enough time for the micro:bit to come to rest before storing the new <code style="background-color: #DC143C">restingPosition</code> to the variable.
-
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Aqgc2mHrw529" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
 
 Next you are going to use the `A+B` button press event to reset your sleep tracker!

@@ -101,11 +101,13 @@ From the <code style="background-color: #00AA00">Loops</code> menu, drag a <code
 
 Change the number of repeats from `4` to `2`.
 
-![Animation showing the 'repeat' block taken from the Loops menu. The 'repeat' block is then held over the top 'show leds' block and released, making the three 'show leds' blocks snap inside it. The number is then changed from a '4' to a '2'.](images/repeat-around-leds.gif)
+<img src="images/repeat-around-leds.gif" alt="Animation showing the 'repeat' block taken from the Loops menu. The 'repeat' block is then held over the top 'show leds' block and released, making the three 'show leds' blocks snap inside it. The number is then changed from a '4' to a '2'." width="350"/>
 
 --- /task ---
 
 When you make a change to a code block in the code editor panel, the simulator will restart.
+
+--- task ---
 
 **Test** 
 When the program runs, move over the left and right of the micro:bit to record some movements. 
@@ -114,6 +116,8 @@ Next, press the `A+B` button.
 
 The word 'Movements' will scroll across the display and the number of movements will be shown. The zZ animation will then loop twice.
 
-<img src="images/images/reset-test.gif" alt="Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z." width="350"/>
+<img src="images/reset-test.gif" alt="Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z." width="350"/>
+
+--- /task ---
 
 Next you are going to use the `A` button and `B` button to change the display brightness!
