@@ -48,7 +48,11 @@ Before you display the number, it is a good idea to show what the number is.
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">show string</code> block and place it inside the <code style="background-color: #d400d4">on button</code> block under the <code style="background-color: #1E90FF">clear screen</code> block and replace the word `Hello` with `Movements`.
+From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">show string</code> block.
+
+Place it inside the <code style="background-color: #d400d4">on button</code> block, under the <code style="background-color: #1E90FF">clear screen</code> block.
+
+Replace the word `Hello` with `Movements`.
 
 --- /task ---
 
@@ -56,15 +60,19 @@ Now it is time to display the total number of sleep movements recorded.
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">show number</code> block and place it inside the <code style="background-color: #d400d4">on button</code> block under the <code style="background-color: #1E90FF">show string</code> block. 
+From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">show number</code> block.
+
+Place it inside the <code style="background-color: #d400d4">on button</code> block, under the <code style="background-color: #1E90FF">show string</code> block. 
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">movements</code> block and place it over the `0` in the <code style="background-color: #1E90FF">show number</code> block.
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">movements</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_bh7Lw76vDhJx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+Place it over the `0` in the <code style="background-color: #1E90FF">show number</code> block.
+
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bh7Lw76vDhJx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -80,7 +88,7 @@ From the <code style="background-color: #DC143C">Variables</code> menu, drag out
 
 Use the drop down menu to select <code style="background-color: #DC143C">movements</code> as the variable to set.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:85%;height:85%;" src="https://makecode.microbit.org/---codeembed#pub:_eHpTW3Xy0Jpt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_eHpTW3Xy0Jpt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
