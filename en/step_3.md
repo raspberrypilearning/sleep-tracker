@@ -82,7 +82,9 @@ You now need to reset the movements variable back to 0, ready to track again.
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out a <code style="background-color: #DC143C">set</code> block and place it under the <code style="background-color: #1E90FF">show number</code> block.
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out a <code style="background-color: #DC143C">set</code> block.
+
+Place it under the <code style="background-color: #1E90FF">show number</code> block.
 
 --- /task ---
 
@@ -94,7 +96,7 @@ Use the drop down menu to select <code style="background-color: #DC143C">movemen
 
 --- /task ---
 
-To show the sleep tracker is ready, you can show an animation. As this is a sleep tracker, you will create an animation of some Zs.
+To show the sleep tracker is ready, you can show an animation. As this is a sleep tracker, you will create an animation of some Zs. 😴
 
 --- task ---
 

@@ -26,7 +26,9 @@ Because the A button is on the left, you will use it to turn the brightness down
 
 --- task ---
 
-From the <code style="background-color: #D400D4">Input</code> menu, drag out an <code style="background-color: #D400D4">on button</code> block and place it on the code editor panel.
+From the <code style="background-color: #D400D4">Input</code> menu, drag out an <code style="background-color: #D400D4">on button</code> block.
+
+Place it on the code editor panel.
 
 <img src="images/on-button-location.png" alt="The Input menu, with the 'on button' block highlighted" width="350"/>
 
@@ -36,9 +38,15 @@ Each time the A button is pressed, you will halve the brightness.
 
 --- task ---
 
-From the <code style="background-color: #5C2D91">Led ... more</code> menu, drag out a <code style="background-color: #5C2D91">set brightness</code> block and place it inside the <code style="background-color: #D400D4">on button</code> block.
+From the <code style="background-color: #5C2D91">Led ... more</code> menu, drag out a <code style="background-color: #5C2D91">set brightness</code> block.
 
 <img src="images/set-brightness-location.png" alt="The 'Led more' menu, with the 'set brightness' block highlighted" width="350"/>
+
+--- /task ---
+
+--- task ---
+
+Place it inside the <code style="background-color: #D400D4">on button</code> block.
 
 **Debug** Check you have clicked on the Led **more** menu, not the normal Led menu.
 
@@ -48,15 +56,31 @@ To halve the brightness, you will use a Math block.
 
 --- task ---
 
-From the <code style="background-color: #9400D3">Math</code> menu, drag out a <code style="background-color: #9400D3">0 / 0</code> divide block and place it over the `255` value in the <code style="background-color: #5C2D91">set brightness</code> block.
+From the <code style="background-color: #9400D3">Math</code> menu, drag out a <code style="background-color: #9400D3">0 / 0</code> divide block.
 
-From the <code style="background-color: #5C2D91">Led ... more</code> menu, drag out a <code style="background-color: #5C2D91">brightness</code> block and place it over the first `0` value in the <code style="background-color: #9400D3">0 / 0</code> block.
+Place it over the `255` value in the <code style="background-color: #5C2D91">set brightness</code> block.
+
+--- /task ---
+
+--- task ---
+
+From the <code style="background-color: #5C2D91">Led ... more</code> menu, drag out a <code style="background-color: #5C2D91">brightness</code> block.
+
+Place it over the first `0` value in the <code style="background-color: #9400D3">0 / 0</code> block.
+
+--- /task ---
+
+--- task ---
 
 Change the second `0` to a `2`.
 
 This will set the brightness to whatever value it currently is, divided by 2.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_R06gicKH4Kt2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+--- /task ---
+
+Your blocks should look like this:
+
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:65%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_R06gicKH4Kt2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -90,15 +114,15 @@ A drop down menu will open.
 
 Choose <code style="background-color: #9400D3">×</code>.
 
-You will now have these blocks for the A button and the B button:
-
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_7VtHDq1F0884" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
 --- /task ---
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+You will now have these blocks for the A button and the B button:
+
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:95%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7VtHDq1F0884" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- task ---
+
+When you make a change to a code block in the code editor panel, the simulator will restart.
 
 **Test** your program: 
 
@@ -116,17 +140,25 @@ When you multiply `0` by `2` you get.... `0`. You can press the `B` button as ma
 
 You need to stop the brightness value from being set to `0`.
 
-To do this, you will use a Logic block to only halve the brightness value **if** the brightness level is **more than 10**.
+To do this, you will use a Logic block to halve the brightness value only **if** the brightness level is **more than 10**.
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag out an <code style="background-color: #00A4A6">if</code> block and place it around the <code style="background-color: #5C2D91">set brightness</code> block in the <code style="background-color: #D400D4">on button A</code> block.
+From the <code style="background-color: #00A4A6">Logic</code> menu, drag out an <code style="background-color: #00A4A6">if</code> block.
+
+Place it around the <code style="background-color: #5C2D91">set brightness</code> block in the <code style="background-color: #D400D4">on button A</code> block.
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag out a <code style="background-color: #00A4A6">0 < 0</code> block and place it over the <code style="background-color: #00A4A6">true</code> part.
+From the <code style="background-color: #00A4A6">Logic</code> menu, drag out a <code style="background-color: #00A4A6">0 < 0</code> block
+
+Place it over the <code style="background-color: #00A4A6">true</code> part.
+
+--- /task ---
+
+--- task ---
 
 Change the <code style="background-color: #00A4A6"><</code> to a <code style="background-color: #00A4A6">></code>
 
@@ -134,17 +166,25 @@ Change the <code style="background-color: #00A4A6"><</code> to a <code style="ba
 
 --- task ---
 
-From the <code style="background-color: #5C2D91">Led ... more</code> menu, drag out a <code style="background-color: #5C2D91">brightness</code> block and place it inside the first `0` in the <code style="background-color: #00A4A6">0 > 0</code> block.
+From the <code style="background-color: #5C2D91">Led ... more</code> menu, drag out a <code style="background-color: #5C2D91">brightness</code> block.
+
+Place it inside the first `0` in the <code style="background-color: #00A4A6">0 > 0</code> block.
+
+--- /task ---
+
+--- task ---
 
 Change the second `0` to `10`.
 
 ![Animation showing the 'if' block taken from the Logic menu and held over the 'set brightness' block. It is released, making the 'set brightness' block snap inside it. A '0 > 0' block is then taken from the Logic menu and placed inside the first '0' of the '0 > 0' block. A 'brightness' block is then taken from the 'Led more' menu and placed inside the first '0' of the '0 > 0' block. The second '0' is changed to '10'.](images/if-around-set-brightness.gif)
 
+--- /task ---
+
+Your code should look like this:
+
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_8RWA44daDH1K" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 **Tip** There is no need to do this for the `on button B` block as the maximum value the LEDs can be set to is `255`.
-
---- /task ---
 
 --- task ---
 
