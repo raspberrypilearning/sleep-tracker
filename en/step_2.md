@@ -356,6 +356,8 @@ From the <code style="background-color: #dc143c">Variables</code> menu, grab the
 
 Place it under the <code style="background-color: #1E90FF">pause</code> block.
 
+--- /task ---
+
 --- task ---
 
 Duplicate the <code style="background-color: #D400D4">rotation</code> block and place it in the `0` of the <code style="background-color: #DC143C">set</code> block.
