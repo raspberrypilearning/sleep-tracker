@@ -80,7 +80,7 @@ This will set the brightness to whatever value it currently is, divided by 2.
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:65%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_R06gicKH4Kt2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(125px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:65%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_R06gicKH4Kt2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 ### Brightness up
 
@@ -98,8 +98,6 @@ There will now be two <code style="background-color: #D400D4">on button A</code>
 
 Click on the arrow next to <code style="background-color: #D400D4">A</code> on the duplicated block. 
 
-A drop down menu will open.
-
 Choose <code style="background-color: #D400D4">B</code>.
 
 --- /task ---
@@ -107,8 +105,6 @@ Choose <code style="background-color: #D400D4">B</code>.
 --- task ---
 
 Click on the arrow next to <code style="background-color: #9400D3">/</code> on the duplicated block. 
-
-A drop down menu will open.
 
 Choose <code style="background-color: #9400D3">×</code>.
 
@@ -182,7 +178,7 @@ Here is an animation showing the above steps:
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_8RWA44daDH1K" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:65%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_8RWA44daDH1K" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 **Tip** There is no need to do this for the `on button B` block as the maximum brightness value the LEDs can be set to is `255`.
 
