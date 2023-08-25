@@ -174,15 +174,17 @@ Place it inside the first `0` in the <code style="background-color: #00A4A6">0 >
 
 Change the second `0` to `10`.
 
-![Animation showing the 'if' block taken from the Logic menu and held over the 'set brightness' block. It is released, making the 'set brightness' block snap inside it. A '0 > 0' block is then taken from the Logic menu and placed inside the first '0' of the '0 > 0' block. A 'brightness' block is then taken from the 'Led more' menu and placed inside the first '0' of the '0 > 0' block. The second '0' is changed to '10'.](images/if-around-set-brightness.gif)
-
 --- /task ---
+
+Here is an animation showing the above steps:
+
+<img src="images/if-around-set-brightness.gif" alt="Animation showing the 'if' block taken from the Logic menu and held over the 'set brightness' block. It is released, making the 'set brightness' block snap inside it. A '0 > 0' block is then taken from the Logic menu and placed inside the first '0' of the '0 > 0' block. A 'brightness' block is then taken from the 'Led more' menu and placed inside the first '0' of the '0 > 0' block. The second '0' is changed to '10'." width="350"/>
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_8RWA44daDH1K" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_8RWA44daDH1K" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
-**Tip** There is no need to do this for the `on button B` block as the maximum value the LEDs can be set to is `255`.
+**Tip** There is no need to do this for the `on button B` block as the maximum brightness value the LEDs can be set to is `255`.
 
 --- task ---
 
