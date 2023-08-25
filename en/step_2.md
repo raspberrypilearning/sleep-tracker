@@ -20,7 +20,13 @@ There is also a [downloadable version of the MakeCode editor](https://makecode.m
 
 --- /task ---
 
-Once the editor is open, you will need to create a New Project and give your project a name. 
+### First micro:bit project?
+
+[[[makecode-tour]]]
+
+### Create your project
+
+Once the editor is open, you will need to create a new project and give your project a name. 
 
 --- task ---
 
@@ -40,8 +46,6 @@ Give your new project the name `Sleep tracker` and click **Create**.
 
 --- /task ---
 
-[[[makecode-tour]]]
-
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 In this step you will program the micro:bit to sense if it moves and make the LEDs light if it does.
@@ -57,15 +61,15 @@ The micro:bit uses a sensor called an accelerometer to sense when it has been ro
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 
-<span style="color: #0faeb0">Accelerometers</span> are used in many devices. They can tell if we're moving, like when we run or jump, and they help our tablets and smartphones know which way they're being held. These clever sensors make games more fun, letting you control how a character moves by tilting a controller. So next time you play a game, remember that accelerometers are making it super cool!
+<span style="color: #0faeb0">Accelerometers</span> are used in many devices. They can tell if we're moving, like when you run or jump, and they help our tablets and smartphones know which way they're being held. These clever sensors make games more fun, letting you control how a character moves by tilting a controller.
 
 </p>
 
 ### Roll
 
-We need to check **if** the micro:bit has been rolled right **or** left. 
+You need to check **if** the micro:bit has been rolled right **or** left. 
 
-If this happens, we will assume there has been movement during sleep.
+If this happens, you will assume there has been movement during sleep.
 
 --- task ---
 
@@ -83,7 +87,7 @@ Open the <code style="background-color: #00a4a6">Logic</code> menu again and tak
 
 Place it in the `true` section of the <code style="background-color: #00a4a6">if</code> block. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_d6KcohD3RCjK" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_d6KcohD3RCjK" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -97,7 +101,7 @@ From the <code style="background-color: #00A4A6">Logic</code> menu, drag out the
 
 Place it on the left side of the <code style="background-color: #00a4a6">or</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_6zUfDw2k274E" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_6zUfDw2k274E" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -109,11 +113,23 @@ From the <code style="background-color: #D400D4">Input ... more</code> menu, dra
 
 Place it inside the first `0` in the <code style="background-color: #00a4a6">0 < 0</code> comparison block.
 
+--- /task ---
+
+--- task ---
+
 Use the dropdown to change <code style="background-color: #D400D4">pitch</code> to <code style="background-color: #D400D4">roll</code>. 
 
-Change the `0` to `-10`.
+--- /task ---
+
+--- task ---
+
+Change the `0` to `-10`, to check if the micro:bit is rolled 10° to the **left**.
+
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_XefbaDJ4uTvi" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
+
+--- task ---
 
 **Debug** 
 
@@ -122,31 +138,45 @@ Check you have:
 + Clicked on the Input **more** menu, not the normal Input menu.
 + Changed the second value from `0` to **`-10`**, not `10`.
 
+--- /task ---
+
 --- task ---
 
 Right click on the <code style="background-color: #00a4a6">0 < 0</code> comparison block and select Duplicate.
 
+--- /task ---
+
 You will now have two comparison blocks.
+
+--- task ---
 
 Drag the duplicated comparison block to the right of the <code style="background-color: #00a4a6">or</code> block.
 
+--- /task ---
+
+--- task ---
+
 Use the dropdown to change the less than symbol (<code style="background-color: #00a4a6"><</code>) to a greater than symbol (<code style="background-color: #00a4a6">></code>). 
-
-Change the `-10` to `10`.
-
-![A demo of duplicating the comparison block and making the changes.](images/duplicting-rotation-comparison.gif)
-
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2jaW263vc1mt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
+--- task ---
+
+Change the `-10` to `10`, to check if the micro:bit is rolled 10° to the **right**.
+
+![A demo of duplicating the comparison block and making the changes.](images/duplicting-rotation-comparison.gif)
+
+--- /task ---
+
+### Keep a count
+
 When either condition is met, the micro:bit will have been rolled left or right.
 
-We need to:
+You need to:
 + Keep a count of sleep movements
 + Light the LEDs
 
-To keep a count of sleep movements, we will use a variable.
+To keep a count of sleep movements, you will use a variable.
 
 --- task ---
 
@@ -164,7 +194,7 @@ Name your new variable `movements`.
 
 --- /task ---
 
-We will increase the movements variable by `1` each time a movement is detected.
+You will increase the movements variable by `1` each time a movement is detected.
 
 --- task ---
 
@@ -172,11 +202,17 @@ From the <code style="background-color: #dc143c">Variables</code> menu, grab the
 
 <img src="images/change-movements.png" alt="The Variables menu with the 'change movements by 1' block highlighted" width="350"/>
 
+--- /task ---
+
+--- task ---
+
 Place it inside the <code style="background-color: #00A4A6">if</code> block.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_iT2FmD3d7TE2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
+
+### Lighting the LEDS
 
 You can use the LEDs on the micro:bit to show there has been a movement. 
 
@@ -188,25 +224,39 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code
 
 <img src="images/show-icon-location.png" alt="The Basic menu, open with the 'show icon' block highlighted" width="350"/>
 
+--- /task ---
+
+--- task ---
+
 Place it under the <code style="background-color: #dc143c">change movements</code> block.
+
+--- /task ---
+
+--- task ---
 
 From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">pause</code> block.
 
 Place it under the <code style="background-color: #1E90FF">show icon</code> block.
 
+--- /task ---
+
+--- task ---
+
 From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">clear screen</code> block.
 
 Place it under the <code style="background-color: #1E90FF">pause</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_UL1DcWbiR5Ey" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
 --- /task ---
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+Your code should look like this:
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_UL1DcWbiR5Ey" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- task ---
 
 **Test** your program:
+
+When you make a change to a code block in the code editor panel, the simulator will restart.
 
 + Move over the right or left of the micro:bit. 
 
@@ -228,9 +278,11 @@ When you lie down, the weight of your head on your pillow will probably roll the
 
 This will be the **resting position**. 
 
-We need to record a movement only if the micro:bit is rolled away from the resting position. 
+You need to record a movement only if the micro:bit is rolled away from the resting position. 
 
-In other words, we need to know if there is a difference between the resting position and the current roll position.
+In other words, you need to know if there is a difference between the resting position and the current roll position.
+
+### Check for movement to the LEFT from the resting position
 
 --- task ---
 
@@ -246,37 +298,57 @@ Open the <code style="background-color: #dc143c">Variables</code> menu and click
 
 Name your new variable `restingPosition`.
 
+--- task ---
+
 From the <code style="background-color: #dc143c">Variables</code> menu, grab the <code style="background-color: #dc143c">restingPosition</code> block. 
 
 Place it in the first `0` on the left of the <code style="background-color: #9400D3">0 - 0</code> block. 
-
-Change the `0` to `10` on the right of the <code style="background-color: #9400D3">-</code>.
-
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_i6zFuRE2K8ew" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #9400D3">Math</code> menu, grab another <code style="background-color: #9400D3">0 - 0</code> block.
+Change the `0` to `10` on the right of the <code style="background-color: #9400D3">-</code>.
+
+--- /task ---
+
+Your code should look like this:
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_i6zFuRE2K8ew" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+### Check for movement to the RIGHT from the resting position
+
+--- task ---
+
+From the <code style="background-color: #9400D3">Math</code> menu, grab a <code style="background-color: #9400D3">0 + 0</code> block.
 
 Place it in the `10` of the <code style="background-color: #00A4A6">></code> comparison block.
 
-Change the <code style="background-color: #9400D3">-</code> to a <code style="background-color: #9400D3">+</code>
+--- /task ---
+
+--- task ---
 
 From the <code style="background-color: #dc143c">Variables</code> menu, grab another <code style="background-color: #dc143c">restingPosition</code> block. 
 
 Place it in the first `0` on the left of the <code style="background-color: #9400D3">0 + 0</code> block.
 
+--- /task ---
+
+--- task ---
+
 Change the `0` to `10` on the right of the <code style="background-color: #9400D3">+</code>.
+
+--- /task ---
+
+Your code should look like this:
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_hmmgeHXfb5xH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-Each time the micro:bit is rolled to a new resting position, we need to set the new resting position, so we can use it in our comparison.
+### Setting a new resting position after each movement
 
-We will use a new variable for this.
+Each time the micro:bit is rolled to a new resting position, you need to set the current position as the new resting position, so you can use it in our comparison.
 
 --- task ---
 
@@ -284,9 +356,15 @@ From the <code style="background-color: #dc143c">Variables</code> menu, grab the
 
 Place it under the <code style="background-color: #1E90FF">pause</code> block.
 
+--- task ---
+
 Duplicate the <code style="background-color: #D400D4">rotation</code> block and place it in the `0` of the <code style="background-color: #DC143C">set</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_VooFR6cseED5" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+--- /task ---
+
+Your code should look like this:
+
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_VooFR6cseED5" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -298,11 +376,11 @@ When you make a change to a code block in the code editor panel, the simulator w
 + Move from the centre of the micro:bit to the right or left. 
 
 The LEDs will light up and stay on for a short time. 
-***Keep your mouse still.***
+***Keep your mouse still until the LEDs turn off.***
 
 + When the LEDs turn off, move from the new position (your resting position) to the right or left again. 
 
-The LEDs will light up and stay on for a short time.
+The LEDs will light up and stay on for **a short time**.
 
 Repeat this process to see how the LEDs will turn on only when there is movement away from the resting position.
 
@@ -310,14 +388,28 @@ Repeat this process to see how the LEDs will turn on only when there is movement
 
 ### Letting the micro:bit come to rest
 
-We should give the micro:bit some time to come to rest before setting the new <code style="background-color: #DC143C">restingPosition</code> to the variable.
+You should give the micro:bit some time to come to rest before setting the new <code style="background-color: #DC143C">restingPosition</code> to the variable.
 
 --- task ---
 
 Change the value in <code style="background-color: #1E90FF">pause</code> from `100` to `5 seconds`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Aqgc2mHrw529" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Aqgc2mHrw529" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-Next you are going to use the `A+B` button press event to reset your sleep tracker!
+--- task ---
+
+**Test** your program:
++ Move from the centre of the micro:bit to the right or left. 
+
+The LEDs will light up and stay on for **five seconds**. 
+***Keep your mouse still until the LEDs turn off.***
+
++ When the LEDs turn off, move from the new position (your resting position) to the right or left again. 
+
+The LEDs will light up and stay on for five seconds again.
+
+--- /task ---
+
+Next you are going to use the `A+B` button press event to **reset** your sleep tracker!

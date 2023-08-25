@@ -27,7 +27,7 @@ Which block did you use to do this?
 
   --- feedback ---
   
-  This is a block from the Variables menu. We used the movements variable to count the number of times the accelerometer detected rolls left or right.
+  This is a block from the Variables menu. You used the movements variable to count the number of times the accelerometer detected rolls left or right.
   
   --- /feedback ---
 
