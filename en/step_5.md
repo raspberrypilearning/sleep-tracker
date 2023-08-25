@@ -24,7 +24,7 @@ There will now be two <code style="background-color: #00AA00">repeat</code> bloc
 
 --- task ---
 
-Drag the duplicated <code style="background-color: #00AA00">repeat</code> block and put it inside the <code style="background-color: #1E90FF">on start</code> block, under the <code style="background-color: #DC143C">set</code> block.
+Put the duplicated <code style="background-color: #00AA00">repeat</code> block inside the <code style="background-color: #1E90FF">on start</code> block, under the <code style="background-color: #DC143C">set</code> block.
 
 <img src="images/repeat-in-on-start.png" alt="The duplicated code insde the 'on start' block" width="350"/>
 
@@ -34,9 +34,17 @@ Drag the duplicated <code style="background-color: #00AA00">repeat</code> block 
 
 The animation is a large group of code blocks. 
 
-Repeating large group of blocks makes our code untidy.
+Repeating a large group of blocks makes our code untidy.
 
 If you need to re-use code, it is sometimes better to put it in a function and then 'call' the function to run. 
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+
+A <span style="color: #0faeb0">function</span> is a group of blocks that you can create and name. You can run those blocks by 'calling' the name of the function. Another word for a function is a <span style="color: #0faeb0">subprogram</span>, because it can be called to run from the main program.
+</p>
+
+</div>
+<div>
 
 --- task ---
 
@@ -54,7 +62,7 @@ Name the function `zZ`.
 
 From the <code style="background-color: #D400D4">on button A+B</code> block, drag out the <code style="background-color: #00AA00">repeat</code> block.
 
-Place it inside your new `zZ` function block.
+Place it inside your new `function zZ` block.
 
 --- /task ---
 
@@ -80,7 +88,7 @@ Place it inside the <code style="background-color: #D400D4">on button A+B</code>
 
 --- /task ---
 
-When a `call zZ` block is executed, it calls the code in the `zZ function` to run.
+When a `call zZ` block is executed, it calls the code in the `function zZ` to run.
 
 Here are the blocks that have changed in this step:
 
