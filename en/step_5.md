@@ -52,21 +52,39 @@ Name the function `zZ`.
 
 --- task ---
 
-From the <code style="background-color: #D400D4">on button A+B</code> block, drag the <code style="background-color: #00AA00">repeat</code> block out and place it inside your new `zZ` function block.
+From the <code style="background-color: #D400D4">on button A+B</code> block, drag out the <code style="background-color: #00AA00">repeat</code> block.
 
-Delete the code inside the <code style="background-color: #1E90FF">on start</code> block.
-
-From the Advanced > Functions menu, drag out a `call zZ` block and place it inside the <code style="background-color: #1E90FF"> on start</code> block.
-
-Drag out another `call zZ` block and place it inside the <code style="background-color: #D400D4">on button A+B</code> block, under the <code style="background-color: #DC143C">set movements</code> block.
+Place it inside your new `zZ` function block.
 
 --- /task ---
 
-Now, when a `call zZ` block is executed, it calls the code in the `zZ function` to run.
+--- task ---
 
-Your code should look like this:
+Delete the code inside the <code style="background-color: #1E90FF">on start</code> block.
 
-<div style="position:relative;height:calc(800px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_14Lib71CCP0F" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+--- /task ---
+
+--- task ---
+
+From the Advanced > Functions menu, drag out a `call zZ` block.
+
+Place it inside the <code style="background-color: #1E90FF"> on start</code> block.
+
+--- /task ---
+
+--- task ---
+
+Drag out another `call zZ` block.
+
+Place it inside the <code style="background-color: #D400D4">on button A+B</code> block, under the <code style="background-color: #DC143C">set movements</code> block.
+
+--- /task ---
+
+When a `call zZ` block is executed, it calls the code in the `zZ function` to run.
+
+Here are the blocks that have changed in this step:
+
+<div style="position:relative;height:calc(800px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Exxaiz8UhErD" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- task ---
 
