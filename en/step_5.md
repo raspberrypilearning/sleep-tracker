@@ -69,6 +69,8 @@ Delete the code inside the <code style="background-color: #1E90FF">on start</cod
 
 --- /task ---
 
+When a `call zZ` block is executed, it runs the code in the `function zZ`.
+
 --- task ---
 
 From the Advanced > Functions menu, drag out a `call zZ` block.
@@ -84,8 +86,6 @@ Drag out another `call zZ` block.
 Place it inside the <code style="background-color: #D400D4">on button A+B</code> block, under the <code style="background-color: #DC143C">set movements</code> block.
 
 --- /task ---
-
-When a `call zZ` block is executed, it calls the code in the `function zZ` to run.
 
 Here are the blocks that have changed in this step:
 
