@@ -68,7 +68,7 @@ From the <code style="background-color: #DC143C">Variables</code> menu, drag out
 
 --- /task ---
 
-We now need to reset the movements variable back to 0, ready to track again.
+You now need to reset the movements variable back to 0, ready to track again.
 
 --- task ---
 
@@ -78,7 +78,7 @@ From the <code style="background-color: #DC143C">Variables</code> menu, drag out
 
 --- /task ---
 
-To show the sleep tracker is ready, you can show an animation. As this is a sleep tracker, we will create an animation of some Zs.
+To show the sleep tracker is ready, you can show an animation. As this is a sleep tracker, you will create an animation of some Zs.
 
 --- task ---
 

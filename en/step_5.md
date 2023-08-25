@@ -12,7 +12,7 @@ In this step, you will display the zZs animation again when the program starts a
 
 ### Re-using code
 
-We can reuse the animation code.
+You can reuse the animation code.
 
 --- task ---
 

@@ -20,7 +20,7 @@ To sleep better, try not to be around really <span style="color: #0faeb0">bright
 </div>
 </div>
 
-Because the A button is on the left, we will use it to turn the brightness down.
+Because the A button is on the left, you will use it to turn the brightness down.
 
 ### Brightness down
 
@@ -32,7 +32,7 @@ From the <code style="background-color: #D400D4">Input</code> menu, drag out an 
 
 --- /task ---
 
-Each time the A button is pressed, we will halve the brightness.
+Each time the A button is pressed, you will halve the brightness.
 
 --- task ---
 
@@ -44,7 +44,7 @@ From the <code style="background-color: #5C2D91">Led ... more</code> menu, drag 
 
 --- /task ---
 
-To halve the brightness, we will use a Math block.
+To halve the brightness, you will use a Math block.
 
 --- task ---
 
@@ -62,7 +62,7 @@ This will set the brightness to whatever value it currently is, divided by 2.
 
 ### Brightness up
 
-Now we will set up the B button to turn the brightness up.
+Now you will set up the B button to turn the brightness up.
 
 --- task ---
 
@@ -114,9 +114,9 @@ When you multiply `0` by `2` you get.... `0`. You can press the `B` button as ma
 
 --- /task ---
 
-We need to stop the brightness value from being set to `0`.
+You need to stop the brightness value from being set to `0`.
 
-To do this, we will use a Logic block to only halve the brightness value **if** the brightness level is **more than 10**.
+To do this, you will use a Logic block to only halve the brightness value **if** the brightness level is **more than 10**.
 
 --- task ---
 

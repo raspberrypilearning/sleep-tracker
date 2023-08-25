@@ -7,7 +7,7 @@ You can run the program on your micro:bit when it is placed under your pillow, s
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 
-Keeping <span style="color: #0faeb0">track</span> of how well you sleep can be really helpful. When we pay attention to things like if we move a lot during the night, we can learn how to sleep even better. Sleeping better makes our brains work better, helps us feel happier, and keeps our bodies healthier. Using special tools to track our sleep can teach us how to sleep in the best way, so we feel refreshed every morning!
+Keeping <span style="color: #0faeb0">track</span> of how well you sleep can be really helpful. When you pay attention to things like if you move a lot during the night, you can learn how to sleep even better. Sleeping better makes our brains work better, helps us feel happier, and keeps our bodies healthier.
 
 </p>
 
