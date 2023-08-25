@@ -298,6 +298,8 @@ Open the <code style="background-color: #dc143c">Variables</code> menu and click
 
 Name your new variable `restingPosition`.
 
+--- /task ---
+
 --- task ---
 
 From the <code style="background-color: #dc143c">Variables</code> menu, grab the <code style="background-color: #dc143c">restingPosition</code> block. 
@@ -343,8 +345,6 @@ Change the `0` to `10` on the right of the <code style="background-color: #9400D
 Your code should look like this:
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_hmmgeHXfb5xH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
---- /task ---
 
 ### Setting a new resting position after each movement
 
