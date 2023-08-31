@@ -52,7 +52,7 @@ Change the `0` to `10` on the right of the <code style="background-color: #9400D
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_i6zFuRE2K8ew" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_TicJJp2W2E9x" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 ### Check for movement to the RIGHT from the resting position
 
@@ -80,11 +80,11 @@ Change the `0` to `10` on the right of the <code style="background-color: #9400D
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_hmmgeHXfb5xH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_hmmgeHXfb5xH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 ### Setting a new resting position after each movement
 
-Each time the micro:bit is rolled to a new resting position, you need to set the current position as the new resting position, so you can use it in our comparison.
+Each time the micro:bit is rolled to a new resting position, you need to set the current position as the new resting position, so you can use it in your comparison.
 
 --- task ---
 
