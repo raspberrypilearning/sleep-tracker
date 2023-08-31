@@ -1,144 +1,152 @@
-## Push to reset
+### Dealing with different resting head positions
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step it's time to make your sleep tracker even better! 
 
-When you press both the A and B buttons together, the micro:bit will show how much it moved and then start counting from zero again. 
+At the moment, the micro:bit is recording a movement whenever the micro:bit is **not** level.
 
-You'll also make a special sleepy animation to know your sleep tracker is all set and ready to help you sleep!
+For this project, the micro:bit will be placed under a pillow (it would be uncomfortable to wear it on your head!)
+
+When you lie down, the weight of your head on your pillow will probably roll the micro:bit so that it is not completely level.
+
+This will be the **resting position**. 
+
+You need to record a movement only if the micro:bit is rolled away from the resting position. 
 
 </div>
-<div>
-
-![Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z.](images/reset-test.gif)
-
-</div>
 </div>
 
-The micro:bit has two buttons, the `A` button and the `B` button. 
+### Check for movement to the LEFT from the resting position
 
-You can program something to happen when only `A` is pressed, only `B` is pressed, or `A+B` are pressed together.
-
-### Show the total movements
+You need to know if there is a difference between the resting position and the current roll position.
 
 --- task ---
 
-From the <code style="background-color: #D400D4">Input</code> menu, drag out an <code style="background-color: #D400D4">on button</code> block.
+From the <code style="background-color: #9400D3">Math</code> menu, grab a <code style="background-color: #9400D3">0 - 0</code> block.
 
-Place it on the code editor panel.
-
-<img src="images/on-button-location.png" alt="The Input menu, with the 'on button' block highlighted" width="350"/>
-
-Use the dropdown to change the button to <code style="background-color: #d400d4">A+B</code>.
-
---- /task ---
-
-Before the micro:bit displays the total number of recorded sleep movements, you will need to clear the screen. 
-
---- task ---
-
-From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">clear screen</code> block and place it inside the <code style="background-color: #d400d4">on button</code> block.  
-
-The clear screen block turns off all the LEDs.
-
---- /task ---
-
-Next, you will want to see the total number of sleep movements the micro:bit has recorded.
-
-Before you display the number, it is a good idea to show what the number is.
-
---- task ---
-
-From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">show string</code> block.
-
-Place it inside the <code style="background-color: #d400d4">on button</code> block, under the <code style="background-color: #1E90FF">clear screen</code> block.
-
-Replace the word `Hello` with `Movements`.
-
---- /task ---
-
-Now it is time to display the total number of sleep movements recorded.
-
---- task ---
-
-From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">show number</code> block.
-
-Place it inside the <code style="background-color: #d400d4">on button</code> block, under the <code style="background-color: #1E90FF">show string</code> block. 
+Place it in the `-10` of the <code style="background-color: #00A4A6"><</code> comparison block.
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">movements</code> block.
+Open the <code style="background-color: #dc143c">Variables</code> menu and click `Make a Variable`.
 
-Place it over the `0` in the <code style="background-color: #1E90FF">show number</code> block.
-
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bh7Lw76vDhJx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
---- /task ---
-
-You now need to reset the movements variable back to 0, ready to track again.
-
---- task ---
-
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out a <code style="background-color: #DC143C">set</code> block.
-
-Place it under the <code style="background-color: #1E90FF">show number</code> block.
+Name your new variable `restingPosition`.
 
 --- /task ---
 
 --- task ---
 
-Use the drop down menu to select <code style="background-color: #DC143C">movements</code> as the variable to set.
+From the <code style="background-color: #dc143c">Variables</code> menu, grab the <code style="background-color: #dc143c">restingPosition</code> block. 
 
-<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_eHpTW3Xy0Jpt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+Place it in the first `0` on the left of the <code style="background-color: #9400D3">0 - 0</code> block. 
 
 --- /task ---
-
-To show the sleep tracker is ready, you can show an animation. As this is a sleep tracker, you will create an animation of some Zs. 😴
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code>menu, drag out **three** <code style="background-color: #1E90FF">show leds</code> blocks and place them under the <code style="background-color: #DC143C">set movements</code> block.
-
-Click the squares on each one to create these patterns:
-
-<div style="position:relative;height:calc(400px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_AaDf7mJwE52H" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
-**Tip** If you hold down the mouse, you can select multiple LEDs as you move.
+Change the `0` to `10` on the right of the <code style="background-color: #9400D3">-</code>.
 
 --- /task ---
 
-To create an animation, you can put the 'show leds' blocks in a loop.
+Your code should look like this:
+
+<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_i6zFuRE2K8ew" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+### Check for movement to the RIGHT from the resting position
 
 --- task ---
 
-From the <code style="background-color: #00AA00">Loops</code> menu, drag a <code style="background-color: #00AA00">repeat</code> block and place it around the three <code style="background-color: #1E90FF">show leds</code> blocks.
+From the <code style="background-color: #9400D3">Math</code> menu, grab a <code style="background-color: #9400D3">0 + 0</code> block.
 
-Change the number of repeats from `4` to `2`.
-
-<img src="images/repeat-around-leds.gif" alt="Animation showing the 'repeat' block taken from the Loops menu. The 'repeat' block is then held over the top 'show leds' block and released, making the three 'show leds' blocks snap inside it. The number is then changed from a '4' to a '2'." width="350"/>
+Place it in the `10` of the <code style="background-color: #00A4A6">></code> comparison block.
 
 --- /task ---
+
+--- task ---
+
+From the <code style="background-color: #dc143c">Variables</code> menu, grab another <code style="background-color: #dc143c">restingPosition</code> block. 
+
+Place it in the first `0` on the left of the <code style="background-color: #9400D3">0 + 0</code> block.
+
+--- /task ---
+
+--- task ---
+
+Change the `0` to `10` on the right of the <code style="background-color: #9400D3">+</code>.
+
+--- /task ---
+
+Your code should look like this:
+
+<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_hmmgeHXfb5xH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+### Setting a new resting position after each movement
+
+Each time the micro:bit is rolled to a new resting position, you need to set the current position as the new resting position, so you can use it in our comparison.
+
+--- task ---
+
+From the <code style="background-color: #dc143c">Variables</code> menu, grab the <code style="background-color: #dc143c">set</code> block. 
+
+Place it under the <code style="background-color: #1E90FF">pause</code> block.
+
+--- /task ---
+
+--- task ---
+
+Duplicate the <code style="background-color: #D400D4">rotation</code> block and place it in the `0` of the <code style="background-color: #DC143C">set</code> block.
+
+--- /task ---
+
+Your code should look like this:
+
+<div style="position:relative;height:calc(170px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_VooFR6cseED5" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- task ---
 
 When you make a change to a code block in the code editor panel, the simulator will restart.
 
---- task ---
+**Test** your program:
 
-**Test** 
-When the program runs, move over the left and right of the micro:bit to record some movements. 
++ Move from the centre of the micro:bit to the right or left. 
 
-Next, press the `A+B` button. 
+The LEDs will light up and stay on for a short time. 
+***Keep your mouse still until the LEDs turn off.***
 
-The word 'Movements' will scroll across the display.
++ When the LEDs turn off, move from the new position (your resting position) to the right or left again. 
 
-The number of movements will then be shown.
+The LEDs will light up and stay on for **a short time**.
 
-The zZ animation will then loop twice.
-
-<img src="images/reset-test.gif" alt="Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z." width="350"/>
+Repeat this process to see how the LEDs will turn on only when there is movement away from the resting position.
 
 --- /task ---
 
-Next you are going to use the `A` button and `B` button to change the display brightness!
+### Letting the micro:bit come to rest
+
+You should give the micro:bit some time to come to rest before setting the new <code style="background-color: #DC143C">restingPosition</code> to the variable.
+
+--- task ---
+
+Change the value in <code style="background-color: #1E90FF">pause</code> from `100` to `5 seconds`.
+
+--- /task ---
+
+<div style="position:relative;height:calc(170px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Aqgc2mHrw529" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- task ---
+
+**Test** your program:
++ Move from the centre of the micro:bit to the right or left. 
+
+The LEDs will light up and stay on for **five seconds**. 
+***Keep your mouse still until the LEDs turn off.***
+
++ When the LEDs turn off, move from the new position (your resting position) to the right or left again. 
+
+The LEDs will light up and stay on for five seconds again.
+
+--- /task ---
+
+Next you are going to use the `A+B` button press event to **reset** your sleep tracker!

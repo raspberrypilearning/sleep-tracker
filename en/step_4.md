@@ -1,28 +1,26 @@
-## Change brightness
+## Push to reset
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
+In this step it's time to make your sleep tracker even better! 
 
-When it is late at night, the LEDs on your micro:bit might be too bright.
+When you press both the A and B buttons together, the micro:bit will show how much it moved and then start counting from zero again. 
 
-In this step, you will use the A button and B button to change the brightness of the micro:bit's LED display.
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-
-To sleep better, try not to be around really <span style="color: #0faeb0">bright light</span> 2 hours before bedtime. If you can't sleep, make the lights less bright 2 hours before you want to sleep. And if you feel too sleepy early, go where the lights are bright to feel more awake.
-</p>
+You'll also make a special sleepy animation to know your sleep tracker is all set and ready to help you sleep!
 
 </div>
 <div>
 
-![Animation showing that when the the A button is pressed, the LED display brightness decreases and when the B button is pressed, the LED display brightness increases.](images/brightness-change.gif)
+![Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z.](images/reset-test.gif)
 
 </div>
 </div>
 
-Because the A button is on the left, you will use it to turn the brightness down.
+The micro:bit has two buttons, the `A` button and the `B` button. 
 
-### Brightness down
+You can program something to happen when only `A` is pressed, only `B` is pressed, or `A+B` are pressed together.
+
+### Show the total movements
 
 --- task ---
 
@@ -32,174 +30,115 @@ Place it on the code editor panel.
 
 <img src="images/on-button-location.png" alt="The Input menu, with the 'on button' block highlighted" width="350"/>
 
---- /task ---
-
-Each time the A button is pressed, you will halve the brightness.
-
---- task ---
-
-From the <code style="background-color: #5C2D91">Led ... more</code> menu, drag out a <code style="background-color: #5C2D91">set brightness</code> block.
-
-<img src="images/set-brightness-location.png" alt="The 'Led more' menu, with the 'set brightness' block highlighted" width="350"/>
+Use the dropdown to change the button to <code style="background-color: #d400d4">A+B</code>.
 
 --- /task ---
 
+Before the micro:bit displays the total number of recorded sleep movements, you will need to clear the screen. 
+
 --- task ---
 
-Place it inside the <code style="background-color: #D400D4">on button</code> block.
+From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">clear screen</code> block and place it inside the <code style="background-color: #d400d4">on button</code> block.  
 
-**Debug** Check you have clicked on the Led **more** menu, not the normal Led menu.
+The clear screen block turns off all the LEDs.
 
 --- /task ---
 
-To halve the brightness, you will use a Math block.
+Next, you will want to see the total number of sleep movements the micro:bit has recorded.
+
+Before you display the number, it is a good idea to show what the number is.
 
 --- task ---
 
-From the <code style="background-color: #9400D3">Math</code> menu, drag out a <code style="background-color: #9400D3">0 / 0</code> divide block.
+From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">show string</code> block.
 
-Place it over the `255` value in the <code style="background-color: #5C2D91">set brightness</code> block.
+Place it inside the <code style="background-color: #d400d4">on button</code> block, under the <code style="background-color: #1E90FF">clear screen</code> block.
+
+Replace the word `Hello` with `Movements`.
 
 --- /task ---
 
---- task ---
-
-From the <code style="background-color: #5C2D91">Led ... more</code> menu, drag out a <code style="background-color: #5C2D91">brightness</code> block.
-
-Place it over the first `0` value in the <code style="background-color: #9400D3">0 / 0</code> block.
-
---- /task ---
+Now it is time to display the total number of sleep movements recorded.
 
 --- task ---
 
-Change the second `0` to a `2`.
+From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">show number</code> block.
 
-This will set the brightness to whatever value it currently is, divided by 2.
-
---- /task ---
-
-Your code should look like this:
-
-<div style="position:relative;height:calc(125px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:65%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_R06gicKH4Kt2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
-### Brightness up
-
-Now you will set up the B button to turn the brightness up.
-
---- task ---
-
-Right-click on the entire <code style="background-color: #D400D4">on button A</code> block and click `Duplicate`.
-
-There will now be two <code style="background-color: #D400D4">on button A</code> blocks on the code editor panel.
+Place it inside the <code style="background-color: #d400d4">on button</code> block, under the <code style="background-color: #1E90FF">show string</code> block. 
 
 --- /task ---
 
 --- task ---
 
-Click on the arrow next to <code style="background-color: #D400D4">A</code> on the duplicated block. 
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">movements</code> block.
 
-Choose <code style="background-color: #D400D4">B</code>.
+Place it over the `0` in the <code style="background-color: #1E90FF">show number</code> block.
+
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bh7Lw76vDhJx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+You now need to reset the movements variable back to 0, ready to track again.
+
+--- task ---
+
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out a <code style="background-color: #DC143C">set</code> block.
+
+Place it under the <code style="background-color: #1E90FF">show number</code> block.
 
 --- /task ---
 
 --- task ---
 
-Click on the arrow next to <code style="background-color: #9400D3">/</code> on the duplicated block. 
+Use the drop down menu to select <code style="background-color: #DC143C">movements</code> as the variable to set.
 
-Choose <code style="background-color: #9400D3">×</code>.
+<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_eHpTW3Xy0Jpt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-You will now have these blocks for the A button and the B button:
-
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7VtHDq1F0884" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+To show the sleep tracker is ready, you can show an animation. As this is a sleep tracker, you will create an animation of some Zs. 😴
 
 --- task ---
+
+From the <code style="background-color: #1E90FF">Basic</code>menu, drag out **three** <code style="background-color: #1E90FF">show leds</code> blocks and place them under the <code style="background-color: #DC143C">set movements</code> block.
+
+Click the squares on each one to create these patterns:
+
+<div style="position:relative;height:calc(400px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_AaDf7mJwE52H" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+**Tip** If you hold down the mouse, you can select multiple LEDs as you move.
+
+--- /task ---
+
+To create an animation, you can put the 'show leds' blocks in a loop.
+
+--- task ---
+
+From the <code style="background-color: #00AA00">Loops</code> menu, drag a <code style="background-color: #00AA00">repeat</code> block and place it around the three <code style="background-color: #1E90FF">show leds</code> blocks.
+
+Change the number of repeats from `4` to `2`.
+
+<img src="images/repeat-around-leds.gif" alt="Animation showing the 'repeat' block taken from the Loops menu. The 'repeat' block is then held over the top 'show leds' block and released, making the three 'show leds' blocks snap inside it. The number is then changed from a '4' to a '2'." width="350"/>
+
+--- /task ---
 
 When you make a change to a code block in the code editor panel, the simulator will restart.
 
-**Test** your program: 
-
-+ Click the `A` button until the LEDs go out fully. 
-
-+ Click the `B` button and see what happens.
-
-If you have pressed the `A` button enough times, pressing the `B` button will not turn the LEDs back on.
-
-This is because the brightness value has reached `0`.
-
-When you multiply `0` by `2` you get.... `0`. You can press the `B` button as many times as you want, but you will keep setting the brightness to `0 × 2`, which is **always** `0`!
-
---- /task ---
-
-You need to stop the brightness value from being set to `0`.
-
-To do this, you will use a Logic block to halve the brightness value only **if** the brightness level is **more than 10**.
-
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag out an <code style="background-color: #00A4A6">if</code> block.
+**Test** 
+When the program runs, move over the left and right of the micro:bit to record some movements. 
 
-Place it around the <code style="background-color: #5C2D91">set brightness</code> block in the <code style="background-color: #D400D4">on button A</code> block.
+Next, press the `A+B` button. 
 
---- /task ---
+The word 'Movements' will scroll across the display.
 
---- task ---
+The number of movements will then be shown.
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag out a <code style="background-color: #00A4A6">0 < 0</code> block
+The zZ animation will then loop twice.
 
-Place it over the <code style="background-color: #00A4A6">true</code> part.
-
---- /task ---
-
---- task ---
-
-Change the <code style="background-color: #00A4A6"><</code> to a <code style="background-color: #00A4A6">></code>
+<img src="images/reset-test.gif" alt="Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z." width="350"/>
 
 --- /task ---
 
---- task ---
-
-From the <code style="background-color: #5C2D91">Led ... more</code> menu, drag out a <code style="background-color: #5C2D91">brightness</code> block.
-
-Place it inside the first `0` in the <code style="background-color: #00A4A6">0 > 0</code> block.
-
---- /task ---
-
---- task ---
-
-Change the second `0` to `10`.
-
---- /task ---
-
-Here is an animation showing the above steps:
-
-<img src="images/if-around-set-brightness.gif" alt="Animation showing the 'if' block taken from the Logic menu and held over the 'set brightness' block. It is released, making the 'set brightness' block snap inside it. A '0 > 0' block is then taken from the Logic menu and placed inside the first '0' of the '0 > 0' block. A 'brightness' block is then taken from the 'Led more' menu and placed inside the first '0' of the '0 > 0' block. The second '0' is changed to '10'." width="350"/>
-
-Your code should look like this:
-
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:65%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_8RWA44daDH1K" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
-**Tip** There is no need to do this for the `on button B` block as the maximum brightness value the LEDs can be set to is `255`.
-
---- task ---
-
-**Test** your program: 
-
-+ Move over the edges of the micro:bit to record and display some movements
-
-+ Press the `A+B` button
-
-+ Press the `A` button a few times
-
-The display should get less bright.
-
-+ Press the `B` button a few times
-
-The display should get brighter.
-
-![Animation showing that when the the A button is pressed, the LED display brightness decreases and when the B button is pressed, the LED display brightness increases.](images/brightness-change.gif)
-
---- /task ---
-
-Next you are going to set the sleepy zZ animation to run when the program starts and organise your code using a function!
+Next you are going to use the `A` button and `B` button to change the display brightness!

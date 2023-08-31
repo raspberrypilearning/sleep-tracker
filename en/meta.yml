@@ -12,6 +12,7 @@ steps:
 - title: Track and display
   completion:
     - engaged
+- title: Check your head
 - title: Push to reset
 - title: Change brightness
 - title: Show some Zs
