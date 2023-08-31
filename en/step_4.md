@@ -50,7 +50,7 @@ Before you display the number, it is a good idea to show what the number is.
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">show string</code> block.
+From the <code style="background-color: #1E90FF">Basic</code> menu, drag out a <code style="background-color: #1E90FF">show string</code> block.
 
 Place it inside the <code style="background-color: #d400d4">on button</code> block, under the <code style="background-color: #1E90FF">clear screen</code> block.
 
@@ -62,7 +62,7 @@ Now it is time to display the total number of sleep movements recorded.
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code>menu, drag out a <code style="background-color: #1E90FF">show number</code> block.
+From the <code style="background-color: #1E90FF">Basic</code> menu, drag out a <code style="background-color: #1E90FF">show number</code> block.
 
 Place it inside the <code style="background-color: #d400d4">on button</code> block, under the <code style="background-color: #1E90FF">show string</code> block. 
 
@@ -100,7 +100,7 @@ To show the sleep tracker is ready, you can show an animation. As this is a slee
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code>menu, drag out **three** <code style="background-color: #1E90FF">show leds</code> blocks and place them under the <code style="background-color: #DC143C">set movements</code> block.
+From the <code style="background-color: #1E90FF">Basic</code> menu, drag out **three** <code style="background-color: #1E90FF">show leds</code> blocks and place them under the <code style="background-color: #DC143C">set movements</code> block.
 
 Click the squares on each one to create these patterns:
 

@@ -24,7 +24,7 @@ There will now be two <code style="background-color: #00AA00">repeat</code> bloc
 
 --- task ---
 
-Put the duplicated <code style="background-color: #00AA00">repeat</code> block inside the <code style="background-color: #1E90FF">on start</code> block, under the <code style="background-color: #DC143C">set</code> block.
+Put the duplicated <code style="background-color: #00AA00">repeat</code> block inside the <code style="background-color: #1E90FF">on start</code> block.
 
 <img src="images/repeat-in-on-start.png" alt="The duplicated code insde the 'on start' block" width="350"/>
 
