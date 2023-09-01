@@ -1,6 +1,6 @@
 ## You will make
 
-Do you ever wonder if you have had a good night's sleep?
+Have you ever wondered how many times you turn over while you sleep?
 
 In this project, you are going to make a sleep tracker that will display how rested you are. 
 You can run the program on your micro:bit when it is placed under your pillow, so it can track your sleep movements.
