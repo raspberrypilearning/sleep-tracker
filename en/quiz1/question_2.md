@@ -5,7 +5,7 @@
 legend: Question 2 of 3
 ---
 
-You checked if the micro:bit has been moved.
+You checked if the micro:bit had been moved.
 
 Which block did you use to do this?
 
