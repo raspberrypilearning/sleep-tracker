@@ -10,23 +10,23 @@ In this step, you will display the zZs animation again when the program starts a
 </div>
 </div>
 
-### Re-using code
+### Re-use code
 
 You can reuse the animation code.
 
 --- task ---
 
-Right-click on the <code style="background-color: #00AA00">repeat</code> block and click `Duplicate`.
+Right-click on the <code style="background-color: #00AA00">repeat</code> block and click **Duplicate**.
 
 --- /task ---
 
-There will now be two <code style="background-color: #00AA00">repeat</code> blocks on the code editor panel. Each will contain three <code style="background-color: #1E90FF">show led</code> blocks
+There will now be two <code style="background-color: #00AA00">repeat</code> blocks in the code editor panel. Each will contain three <code style="background-color: #1E90FF">show led</code> blocks.
 
 --- task ---
 
 Put the duplicated <code style="background-color: #00AA00">repeat</code> block inside the <code style="background-color: #1E90FF">on start</code> block.
 
-<img src="images/repeat-in-on-start.png" alt="The duplicated code insde the 'on start' block" width="350"/>
+<img src="images/repeat-in-on-start.png" alt="The duplicated code inside the 'on start' block." width="350"/>
 
 --- /task ---
 
@@ -47,7 +47,7 @@ A <span style="color: #0faeb0">function</span> is a group of blocks that you can
 
 Click the `Advanced` menu to reveal the Functions menu.
 
-Click the Functions menu and then click `Make a Function`.
+Click the **Functions** menu and then click **Make a Function**.
 
 Name the function `zZ`.
 
@@ -57,7 +57,7 @@ Name the function `zZ`.
 
 --- task ---
 
-From the <code style="background-color: #D400D4">on button A+B</code> block, drag out the <code style="background-color: #00AA00">repeat</code> block.
+From the <code style="background-color: #D400D4">on button A+B</code> block, drag the <code style="background-color: #00AA00">repeat</code> block.
 
 Place it inside your new `function zZ` block.
 
@@ -73,7 +73,7 @@ When a `call zZ` block is executed, it runs the code in the `function zZ`.
 
 --- task ---
 
-From the Advanced > Functions menu, drag out a `call zZ` block.
+From the Advanced > Functions menu, drag a `call zZ` block.
 
 Place it inside the <code style="background-color: #1E90FF"> on start</code> block.
 
@@ -93,7 +93,7 @@ Here are the blocks that have changed in this step:
 
 --- task ---
 
-**Test** your program: 
+**Test your program** 
 
 + Check that your zZ animation plays when the simulator starts
 + Check that your zZ animation also plays when the `A+B` button is pressed (after the number of movements is displayed)
