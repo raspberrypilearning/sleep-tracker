@@ -42,7 +42,7 @@ LED
 
   --- feedback ---
 
-  LEDs are used to display text, numbers or images.
+  LEDs are used to display text, numbers, or images.
 
   --- /feedback ---
 
