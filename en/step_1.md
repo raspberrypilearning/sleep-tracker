@@ -29,15 +29,11 @@ You will:
 
 Click on the embedded project.
 
-What happens when the program starts?
-
-What happens if you hover over the edges of the micro:bit?
-
-What happens if you click the A button?
-
-What happens if you click the B button?
-
-What happens if you click the A+B button?
++ What happens when the program starts?
++ What happens if you hover over the edges of the micro:bit?
++ What happens if you click the A button?
++ What happens if you click the B button?
++ What happens if you click the A+B button?
 
 <div style="position:relative;height:0;padding-bottom:125%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_14Lib71CCP0F" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
 
