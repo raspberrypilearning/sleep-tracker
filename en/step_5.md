@@ -88,7 +88,7 @@ Now, you will set up the B button to turn the brightness up.
 
 --- task ---
 
-Right click on the entire <code style="background-color: #D400D4">on button A</code> block and click **Duplicate**.
+Right-click on the entire <code style="background-color: #D400D4">on button A</code> block and click **Duplicate**.
 
 There will now be two <code style="background-color: #D400D4">on button A</code> blocks in the code editor panel.
 
