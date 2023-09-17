@@ -144,7 +144,7 @@ Check you have:
 
 --- task ---
 
-Right click on the <code style="background-color: #00a4a6"> < </code> comparison block and select **Duplicate**.
+Right-click on the <code style="background-color: #00a4a6"> < </code> comparison block and select **Duplicate**.
 
 --- /task ---
 
