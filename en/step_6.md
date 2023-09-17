@@ -75,7 +75,7 @@ When a `call zZ` block is executed, it runs the code in the `function zZ`.
 
 From the Advanced > Functions menu, drag a `call zZ` block.
 
-Place it inside the <code style="background-color: #1E90FF"> on start</code> block.
+Place it inside the <code style="background-color: #1E90FF">on start</code> block.
 
 --- /task ---
 
