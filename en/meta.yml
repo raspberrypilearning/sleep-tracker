@@ -16,6 +16,7 @@ steps:
 - title: Push to reset
 - title: Change brightness
 - title: Show some Zs
+- title: 1,2,3, sleep!
   completion:
     - internal
 - title: Quick quiz

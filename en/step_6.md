@@ -100,8 +100,6 @@ Here are the blocks that have changed in this step:
 
 --- /task ---
 
---- task ---
+Now you have a function, you can add to it and the code will run every time it is called! 
 
-[[[download-to-microbit]]]
-
---- /task ---
+Next you will add a countdown timer to your function.
