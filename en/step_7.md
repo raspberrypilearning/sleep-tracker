@@ -42,11 +42,9 @@ Change the `100` to `1 second`.
 
 When you added the `for index`{:class='microbitloops'} block to your Workspace, the `index`{:class='microbitvariables'} variable was created.
 
-In a `for index`{:class='microbitloops'} loop, the `index`{:class='microbitvariables'} variable takes on each value from `0` to the end number (`2` in our example) and counts up by one each time.
+The `index`{:class='microbitvariables'} variable takes on each value from `0` to `2` (the end number in our example) and counts up by one each time.
 
-It is better to rename the `index`{:class='microbitvariables'} variable to something more meaningful. 
-
-You will rename it `second` because your timer will increase each second.
+Rename the `index`{:class='microbitvariables'} variable `second` because your timer will increase each second.
 
 --- task ---
 
