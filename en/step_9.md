@@ -1,18 +1,33 @@
-## What next?
+## Upgrade your project
 
-If you are following the [TODO: Pathway name and slug](https://projects.raspberrypi.org/en/raspberrypi/path-name) path, you can move on to the [TODO: Design 1 and slug](https://projects.raspberrypi.org/en/projects/project-name) project. In this project, you will make a (add description here).
+<div style="display: flex; flex-wrap: wrap">
+<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
+Great work! You have created your micro:bit sleep tracker. Here are some ideas to upgrade your project and create a more advanced sleep tracker:
 
---- print-only ---
++ Use a the microphone to detect snoring (V2). If you have a V1, then you could detect the light level.
++ Change the sleepy (zZs) animation.
++ Plot the number of movements on the LEDs instead of showing the number value.
++ Use Logic to display an overall sleep rating rather than a number of events.
++ Log sleep events (V2).
++ Power save - turn the LED brightness down on start **and** remove the heart icon that is currently shown after each movement.
 
-![ProjectName project](images/projectname-project.png)
+</div>
+</div>
 
---- /print-only ---
+Click on the embedded project.
 
---- no-print ---
++ Compare the brightness level on start with the base project
++ Drag the red sound level up to 165 (or more)
++ Press the A or B buttons to see the number of movements and 'snores' detected **and** an overall sleep rating!
 
-![TODO: Embed simulator of Design 1 here]()
-<div style="position:relative;height:0;padding-bottom:125%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_XXXXXXXXXXXX" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
+<div style="position:relative;height:0;padding-bottom:125%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_H4rYJT7oYKfW" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
 
---- /no-print ---
+--- collapse ---
 
-If you want to have more fun exploring micro:bit, then you could try out any of [TODO: Check link to these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=makecode&curriculum%5B%5D=%201).
+---
+title: Completed project
+---
+
+You can view the [completed project here](https://makecode.microbit.org/_chL9qP1xvF6D){:target="_blank"}.
+
+--- /collapse ---

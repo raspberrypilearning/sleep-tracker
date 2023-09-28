@@ -15,7 +15,7 @@ Functions
 
   --- feedback ---
 
-  That's right! Functions can contain code that you can call to be run from anywhere in your program. This stops you having to repeat blocks of code all over your program.
+  That's right! Functions contain code that you can call to be run from anywhere in your program. This stops you having to repeat blocks of code all over your program.
 
   --- /feedback ---
 

@@ -2,7 +2,7 @@
 title: Sleep tracker
 hero_image: images/banner.png
 description: 
-  Monitor your sleep to see how rested you were.
+  Monitor your sleep to see how rested you are
 version: 4
 listed: false
 copyedit: false
@@ -16,6 +16,7 @@ steps:
 - title: Push to reset
 - title: Change brightness
 - title: Show some Zs
+- title: 1,2,3, sleep!
   completion:
     - internal
 - title: Quick quiz
