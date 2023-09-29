@@ -141,7 +141,13 @@ Change the `0` to `-10`. This will check if the micro:bit is rolled 10° to the 
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(100px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_XefbaDJ4uTvi" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    if (input.rotation(Rotation.Roll) < -10 || false) {
+    	
+    }
+})
+```
 
 --- task ---
 
@@ -222,7 +228,14 @@ From the `Variables`{:class='microbitvariables'} menu, get the `change movements
 
 Place it inside the `if`{:class='microbitlogic'} block.
 
-<div style="position:relative;height:calc(100px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_iT2FmD3d7TE2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let movements = 0
+basic.forever(function () {
+    if (input.rotation(Rotation.Roll) < -10 || input.rotation(Rotation.Roll) > 10) {
+        movements += 1
+    }
+})
+```
 
 --- /task ---
 
@@ -262,7 +275,17 @@ Place it under the `pause`{:class='microbitbasic'} block.
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_UL1DcWbiR5Ey" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let movements = 0
+basic.forever(function () {
+    if (input.rotation(Rotation.Roll) < -10 || input.rotation(Rotation.Roll) > 10) {
+        movements += 1
+        basic.showIcon(IconNames.Heart)
+        basic.pause(100)
+        basic.clearScreen()
+    }
+})
+```
 
 --- /task ---
 
