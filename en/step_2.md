@@ -87,7 +87,13 @@ Open the `Logic`{:class='microbitlogic'} menu again and take an `or`{:class='mic
 
 Place it in the `true` section of the `if`{:class='microbitlogic'} block.
 
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_d6KcohD3RCjK" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    if (false || false) {
+    	
+    }
+})
+```
 
 --- /task ---
 
@@ -101,7 +107,13 @@ From the `Logic`{:class='microbitlogic'} menu, drag the `0 < 0`{:class='microbit
 
 Place it on the left side of the `or`{:class='microbitlogic'} block.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_6zUfDw2k274E" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    if (0 < 0 || false) {
+    	
+    }
+})
+```
 
 --- /task ---
 
