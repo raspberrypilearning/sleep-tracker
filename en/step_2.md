@@ -73,7 +73,7 @@ If this happens, you will assume there has been movement during sleep.
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag an <code style="background-color: #00A4A6">if</code> block and place it inside the <code style="background-color: #1E90FF">forever</code> block.
+From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block and place it inside the `forever`{:class='microbitbasic'}</code> block.
 
 <img src="images/if-block-location.png" alt="The Logic menu with the 'if...then' block highlighted." width="350"/>
 
@@ -81,11 +81,11 @@ From the <code style="background-color: #00A4A6">Logic</code> menu, drag an <cod
 
 --- task ---
 
-Open the <code style="background-color: #00a4a6">Logic</code> menu again and take an <code style="background-color: #00a4a6">or</code> block. 
+Open the `Logic`{:class='microbitlogic'} menu again and take an `or`{:class='microbitlogic'} block.
 
 <img src="images/or-block-location.png" alt="The bottom part of the Logic menu, showing the location of the 'or' block in the 'Boolean' section." width="150"/>
 
-Place it in the `true` section of the <code style="background-color: #00a4a6">if</code> block. 
+Place it in the `true` section of the `if`{:class='microbitlogic'} block.
 
 <div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_d6KcohD3RCjK" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -93,13 +93,13 @@ Place it in the `true` section of the <code style="background-color: #00a4a6">if
 
 Now you need to add the **two** conditions either side of the **or**. 
 
-This will mean that the code inside your <code style="background-color: #00a4a6">if</code> block will run if **either** condition is met.
+This will mean that the code inside your `if`{:class='microbitlogic'} block will run if **either** condition is met.
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag the <code style="background-color: #00a4a6">0 < 0</code> comparison block.
+From the `Logic`{:class='microbitlogic'} menu, drag the `0 < 0`{:class='microbitlogic'} comparison block.
 
-Place it on the left side of the <code style="background-color: #00a4a6">or</code> block.
+Place it on the left side of the `or`{:class='microbitlogic'} block.
 
 <div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_6zUfDw2k274E" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -107,17 +107,17 @@ Place it on the left side of the <code style="background-color: #00a4a6">or</cod
 
 --- task ---
 
-From the <code style="background-color: #D400D4">Input...more</code> menu, drag a <code style="background-color: #D400D4">rotation</code> block.
+From the `Input...more`{:class='microbitinput'} menu, drag a `rotation`{:class='microbitinput'} block.
 
 <img src="images/rotation-location.png" alt="The 'Input...more' menu with the 'rotation' block highlighted." width="350"/>
 
-Place it inside the first `0` in the <code style="background-color: #00a4a6">0 < 0</code> comparison block.
+Place it inside the first `0` in the `0 < 0`{:class='microbitlogic'} comparison block.
 
 --- /task ---
 
 --- task ---
 
-Use the drop-down menu to change <code style="background-color: #D400D4">pitch</code> to <code style="background-color: #D400D4">roll</code>. 
+Use the drop-down menu to change `pitch`{:class='microbitinput'} to `roll`{:class='microbitinput'}. 
 
 --- /task ---
 
@@ -144,7 +144,7 @@ Check you have:
 
 --- task ---
 
-Right-click on the <code style="background-color: #00a4a6"> < </code> comparison block and select **Duplicate**.
+Right-click on the `<`{:class='microbitlogic'} comparison block and select **Duplicate**.
 
 --- /task ---
 
@@ -152,13 +152,13 @@ You will now have two comparison blocks.
 
 --- task ---
 
-Drag the duplicated comparison block to the right of the <code style="background-color: #00a4a6">or</code> block.
+Drag the duplicated comparison block to the right of the `or`{:class='microbitlogic'} block.
 
 --- /task ---
 
 --- task ---
 
-Use the drop-down menu to change the less than symbol (<code style="background-color: #00a4a6"> < </code>) to a greater than symbol (<code style="background-color: #00a4a6"> > </code>). 
+Use the drop-down menu to change the less than symbol (`<`{:class='microbitlogic'}) to a greater than symbol (`>`{:class='microbitlogic'}). 
 
 --- /task ---
 
@@ -182,7 +182,7 @@ To keep a count of sleep movements, you will use a variable.
 
 --- task ---
 
-Open the <code style="background-color: #dc143c">Variables</code> menu and click **Make a Variable**.
+Open the `Variables`{:class='microbitvariables'} menu and click **Make a Variable**.
 
 <img src="images/variable-menu.png" alt="The Variables block menu with the 'Make a variable' button highlighted." width="350"/>
 
@@ -200,7 +200,7 @@ You will increase the `movements` variable by `1` each time a movement is detect
 
 --- task ---
 
-From the <code style="background-color: #dc143c">Variables</code> menu, get the <code style="background-color: #dc143c">change movements</code> block. 
+From the `Variables`{:class='microbitvariables'} menu, get the `change movements`{:class='microbitvariables'} block. 
 
 <img src="images/change-movements.png" alt="The Variables menu with the 'change movements by 1' block highlighted." width="350"/>
 
@@ -208,7 +208,7 @@ From the <code style="background-color: #dc143c">Variables</code> menu, get the 
 
 --- task ---
 
-Place it inside the <code style="background-color: #00A4A6">if</code> block.
+Place it inside the `if`{:class='microbitlogic'} block.
 
 <div style="position:relative;height:calc(100px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_iT2FmD3d7TE2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -222,7 +222,7 @@ This will help you test your project.
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">show icon</code> block.
+From the `Basic`{:class='microbitbasic'} menu, drag a `show icon`{:class='microbitbasic'} block.
 
 <img src="images/show-icon-location.png" alt="The Basic menu with the 'show icon' block highlighted." width="350"/>
 
@@ -230,23 +230,23 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code
 
 --- task ---
 
-Place it under the <code style="background-color: #dc143c">change movements</code> block.
+Place it under the `change movements`{:class='microbitvariables'} block.
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">pause</code> block.
+From the `Basic`{:class='microbitbasic'} menu, drag a `pause`{:class='microbitbasic'} block.
 
-Place it under the <code style="background-color: #1E90FF">show icon</code> block.
+Place it under the `show icon`{:class='microbitbasic'} block.
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">clear screen</code> block.
+From the `Basic`{:class='microbitbasic'} menu, drag a `clear screen`{:class='microbitbasic'} block.
 
-Place it under the <code style="background-color: #1E90FF">pause</code> block.
+Place it under the `pause`{:class='microbitbasic'} block.
 
 Your code should look like this:
 
