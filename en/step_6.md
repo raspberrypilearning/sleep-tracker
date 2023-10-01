@@ -89,7 +89,42 @@ Place it inside the `on button A+B`{:class='microbitinput'} block, under the `se
 
 Here are the blocks that have changed in this step:
 
-<div style="position:relative;height:calc(800px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Exxaiz8UhErD" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+function zZ () {
+    for (let index = 0; index < 2; index++) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            # # # . .
+            . # . . .
+            # # # . .
+            `)
+        basic.showLeds(`
+            . . . . .
+            # # # # .
+            . . # . .
+            . # . . .
+            # # # # .
+            `)
+        basic.showLeds(`
+            # # # # #
+            . . . # .
+            . . # . .
+            . # . . .
+            # # # # #
+            `)
+    }
+}
+input.onButtonPressed(Button.AB, function () {
+    basic.clearScreen()
+    basic.showString("Movements")
+    basic.showNumber(movements)
+    movements = 0
+    zZ()
+})
+let movements = 0
+zZ()
+```
 
 --- task ---
 

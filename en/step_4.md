@@ -74,7 +74,14 @@ From the `Variables`{:class='microbitvariables'} menu, drag out the `movements`{
 
 Place it over the `0` in the `show number`{:class='microbitbasic'} block.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bh7Lw76vDhJx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.AB, function () {
+    let movements = 0
+    basic.clearScreen()
+    basic.showString("Movements")
+    basic.showNumber(movements)
+})
+```
 
 --- /task ---
 
@@ -92,7 +99,15 @@ Place it under the `show number`{:class='microbitbasic'} block.
 
 Use the drop-down menu to select `movements`{:class='microbitvariables'} as the variable to set.
 
-<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_eHpTW3Xy0Jpt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let movements = 0
+input.onButtonPressed(Button.AB, function () {
+    basic.clearScreen()
+    basic.showString("Movements")
+    basic.showNumber(movements)
+    movements = 0
+})
+```
 
 --- /task ---
 
@@ -104,7 +119,36 @@ From the `Basic`{:class='microbitbasic'} menu, drag **three** `show leds`{:class
 
 Click the squares on each one to create these patterns:
 
-<div style="position:relative;height:calc(400px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_AaDf7mJwE52H" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let movements = 0
+input.onButtonPressed(Button.AB, function () {
+    basic.clearScreen()
+    basic.showString("Movements")
+    basic.showNumber(movements)
+    movements = 0
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        # # # . .
+        . # . . .
+        # # # . .
+        `)
+    basic.showLeds(`
+        . . . . .
+        # # # # .
+        . . # . .
+        . # . . .
+        # # # # .
+        `)
+    basic.showLeds(`
+        # # # # #
+        . . . # .
+        . . # . .
+        . # . . .
+        # # # # #
+        `)
+})
+```
 
 **Tip:** If you hold down the mouse, you can select multiple LEDs as you move.
 

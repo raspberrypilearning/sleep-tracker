@@ -50,7 +50,18 @@ Change the `0` on the right of the `-`{:class='microbitmath'} to `10`.
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_TicJJp2W2E9x" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let movements = 0
+basic.forever(function () {
+    let restingPosition = 0
+    if (input.rotation(Rotation.Roll) < restingPosition - 10 || input.rotation(Rotation.Roll) > 10) {
+        movements += 1
+        basic.showIcon(IconNames.Heart)
+        basic.pause(100)
+        basic.clearScreen()
+    }
+})
+```
 
 --- /task ---
 
@@ -78,7 +89,18 @@ Change the `0` on the right of the `+`{:class='microbitmath'} to `10`.
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_hmmgeHXfb5xH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let movements = 0
+basic.forever(function () {
+    let restingPosition = 0
+    if (input.rotation(Rotation.Roll) < restingPosition - 10 || input.rotation(Rotation.Roll) > restingPosition + 10) {
+        movements += 1
+        basic.showIcon(IconNames.Heart)
+        basic.pause(100)
+        basic.clearScreen()
+    }
+})
+```
 
 --- /task ---
 
@@ -100,7 +122,19 @@ Duplicate the `rotation`{:class='microbitinput'} block and place it in the `0` o
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(170px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_VooFR6cseED5" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let restingPosition = 0
+let movements = 0
+basic.forever(function () {
+    if (input.rotation(Rotation.Roll) < restingPosition - 10 || input.rotation(Rotation.Roll) > restingPosition + 10) {
+        movements += 1
+        basic.showIcon(IconNames.Heart)
+        basic.pause(100)
+        restingPosition = input.rotation(Rotation.Roll)
+        basic.clearScreen()
+    }
+})
+```
 
 --- /task ---
 
@@ -131,7 +165,19 @@ You should give the micro:bit some time to come to rest before setting the new `
 
 Change the value in `pause`{:class='microbitbasic'} from `100` to `5 seconds`.
 
-<div style="position:relative;height:calc(170px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Aqgc2mHrw529" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let restingPosition = 0
+let movements = 0
+basic.forever(function () {
+    if (input.rotation(Rotation.Roll) < restingPosition - 10 || input.rotation(Rotation.Roll) > restingPosition + 10) {
+        movements += 1
+        basic.showIcon(IconNames.Heart)
+        basic.pause(5000)
+        restingPosition = input.rotation(Rotation.Roll)
+        basic.clearScreen()
+    }
+})
+```
 
 --- /task ---
 

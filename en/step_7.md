@@ -94,7 +94,37 @@ Change the second `0` to `1`.
 
 Here are the blocks that have changed in this step:
 
-<div style="position:relative;height:calc(550px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:65%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Xq682FbbVdxE" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+function zZ () {
+    for (let second = 0; second <= 2; second++) {
+        basic.showNumber(second + 1)
+        basic.pause(1000)
+    }
+    for (let index = 0; index < 2; index++) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            # # # . .
+            . # . . .
+            # # # . .
+            `)
+        basic.showLeds(`
+            . . . . .
+            # # # # .
+            . . # . .
+            . # . . .
+            # # # # .
+            `)
+        basic.showLeds(`
+            # # # # #
+            . . . # .
+            . . # . .
+            . # . . .
+            # # # # #
+            `)
+    }
+}
+```
 
 --- task ---
 
