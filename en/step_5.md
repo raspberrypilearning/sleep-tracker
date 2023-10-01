@@ -26,7 +26,7 @@ Because the A button is on the left, you will use it to turn the brightness down
 
 --- task ---
 
-From the <code style="background-color: #D400D4">Input</code> menu, drag an <code style="background-color: #D400D4">on button</code> block.
+From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block.
 
 Place it in the code editor panel.
 
@@ -38,7 +38,7 @@ Each time the A button is pressed, you will halve the brightness.
 
 --- task ---
 
-From the <code style="background-color: #5C2D91">Led...more</code> menu, drag a <code style="background-color: #5C2D91">set brightness</code> block.
+From the `Led...more`{:class='microbitled'} menu, drag a `set brightness`{:class='microbitled'} block.
 
 <img src="images/set-brightness-location.png" alt="The 'Led...more' menu with the 'set brightness' block highlighted." width="350"/>
 
@@ -46,7 +46,7 @@ From the <code style="background-color: #5C2D91">Led...more</code> menu, drag a 
 
 --- task ---
 
-Place it inside the <code style="background-color: #D400D4">on button</code> block.
+Place it inside the `on button`{:class='microbitinput'} block.
 
 **Debug:** Check you have clicked on the Led **more** menu, not the normal Led menu.
 
@@ -56,17 +56,17 @@ To halve the brightness, you will use a Math block.
 
 --- task ---
 
-From the <code style="background-color: #9400D3">Math</code> menu, drag a <code style="background-color: #9400D3">0 / 0</code> divide block.
+From the `Math`{:class='microbitmath'} menu, drag a `0 / 0`{:class='microbitmath'} divide block.
 
-Place it over the `255` value in the <code style="background-color: #5C2D91">set brightness</code> block.
+Place it over the `255` value in the `set brightness`{:class='microbitled'} block.
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #5C2D91">Led...more</code> menu, drag a <code style="background-color: #5C2D91">brightness</code> block.
+From the `Led...more`{:class='microbitled'} menu, drag a `brightness`{:class='microbitled'} block.
 
-Place it over the first `0` value in the <code style="background-color: #9400D3">0 / 0</code> block.
+Place it over the first `0` value in the `0 / 0`{:class='microbitmath'} block.
 
 --- /task ---
 
@@ -88,25 +88,25 @@ Now, you will set up the B button to turn the brightness up.
 
 --- task ---
 
-Right-click on the entire <code style="background-color: #D400D4">on button A</code> block and click **Duplicate**.
+Right-click on the entire `on button A`{:class='microbitinput'} block and click **Duplicate**.
 
-There will now be two <code style="background-color: #D400D4">on button A</code> blocks in the code editor panel.
-
---- /task ---
-
---- task ---
-
-Click on the arrow next to <code style="background-color: #D400D4">A</code> on the duplicated block. 
-
-Choose <code style="background-color: #D400D4">B</code>.
+There will now be two `on button A`{:class='microbitinput'} blocks in the code editor panel.
 
 --- /task ---
 
 --- task ---
 
-Click on the arrow next to <code style="background-color: #9400D3"> / </code> on the duplicated block. 
+Click on the arrow next to `A`{:class='microbitinput'} on the duplicated block. 
 
-Choose <code style="background-color: #9400D3"> × </code>.
+Choose `B`{:class='microbitinput'}.
+
+--- /task ---
+
+--- task ---
+
+Click on the arrow next to `/`{:class='microbitmath'} on the duplicated block. 
+
+Choose `×`{:class='microbitmath'}.
 
 --- /task ---
 
@@ -138,31 +138,31 @@ To do this, you will use a Logic block to halve the brightness value only **if**
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag an <code style="background-color: #00A4A6">if</code> block.
+From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block.
 
-Place it around the <code style="background-color: #5C2D91">set brightness</code> block in the <code style="background-color: #D400D4">on button A</code> block.
-
---- /task ---
-
---- task ---
-
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag a <code style="background-color: #00A4A6">0 < 0</code> block
-
-Place it over the <code style="background-color: #00A4A6">true</code> part.
+Place it around the `set brightness`{:class='microbitled'} block in the `on button A`{:class='microbitinput'} block.
 
 --- /task ---
 
 --- task ---
 
-Change the <code style="background-color: #00A4A6"> < </code> to a <code style="background-color: #00A4A6"> > </code>.
+From the `Logic`{:class='microbitlogic'} menu, drag a `0 < 0`{:class='microbitlogic'} block
+
+Place it over the `true`{:class='microbitlogic'} part.
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #5C2D91">Led...more</code> menu, drag a <code style="background-color: #5C2D91">brightness</code> block.
+Change the `<`{:class='microbitlogic'} to a `>`{:class='microbitlogic'}.
 
-Place it inside the first `0` in the <code style="background-color: #00A4A6">0 > 0</code> block.
+--- /task ---
+
+--- task ---
+
+From the `Led...more`{:class='microbitled'} menu, drag a `brightness`{:class='microbitled'} block.
+
+Place it inside the first `0` in the `0 > 0`{:class='microbitlogic'} block.
 
 --- /task ---
 

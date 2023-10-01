@@ -16,15 +16,15 @@ You can reuse the animation code.
 
 --- task ---
 
-Right-click on the <code style="background-color: #00AA00">repeat</code> block and click **Duplicate**.
+Right-click on the `repeat`{:class='microbitlogic'} block and click **Duplicate**.
 
 --- /task ---
 
-There will now be two <code style="background-color: #00AA00">repeat</code> blocks in the code editor panel. Each will contain three <code style="background-color: #1E90FF">show led</code> blocks.
+There will now be two `repeat`{:class='microbitlogic'} blocks in the code editor panel. Each will contain three `show led`{:class='microbitbasic'} blocks.
 
 --- task ---
 
-Put the duplicated <code style="background-color: #00AA00">repeat</code> block inside the <code style="background-color: #1E90FF">on start</code> block.
+Put the duplicated `repeat`{:class='microbitlogic'} block inside the `on start`{:class='microbitbasic'} block.
 
 <img src="images/repeat-in-on-start.png" alt="The duplicated code inside the 'on start' block." width="350"/>
 
@@ -57,7 +57,7 @@ Name the function `zZ`.
 
 --- task ---
 
-From the <code style="background-color: #D400D4">on button A+B</code> block, drag the <code style="background-color: #00AA00">repeat</code> block.
+From the `on button A+B`{:class='microbitinput'} block, drag the `repeat`{:class='microbitlogic'} block.
 
 Place it inside your new `function zZ` block.
 
@@ -65,7 +65,7 @@ Place it inside your new `function zZ` block.
 
 --- task ---
 
-Delete the code inside the <code style="background-color: #1E90FF">on start</code> block.
+Delete the code inside the `on start`{:class='microbitbasic'} block.
 
 --- /task ---
 
@@ -75,7 +75,7 @@ When a `call zZ` block is executed, it runs the code in the `function zZ`.
 
 From the Advanced > Functions menu, drag a `call zZ` block.
 
-Place it inside the <code style="background-color: #1E90FF">on start</code> block.
+Place it inside the `on start`{:class='microbitbasic'} block.
 
 --- /task ---
 
@@ -83,7 +83,7 @@ Place it inside the <code style="background-color: #1E90FF">on start</code> bloc
 
 Drag out another `call zZ` block.
 
-Place it inside the <code style="background-color: #D400D4">on button A+B</code> block, under the <code style="background-color: #DC143C">set movements</code> block.
+Place it inside the `on button A+B`{:class='microbitinput'} block, under the `set movements`{:class='microbitvariables'} block.
 
 --- /task ---
 

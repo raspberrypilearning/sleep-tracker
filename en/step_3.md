@@ -22,15 +22,15 @@ You need to know if there is a difference between the resting position and the c
 
 --- task ---
 
-From the <code style="background-color: #9400D3">Math</code> menu, get a <code style="background-color: #9400D3">0 - 0</code> block.
+From the `Math`{:class='microbitmath'} menu, get a `0 - 0`{:class='microbitmath'} block.
 
-Place it in the `-10` of the <code style="background-color: #00A4A6"> < </code> comparison block.
+Place it in the `-10` of the `<`{:class='microbitlogic'} comparison block.
 
 --- /task ---
 
 --- task ---
 
-Open the <code style="background-color: #dc143c">Variables</code> menu and click **Make a Variable**.
+Open the `Variables`{:class='microbitvariables'} menu and click **Make a Variable**.
 
 Name your new variable `restingPosition`.
 
@@ -38,15 +38,15 @@ Name your new variable `restingPosition`.
 
 --- task ---
 
-From the <code style="background-color: #dc143c">Variables</code> menu, get the <code style="background-color: #dc143c">restingPosition</code> block. 
+From the `Variables`{:class='microbitvariables'} menu, get the `restingPosition`{:class='microbitvariables'} block. 
 
-Place it in the first `0` on the left of the <code style="background-color: #9400D3">0 - 0</code> block. 
+Place it in the first `0` on the left of the `0 - 0`{:class='microbitmath'} block. 
 
 --- /task ---
 
 --- task ---
 
-Change the `0` on the right of the <code style="background-color: #9400D3"> - </code> to `10`.
+Change the `0` on the right of the `-`{:class='microbitmath'} to `10`.
 
 Your code should look like this:
 
@@ -58,23 +58,23 @@ Your code should look like this:
 
 --- task ---
 
-From the <code style="background-color: #9400D3">Math</code> menu, get a <code style="background-color: #9400D3">0 + 0</code> block.
+From the `Math`{:class='microbitmath'} menu, get a `0 + 0`{:class='microbitmath'} block.
 
-Place it in the `10` of the <code style="background-color: #00A4A6"> > </code> comparison block.
-
---- /task ---
-
---- task ---
-
-From the <code style="background-color: #dc143c">Variables</code> menu, get another <code style="background-color: #dc143c">restingPosition</code> block. 
-
-Place it in the first `0` on the left of the <code style="background-color: #9400D3">0 + 0</code> block.
+Place it in the `10` of the `>`{:class='microbitlogic'} comparison block.
 
 --- /task ---
 
 --- task ---
 
-Change the `0` on the right of the <code style="background-color: #9400D3"> + </code> to `10`.
+From the `Variables`{:class='microbitvariables'} menu, get another `restingPosition`{:class='microbitvariables'} block. 
+
+Place it in the first `0` on the left of the `0 + 0`{:class='microbitmath'} block.
+
+--- /task ---
+
+--- task ---
+
+Change the `0` on the right of the `+`{:class='microbitmath'} to `10`.
 
 Your code should look like this:
 
@@ -88,15 +88,15 @@ Each time the micro:bit is rolled to a new resting position, you need to set the
 
 --- task ---
 
-From the <code style="background-color: #dc143c">Variables</code> menu, get the <code style="background-color: #dc143c">set</code> block. 
+From the `Variables`{:class='microbitvariables'} menu, get the `set`{:class='microbitvariables'} block. 
 
-Place it under the <code style="background-color: #1E90FF">pause</code> block.
+Place it under the `pause`{:class='microbitbasic'} block.
 
 --- /task ---
 
 --- task ---
 
-Duplicate the <code style="background-color: #D400D4">rotation</code> block and place it in the `0` of the <code style="background-color: #DC143C">set</code> block.
+Duplicate the `rotation`{:class='microbitinput'} block and place it in the `0` of the `set`{:class='microbitvariables'} block.
 
 Your code should look like this:
 
@@ -125,11 +125,11 @@ Repeat this process to check that the LEDs only turn on when there is movement a
 
 ### Let the micro:bit come to rest
 
-You should give the micro:bit some time to come to rest before setting the new <code style="background-color: #DC143C">restingPosition</code> to the variable.
+You should give the micro:bit some time to come to rest before setting the new `restingPosition`{:class='microbitvariables'} to the variable.
 
 --- task ---
 
-Change the value in <code style="background-color: #1E90FF">pause</code> from `100` to `5 seconds`.
+Change the value in `pause`{:class='microbitbasic'} from `100` to `5 seconds`.
 
 <div style="position:relative;height:calc(170px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Aqgc2mHrw529" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
