@@ -59,7 +59,7 @@ Name the function `zZ`.
 
 From the `on button A+B`{:class='microbitinput'} block, drag the `repeat`{:class='microbitlogic'} block.
 
-Place it inside your new `function zZ` block.
+Place it inside your new `function zZ`{:class='microbitfunctions'} block.
 
 --- /task ---
 
@@ -69,11 +69,11 @@ Delete the code inside the `on start`{:class='microbitbasic'} block.
 
 --- /task ---
 
-When a `call zZ` block is executed, it runs the code in the `function zZ`.
+When a `call zZ`{:class='microbitfunctions'} block is executed, it runs the code in the `function zZ`{:class='microbitfunctions'}.
 
 --- task ---
 
-From the Advanced > Functions menu, drag a `call zZ` block.
+From the Advanced > Functions menu, drag a `call zZ`{:class='microbitfunctions'} block.
 
 Place it inside the `on start`{:class='microbitbasic'} block.
 
@@ -81,7 +81,7 @@ Place it inside the `on start`{:class='microbitbasic'} block.
 
 --- task ---
 
-Drag out another `call zZ` block.
+Drag out another `call zZ`{:class='microbitfunctions'} block.
 
 Place it inside the `on button A+B`{:class='microbitinput'} block, under the `set movements`{:class='microbitvariables'} block.
 
