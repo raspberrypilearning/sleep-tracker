@@ -73,7 +73,7 @@ If this happens, you will assume there has been movement during sleep.
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block and place it inside the `forever`{:class='microbitbasic'}</code> block.
+From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block and place it inside the `forever`{:class='microbitbasic'} block.
 
 <img src="images/if-block-location.png" alt="The Logic menu with the 'if...then' block highlighted." width="350"/>
 
