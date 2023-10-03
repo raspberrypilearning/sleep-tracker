@@ -136,6 +136,14 @@ function zZ () {
 
 --- task ---
 
-[[[download-to-microbit]]]
+Download your program onto your micro:bit!
 
 --- /task ---
+
+[[[download-to-microbit]]]
+
+Well done! You now have a fully working sleep tracker!
+
+[[[microbit-share]]]
+
+Next, it is time to check what you have learnt!
