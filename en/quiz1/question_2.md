@@ -13,7 +13,7 @@ Which block did you use to do this?
 
 - (x) 
   
-<code style="background-color: #D400D4">rotation</code>
+`rotation`{:class='microbitinput'}
 
   --- feedback ---
 
@@ -23,7 +23,7 @@ Which block did you use to do this?
 
 - ( ) 
 
-<code style="background-color: #DC143C">set movements</code>
+`set movements`{:class='microbitvariables'}
 
   --- feedback ---
   
@@ -33,7 +33,7 @@ Which block did you use to do this?
 
 - ( ) 
 
-<code style="background-color: #1E90FF">pause</code>
+`pauses`{:class='microbitbasic'}
 
   --- feedback ---
   

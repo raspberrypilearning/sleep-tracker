@@ -24,13 +24,13 @@ You can program something to happen when only `A` is pressed, only `B` is presse
 
 --- task ---
 
-From the <code style="background-color: #D400D4">Input</code> menu, drag an <code style="background-color: #D400D4">on button</code> block.
+From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block.
 
 Place it in the code editor panel.
 
 <img src="images/on-button-location.png" alt="The Input menu with the 'on button' block highlighted." width="350"/>
 
-Use the drop-down menu to change the button to <code style="background-color: #d400d4">A+B</code>.
+Use the drop-down menu to change the button to `A+B`{:class='microbitinput'}.
 
 --- /task ---
 
@@ -38,7 +38,7 @@ Before the micro:bit displays the total number of recorded sleep movements, you 
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code>menu, drag a <code style="background-color: #1E90FF">clear screen</code> block and place it inside the <code style="background-color: #d400d4">on button</code> block.  
+From the `Basic`{:class='microbitbasic'} menu, drag a `clear screen`{:class='microbitbasic'} block and place it inside the `on button`{:class='microbitinput'} block.  
 
 The clear screen block turns off all the LEDs.
 
@@ -50,9 +50,9 @@ Before you display the number, it is a good idea to show what the number is.
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">show string</code> block.
+From the `Basic`{:class='microbitbasic'} menu, drag a `show string`{:class='microbitbasic'} block.
 
-Place it inside the <code style="background-color: #d400d4">on button</code> block, under the <code style="background-color: #1E90FF">clear screen</code> block.
+Place it inside the `on button`{:class='microbitinput'} block, under the `clear screen`{:class='microbitbasic'} block.
 
 Replace the word `Hello` with `Movements`.
 
@@ -62,19 +62,26 @@ Now it is time to display the total number of sleep movements recorded.
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">show number</code> block.
+From the `Basic`{:class='microbitbasic'} menu, drag a `show number`{:class='microbitbasic'} block.
 
-Place it inside the <code style="background-color: #d400d4">on button</code> block, under the <code style="background-color: #1E90FF">show string</code> block. 
+Place it inside the `on button`{:class='microbitinput'} block, under the `show string`{:class='microbitbasic'} block. 
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">movements</code> block.
+From the `Variables`{:class='microbitvariables'} menu, drag out the `movements`{:class='microbitvariables'} block.
 
-Place it over the `0` in the <code style="background-color: #1E90FF">show number</code> block.
+Place it over the `0` in the `show number`{:class='microbitbasic'} block.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bh7Lw76vDhJx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.AB, function () {
+    let movements = 0
+    basic.clearScreen()
+    basic.showString("Movements")
+    basic.showNumber(movements)
+})
+```
 
 --- /task ---
 
@@ -82,17 +89,25 @@ You now need to reset the movements variable back to 0, ready to track again.
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag a <code style="background-color: #DC143C">set</code> block.
+From the `Variables`{:class='microbitvariables'} menu, drag a `set`{:class='microbitvariables'} block.
 
-Place it under the <code style="background-color: #1E90FF">show number</code> block.
+Place it under the `show number`{:class='microbitbasic'} block.
 
 --- /task ---
 
 --- task ---
 
-Use the drop-down menu to select <code style="background-color: #DC143C">movements</code> as the variable to set.
+Use the drop-down menu to select `movements`{:class='microbitvariables'} as the variable to set.
 
-<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_eHpTW3Xy0Jpt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let movements = 0
+input.onButtonPressed(Button.AB, function () {
+    basic.clearScreen()
+    basic.showString("Movements")
+    basic.showNumber(movements)
+    movements = 0
+})
+```
 
 --- /task ---
 
@@ -100,11 +115,40 @@ To show the sleep tracker is ready, you can show an animation. As this is a slee
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag **three** <code style="background-color: #1E90FF">show leds</code> blocks and place them under the <code style="background-color: #DC143C">set movements</code> block.
+From the `Basic`{:class='microbitbasic'} menu, drag **three** `show leds`{:class='microbitbasic'} blocks and place them under the `set movements`{:class='microbitvariables'} block.
 
 Click the squares on each one to create these patterns:
 
-<div style="position:relative;height:calc(400px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_AaDf7mJwE52H" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let movements = 0
+input.onButtonPressed(Button.AB, function () {
+    basic.clearScreen()
+    basic.showString("Movements")
+    basic.showNumber(movements)
+    movements = 0
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        # # # . .
+        . # . . .
+        # # # . .
+        `)
+    basic.showLeds(`
+        . . . . .
+        # # # # .
+        . . # . .
+        . # . . .
+        # # # # .
+        `)
+    basic.showLeds(`
+        # # # # #
+        . . . # .
+        . . # . .
+        . # . . .
+        # # # # #
+        `)
+})
+```
 
 **Tip:** If you hold down the mouse, you can select multiple LEDs as you move.
 
@@ -114,7 +158,7 @@ To create an animation, you can put the 'show leds' blocks in a loop.
 
 --- task ---
 
-From the <code style="background-color: #00AA00">Loops</code> menu, drag a <code style="background-color: #00AA00">repeat</code> block and place it around the three <code style="background-color: #1E90FF">show leds</code> blocks.
+From the `Loops`{:class='microbitloops'} menu, drag a `repeat`{:class='microbitloops'} block and place it around the three `show leds`{:class='microbitbasic'} blocks.
 
 Change the number of repeats from `4` to `2`.
 
