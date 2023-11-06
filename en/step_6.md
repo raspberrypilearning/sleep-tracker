@@ -16,7 +16,7 @@ You can reuse the animation code.
 
 --- task ---
 
-Right-click on the `repeat`{:class='microbitlogic'} block and click **Duplicate**.
+Right-click on the `repeat`{:class='microbitloops'} block and click **Duplicate**.
 
 --- /task ---
 
