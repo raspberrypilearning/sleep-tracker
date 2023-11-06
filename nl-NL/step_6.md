@@ -16,15 +16,15 @@ You can reuse the animation code.
 
 --- task ---
 
-Right-click on the `repeat`{:class='microbitlogic'} block and click **Duplicate**.
+Right-click on the `repeat`{:class='microbitloops'} block and click **Duplicate**.
 
 --- /task ---
 
-There will now be two `repeat`{:class='microbitlogic'} blocks in the code editor panel. Each will contain three `show led`{:class='microbitbasic'} blocks.
+There will now be two `repeat`{:class='microbitloops'} blocks in the code editor panel. Each will contain three `show led`{:class='microbitbasic'} blocks.
 
 --- task ---
 
-Put the duplicated `repeat`{:class='microbitlogic'} block inside the `on start`{:class='microbitbasic'} block.
+Put the duplicated `repeat`{:class='microbitloops'} block inside the `on start`{:class='microbitbasic'} block.
 
 <img src="images/repeat-in-on-start.png" alt="The duplicated code inside the 'on start' block." width="350" />
 
@@ -57,7 +57,7 @@ Name the function `zZ`.
 
 --- task ---
 
-From the `on button A+B`{:class='microbitinput'} block, drag the `repeat`{:class='microbitlogic'} block.
+From the `on button A+B`{:class='microbitinput'} block, drag the `repeat`{:class='microbitloops'} block.
 
 Place it inside your new `function zZ`{:class='microbitfunctions'} block.
 
