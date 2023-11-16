@@ -4,8 +4,8 @@ hero_image: images/banner.png
 description: 
   Monitor your sleep to see how rested you are
 version: 4
-listed: false
-copyedit: false
+listed: true
+copyedit: true
 last_tested: '2023-08-18'
 steps:
 - title: You will make
