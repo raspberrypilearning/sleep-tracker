@@ -1,0 +1,30 @@
+---
+title: Slaap monitor
+hero_image: images/banner.png
+description: Monitor je slaap om te zien hoe uitgerust je bent
+version: 4
+listed: false
+copyedit: false
+last_tested: '2023-08-18'
+steps:
+  - title: Wat ga je maken
+  - title: Bijhouden en weergeven
+    completion:
+      - engaged
+  - title: Controleer je hoofd
+  - title: Druk om te resetten
+  - title: Helderheid wijzigen
+  - title: Toon enkele Zs
+  - title: 1,2,3, slapen!
+    completion:
+      - internal
+  - title: Snelle quiz
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Verbeter je project
+  - title: Wat kun je verder nog doen?
