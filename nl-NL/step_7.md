@@ -1,98 +1,98 @@
-## 1,2,3, sleep!
+## 1,2,3, slapen!
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-Counting is sometimes used as a way to get to sleep.
+Tellen wordt soms gebruikt als een manier om in slaap te vallen.
 
-In this step, you will display a sequence of numbers before the zZs animation when the program starts.
+In deze stap ga je een reeks getallen weergeven vóór de zZs animatie wanneer het programma start.
 
 </div>
 </div>
 
-You can create a timer that counts from 1 to 3 using a `for`{:class='microbitloops'} loop.
+Je kunt een timer maken van 1 tot 3 met behulp van een `voor`{:class='microbitloops'} lus.
 
 --- task ---
 
-From the `Loops`{:class='microbitloops'} block menu, drag a `for index`{:class='microbitloops'} block.
+Sleep vanuit het blokmenu `Lussen`{:class='microbitloops'} een blok `voor index`{:class='microbitloops'}.
 
-Place it inside the `function zZ`{:class='microbitfunctions'} block, above the `repeat`{:class='microbitloops'} block.
+Plaats het in het `functie zZ`{:class='microbitfunctions'} blok, boven het `keer herhalen`{:class='microbitloops'} blok.
 
-Change the `4` to `2`.
+Verander de `4` naar `2`.
 
 --- /task ---
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} block menu, drag a `show number`{:class='microbitbasic'} block.
+Vanuit het `Basis`{:class='microbitbasic'} blokmenu, sleep je een `toon nummer`{:class='microbitbasic'} blok.
 
-Place it inside the `for index`{:class='microbitloops'} block.
-
---- /task ---
-
---- task ---
-
-From the `Basic`{:class='microbitbasic'} block menu, drag a `pause`{:class='microbitbasic'} block.
-
-Place it inside the `for index`{:class='microbitloops'} block, under the `show number`{:class='microbitbasic'} block.
-
-Change the `100` to `1 second`.
-
---- /task ---
-
-When you added the `for index`{:class='microbitloops'} block to your Workspace, the `index`{:class='microbitvariables'} variable was created.
-
-The `index`{:class='microbitvariables'} variable takes on each value from `0` to `2` (the end number in our example) and counts up by one each time.
-
-Rename the `index`{:class='microbitvariables'} variable `second` because your timer will increase each second.
-
---- task ---
-
-Click the arrow to the right of the `index`{:class='microbitvariables'} variable and select `Rename variable`.
-
-Replace the text `index` with `second` and click `Ok`.
+Plaats het in het `voor index`{:class='microbitloops'} blok.
 
 --- /task ---
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} blocks menu, drag a `second`{:class='microbitvariables'} variable.
+Sleep vanuit het blokmenu `Basis`{:class='microbitbasic'} een blok met `pauzeer (ms)`{:class='microbitbasic'}.
 
-Place it in the `0` of the `show number`{:class='microbitbasic'} block.
+Plaats het in het `voor index`{:class='microbitloops'} blok, onder het `toon nummer`{:class='microbitbasic'} blok.
+
+Verander de `100` naar `1 seconde`.
+
+--- /task ---
+
+Toen je het `voor index`{:class='microbitloops'} blok aan je Werkruimte toevoegde, werd de `index`{:class='microbitvariables'} variabele gemaakt.
+
+De variabele `index`{:class='microbitvariables'} neemt elke waarde aan van `0` tot `2` (het eindgetal in ons voorbeeld) en telt elke keer met één op.
+
+Hernoem de `index`{:class='microbitvariables'} variabele naar `seconde` omdat je timer elke seconde stijgt.
+
+--- task ---
+
+Klik op de pijl rechts van de `index`{:class='microbitvariables'} variabele en selecteer `Naam van variabele wijzigen.....`.
+
+Vervang de tekst `index` met `seconde` en klik `Ok`.
 
 --- /task ---
 
 --- task ---
 
-**Test your program**
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een variabele `seconde`{:class="microbitvariables"}.
 
-+ The LEDs will display `0` then `1` then `2` with a one second pause between each.
+Plaats het in de `0` van het `toon nummer`{:class='microbitbasic'} blok.
 
 --- /task ---
-
-It is more natural to see '1, 2, 3' than '0, 1, 2'.
-
-We can do this with some simple maths.
 
 --- task ---
 
-From the `Math`{:class='microbitmath'} blocks menu, drag a `+`{:class='microbitmath'} block.
+**Test je programma**
 
-Place it in the `show number`{:class='microbitbasic'} block, replacing the `second`{:class='microbitvariables'} variable.
++ De LED's geven `0`, vervolgens `1` vervolgens `2` weer, met een pauze van één seconde ertussen.
 
 --- /task ---
 
-The `second`{:class='microbitvariables'} variable will be pushed out, but you can still use it.
+Het is logischer "1, 2, 3” te zien dan "0, 1, 2”.
+
+We kunnen dit doen met wat eenvoudige wiskunde.
 
 --- task ---
 
-Drag the `second`{:class='microbitvariables'} variable to the first `0` in the `+`{:class='microbitmath'} block.
+Sleep vanuit het menu `Rekenen`{:class="microbitmath"} een blok ` + `{:class="microbitmath"}.
 
-Change the second `0` to `1`.
+Plaats het in het `toon nummer`{:class='microbitbasic'} blok, zodat het de `seconde`{:class='microbitvariables'} variabele vervangt.
 
 --- /task ---
 
-Here are the blocks that have changed in this step:
+De `seconde`{:class='microbitvariables'} variabele wordt weggedrukt, maar je kunt hem nog steeds gebruiken.
+
+--- task ---
+
+Sleep de `seconde`{:class='microbitvariables'} variabele naar de eerste `0` in het `+`{:class='microbitmath'} blok.
+
+Verander de tweede `0` in `1`.
+
+--- /task ---
+
+Dit zijn de blokken die in deze stap zijn gewijzigd:
 
 ```microbit
 function zZ () {
@@ -128,20 +128,20 @@ function zZ () {
 
 --- task ---
 
-**Test your program**
+**Test je programma**
 
-+ The LEDs will now display `1` then `2` then `3` with a one second pause between each.
++ De LED's geven `1`, vervolgens `2` vervolgens `3` weer, met een pauze van één seconde ertussen.
 
 --- /task ---
 
 --- task ---
 
-Download your program onto your micro:bit!
+Download je programma naar de micro:bit!
 
 --- /task ---
 
 [[[download-to-microbit]]]
 
-Well done! You now have a fully working sleep tracker!
+Goed gedaan! Je hebt nu een volledig werkende slaapmonitor!
 
-Next, it is time to check what you have learnt!
+Nu is het tijd om te kijken wat je hebt geleerd!
