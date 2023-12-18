@@ -1,54 +1,54 @@
-### Different resting head positions
+### Verschillende rust hoofdposities
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-At the moment, the micro:bit records a movement whenever the micro:bit is **not** level.
+Op dit moment registreert de micro:bit een beweging wanneer de micro:bit **niet** waterpas is.
 
-For this project, the micro:bit will be placed under a pillow as it would be uncomfortable to wear it on your head!
+Voor dit project wordt de micro:bit onder een kussen geplaatst, omdat het oncomfortabel zou zijn om hem op je hoofd te dragen!
 
-When you lie down, the weight of your head on your pillow will probably roll the micro:bit so that it is not completely level.
+Wanneer je gaat liggen, zal het gewicht van je hoofd op je kussen waarschijnlijk de micro:bit laten draaien zodat deze niet volledig waterpas ligt.
 
-This will be the **resting position**. 
+Dit is de **rustpositie**. 
 
-You need to record a movement only if the micro:bit is rolled away from the resting position. 
+Je hoeft alleen een beweging vast te leggen als de micro:bit wegdraait van de rustpositie. 
 
 </div>
 </div>
 
-### Check for movement to the LEFT from the resting position
+### Controleer of er beweging naar LINKS is vanuit de rustpositie
 
-You need to know if there is a difference between the resting position and the current roll position.
+Je moet weten of er een verschil is tussen de rustpositie en de huidige draaipositie.
 
 --- task ---
 
-From the `Math`{:class='microbitmath'} menu, get a `0 - 0`{:class='microbitmath'} block.
+Sleep vanuit het menu `Rekenen`{:class="microbitmath"} een blok `0 - 0`{:class="microbitmath"}.
 
-Place it in the `-10` of the `<`{:class='microbitlogic'} comparison block.
+Plaats het in de `-10` van het `<`{:class='microbitlogic'} vergelijkingsblok.
 
 --- /task ---
 
 --- task ---
 
-Open the `Variables`{:class='microbitvariables'} menu and click **Make a Variable**.
+Open het `Variabelen`{:class="microbitvariables"} menu en klik op **Maak een variabele**.
 
-Name your new variable `restingPosition`.
-
---- /task ---
-
---- task ---
-
-From the `Variables`{:class='microbitvariables'} menu, get the `restingPosition`{:class='microbitvariables'} block.
-
-Place it in the first `0` on the left of the `0 - 0`{:class='microbitmath'} block.
+Geef je nieuwe variabele de naam `rustPositie`.
 
 --- /task ---
 
 --- task ---
 
-Change the `0` on the right of the `-`{:class='microbitmath'} to `10`.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} het blok `rustPositie`{:class="microbitvariables"}.
 
-Your code should look like this:
+Plaats het in de eerste `0` in het `0 - 0`{:class="microbitlogic"} blok.
+
+--- /task ---
+
+--- task ---
+
+Verander de `0` rechts van de `-`{:class='microbitmath'} naar `10`.
+
+Je code zou er als volgt uit moeten zien:
 
 ```microbit
 let movements = 0
@@ -65,29 +65,29 @@ basic.forever(function () {
 
 --- /task ---
 
-### Check for movement to the RIGHT from the resting position
+### Controleer of er beweging naar RECHTS is vanuit de rustpositie
 
 --- task ---
 
-From the `Math`{:class='microbitmath'} menu, get a `0 + 0`{:class='microbitmath'} block.
+Sleep vanuit het menu `Rekenen`{:class="microbitmath"} een blok `0 + 0`{:class="microbitmath"}.
 
-Place it in the `10` of the `>`{:class='microbitlogic'} comparison block.
+Plaats het in de `10` van het `>`{:class='microbitlogic'} vergelijkingsblok.
 
 --- /task ---
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, get another `restingPosition`{:class='microbitvariables'} block.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} nog een blok `rustPositie`{:class="microbitvariables"}.
 
-Place it in the first `0` on the left of the `0 + 0`{:class='microbitmath'} block.
+Plaats het in de eerste `0` in het `0 + 0`{:class="microbitlogic"} blok.
 
 --- /task ---
 
 --- task ---
 
-Change the `0` on the right of the `+`{:class='microbitmath'} to `10`.
+Verander de `0` rechts van de `+`{:class='microbitmath'} naar `10`.
 
-Your code should look like this:
+Je code zou er als volgt uit moeten zien:
 
 ```microbit
 let movements = 0
@@ -104,23 +104,23 @@ basic.forever(function () {
 
 --- /task ---
 
-### Set a new resting position after each movement
+### Stel na elke beweging een nieuwe rustpositie in
 
-Each time the micro:bit is rolled to a new resting position, you need to set the current position as the new resting position, so you can use it in your comparison.
+Elke keer dat de micro:bit naar een nieuwe rustpositie wordt gedraaid, moet je de huidige positie instellen als de nieuwe rustpositie, zodat je deze in je vergelijking kunt gebruiken.
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, get the `set`{:class='microbitvariables'} block.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `stel in op`{:class="microbitvariables"}.
 
-Place it under the `pause`{:class='microbitbasic'} block.
+Plaats het onder het blok `pauzeer (ms)`{:class='microbitbasic'}.
 
 --- /task ---
 
 --- task ---
 
-Duplicate the `rotation`{:class='microbitinput'} block and place it in the `0` of the `set`{:class='microbitvariables'} block.
+Dupliceer het `rotatie`{:class='microbitinput'} blok en plaats het in de `0` van het `stel in op`{:class='microbitvariables'} blok.
 
-Your code should look like this:
+Je code zou er als volgt uit moeten zien:
 
 ```microbit
 let restingPosition = 0
@@ -140,29 +140,29 @@ basic.forever(function () {
 
 --- task ---
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+Als je een wijziging aanbrengt in een codeblok in het bewerkingspaneel zal de simulator opnieuw starten.
 
-**Test your program**
+**Test je programma**
 
-+ Move from the centre of the micro:bit to the right or left.
++ Beweeg het midden van de micro:bit naar links of rechts.
 
-The LEDs will light up and stay on for a short time. **Keep your mouse still until the LEDs turn off.**
+De LED's zullen oplichten en een korte tijd branden. **Beweeg je muis niet totdat de LED's uitgaan.**
 
-+ When the LEDs turn off, move from the new position (your resting position) to the right or left again.
++ Als de LED's uitgaan, beweeg dan van de nieuwe positie (je rustpositie) weer naar rechts of links.
 
-The LEDs will light up and stay on for **a short time**.
+De LED's zullen oplichten en **een korte tijd** branden.
 
-Repeat this process to check that the LEDs only turn on when there is movement away from the resting position.
+Herhaal dit proces om te controleren of de LED's alleen gaan branden als er beweging is vanuit de rustpositie.
 
 --- /task ---
 
-### Let the micro:bit come to rest
+### Laat de micro:bit uitrusten
 
-You should give the micro:bit some time to come to rest before setting the new `restingPosition`{:class='microbitvariables'} to the variable.
+Je zou de micro:bit wat tijd moeten geven om te rusten voordat je de nieuwe `rustPositie`{:class='microbitvariables'} instelt op de variabele.
 
 --- task ---
 
-Change the value in `pause`{:class='microbitbasic'} from `100` to `5 seconds`.
+Wijzig de waarde in `pauzeer (ms)`{:class='microbitbasic'} van `100` naar `5 seconden`.
 
 ```microbit
 let restingPosition = 0
@@ -182,15 +182,15 @@ basic.forever(function () {
 
 --- task ---
 
-**Test your program**
-+ Move from the centre of the micro:bit to the right or left.
+**Test je programma**
++ Beweeg het midden van de micro:bit naar links of rechts.
 
-The LEDs will light up and stay on for **five seconds**. **Keep your mouse still until the LEDs turn off.**
+De LED's zullen oplichten en **5 seconden** blijven branden. **Beweeg je muis niet totdat de LED's uitgaan.**
 
-+ When the LEDs turn off, move from the new position (your resting position) to the right or left again.
++ Als de LED's uitgaan, beweeg dan van de nieuwe positie (je rustpositie) weer naar rechts of links.
 
-The LEDs will light up and stay on for five seconds again.
+De LED's zullen oplichten en weer 5 seconden blijven branden.
 
 --- /task ---
 
-Next, you are going to use the `A+B` button press event to **reset** your sleep tracker!
+Vervolgens ga je de gebeurtenis `Wanneer knop A+B wordt ingedrukt` gebruiken om je slaapmonitor te **resetten**!
