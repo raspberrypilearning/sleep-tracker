@@ -1,82 +1,82 @@
-## Change brightness
+## Verander de helderheid
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-When it is late at night, the LEDs on your micro:bit might be too bright.
+Als laat op de avond is, kunnen de LED's op je micro:bit te helder zijn.
 
-In this step, you will use the A button and B button to change the brightness of the micro:bit's LED display.
+In deze stap gebruik je de A knop en B knop om de helderheid van het LED display van de micro:bit te veranderen.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 
-To sleep better, try not to be around really <span style="color: #0faeb0">bright light</span> 2 hours before bedtime. If you can't sleep, make the lights less bright 2 hours before you want to sleep. And if you feel too sleepy in the mornings, go where the lights are bright to feel more awake.
+Om beter te slapen, probeer <span style="color: #0faeb0">fel licht</span> vanaf 2 uur voor bedtijd te vermijden. Als je niet kunt slapen, zorg er dan voor dat de lichten 2 uur voordat je wilt gaan slapen minder fel zijn. En als je je 's ochtends te slaperig voelt, ga dan naar een helder verlichte plek, zodat je je wakkerder voelt.
 </p>
 
 </div>
 <div>
 
-![Animation showing that when the the A button is pressed, the LED display brightness decreases and when the B button is pressed, the LED display brightness increases.](images/brightness-change.gif)
+![Animatie die laat zien dat wanneer de A-knop wordt ingedrukt, de helderheid van het LED-display afneemt en wanneer de B-knop wordt ingedrukt, de helderheid van het LED-display toeneemt.](images/brightness-change.gif)
 
 </div>
 </div>
 
-Because the A button is on the left, you will use it to turn the brightness down.
+Omdat de A-knop aan de linkerkant zit, gebruik je deze om de helderheid te verlagen.
 
-### Brightness down
+### Verlaag de helderheid
 
 --- task ---
 
-From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block.
+Sleep vanuit het menu `Invoer`{:class='microbitinput'} een `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok.
 
-Place it in the code editor panel.
+Plaats het in het bewerkingspaneel.
 
-<img src="images/on-button-location.png" alt="The Input menu with the 'on button' block highlighted." width="350" />
+<img src="images/on-button-location.png" alt="Het invoermenu met het 'wanneer knop wordt ingedrukt' blok gemarkeerd." width="350" />
 
 --- /task ---
 
-Each time the A button is pressed, you will halve the brightness.
+Elke keer als de A knop wordt ingedrukt, halveert de helderheid.
 
 --- task ---
 
-From the `Led...more`{:class='microbitled'} menu, drag a `set brightness`{:class='microbitled'} block.
+Sleep vanuit het menu `Lichtjes...meer`{:class='microbitinput'} een `stel helderheid in op `{:class='microbitinput'} blok.
 
-<img src="images/set-brightness-location.png" alt="The 'Led...more' menu with the 'set brightness' block highlighted." width="350" />
-
---- /task ---
-
---- task ---
-
-Place it inside the `on button`{:class='microbitinput'} block.
-
-**Debug:** Check you have clicked on the Led **more** menu, not the normal Led menu.
-
---- /task ---
-
-To halve the brightness, you will use a Math block.
-
---- task ---
-
-From the `Math`{:class='microbitmath'} menu, drag a `0 / 0`{:class='microbitmath'} divide block.
-
-Place it over the `255` value in the `set brightness`{:class='microbitled'} block.
+<img src="images/set-brightness-location.png" alt="Het menu 'Lichtjes...meer' met het blok 'stel helderheid in op' gemarkeerd." width="350" />
 
 --- /task ---
 
 --- task ---
 
-From the `Led...more`{:class='microbitled'} menu, drag a `brightness`{:class='microbitled'} block.
+Plaats het in het `wanneer knop wordt ingedrukt `{:class='microbitinput'} blok.
 
-Place it over the first `0` value in the `0 / 0`{:class='microbitmath'} block.
+**Foutopsporing:** Controleer of je hebt geklikt op het Lichtjes **meer** menu, en niet op het normale Lichtjes menu.
+
+--- /task ---
+
+Om de helderheid te halveren, gebruik je een Rekenen blok.
+
+--- task ---
+
+Sleep vanuit het menu `Rekenen`{:class="microbitmath"} een `0 / 0`{:class="microbitmath"} deel blok.
+
+Plaats het op de `255` in het blok `stel helderheid in op`{:class='microbitbasic'}.
 
 --- /task ---
 
 --- task ---
 
-Change the second `0` to a `2`.
+Sleep vanuit het menu `Lichtjes...meer`{:class='microbitinput'} een `helderheid`{:class='microbitinput'} blok.
 
-This will set the brightness to whatever value it currently is, divided by 2.
+Plaats het in de eerste `0` in het `0 / 0`{:class="microbitmath"} blok.
 
-Your code should look like this:
+--- /task ---
+
+--- task ---
+
+Verander de tweede `0` in `2`.
+
+Hierdoor wordt de helderheid ingesteld op de huidige waarde, gedeeld door 2.
+
+Je code zou er als volgt uit moeten zien:
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -86,35 +86,35 @@ input.onButtonPressed(Button.A, function () {
 
 --- /task ---
 
-### Brightness up
+### Verhoog de helderheid
 
-Now, you will set up the B button to turn the brightness up.
+Nu ga je de B-knop instellen om de helderheid te verhogen.
 
 --- task ---
 
-Right-click on the entire `on button A`{:class='microbitinput'} block and click **Duplicate**.
+Klik met de rechtermuisknop op het volledige `wanneer knop A wordt ingedrukt`{:class='microbitinput'} blok en klik **Dupliceren**.
 
-There will now be two `on button A`{:class='microbitinput'} blocks in the code editor panel.
+Er zullen nu twee `wanneer knop A wordt ingedrukt`{:class='microbitinput'} blokken in het bewerkingspaneel staan.
 
 --- /task ---
 
 --- task ---
 
-Click on the arrow next to `A`{:class='microbitinput'} on the duplicated block.
+Klik op de pijl naast `A`{:class='microbitinput'} op het gedupliceerde blok.
 
-Choose `B`{:class='microbitinput'}.
+Kies `B`{:class='microbitinput'}.
 
 --- /task ---
 
 --- task ---
 
-Click on the arrow next to `/`{:class='microbitmath'} on the duplicated block.
+Klik op de pijl naast `/`{:class='microbitmath'} op het gedupliceerde blok.
 
-Choose `×`{:class='microbitmath'}.
+Kies `×`{:class='microbitmath'}.
 
 --- /task ---
 
-You will now have these blocks for the A button and the B button:
+Je hebt nu deze blokken voor de A-knop en de B-knop:
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -127,67 +127,67 @@ input.onButtonPressed(Button.B, function () {
 
 --- task ---
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+Als je een wijziging aanbrengt in een codeblok in het bewerkingspaneel zal de simulator opnieuw starten.
 
-**Test your program**
+**Test je programma**
 
-+ Click the `A` button until the LEDs go out fully
++ Klik op de `A` knop totdat de LED's volledig uit gaan
 
-+ Click the `B` button and see what happens
++ Klik op de knop `B` en kijk wat er gebeurt
 
-If you have pressed the `A` button enough times, pressing the `B` button will not turn the LEDs back on.
+Als je de `A` knop genoeg hebt ingedrukt, zal het indrukken van de `B` knop de LEDs niet meer aanzetten.
 
-This is because the brightness value has reached `0`.
+Dit komt omdat de helderheidswaarde `0` is bereikt.
 
-When you multiply `0` by `2` you get... `0`. You can press the `B` button as many times as you want, but you will keep setting the brightness to `0 × 2`, which is **always** `0`!
-
---- /task ---
-
-You need to stop the brightness value from being set to `0`.
-
-To do this, you will use a Logic block to halve the brightness value only **if** the brightness level is **more than 10**.
-
---- task ---
-
-From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block.
-
-Place it around the `set brightness`{:class='microbitled'} block in the `on button A`{:class='microbitinput'} block.
+Wanneer je `0` vermenigvuldigt met `2` krijg je... `0`. Je kunt de `B` knop zo vaak indrukken als je wilt, maar je blijft de helderheid instellen op `0 × 2`, wat **altijd** `0` is!
 
 --- /task ---
 
+Je moet voorkomen dat de helderheidswaarde wordt ingesteld op `0`.
+
+Om dit te doen gebruik je een Logisch blok om de helderheidswaarde alleen te halveren **als** het helderheidsniveau **meer dan 10** is.
+
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag a `0 < 0`{:class='microbitlogic'} block
+Vanuit het `Logisch`{:class="microbitlogic"} menu, sleep een `als`{:class="microbitlogic"} blok.
 
-Place it over the `true`{:class='microbitlogic'} part.
+Plaats het rond het blok `stel helderheid in op`{:class='microbitled'} in het blok `wanneer knop A wordt ingedrukt`{:class='microbitinput'}.
 
 --- /task ---
 
 --- task ---
 
-Change the `<`{:class='microbitlogic'} to a `>`{:class='microbitlogic'}.
+Vanuit het `Logisch`{:class="microbitlogic"} menu, sleep een `0 < 0`{:class="microbitlogic"} blok
+
+Plaats het op het `waar`{:class='microbitlogic'} gedeelte.
 
 --- /task ---
 
 --- task ---
 
-From the `Led...more`{:class='microbitled'} menu, drag a `brightness`{:class='microbitled'} block.
-
-Place it inside the first `0` in the `0 > 0`{:class='microbitlogic'} block.
+Verander de `<`{:class='microbitlogic'} in een `>`{:class='microbitlogic'}.
 
 --- /task ---
 
 --- task ---
 
-Change the second `0` to `10`.
+Sleep vanuit het menu `Lichtjes...meer`{:class='microbitinput'} een `helderheid`{:class='microbitinput'} blok.
+
+Plaats het in de eerste `0` in het `0 > 0`{:class="microbitlogic"} blok.
 
 --- /task ---
 
-Here is an animation showing the above steps:
+--- task ---
 
-![Animation showing the 'if' block being taken from the Logic menu and held over the 'set brightness' block. It is released, making the 'set brightness' block snap inside it. A '0  mark=](images/if-around-set-brightness.gif) 0' block is then taken from the Logic menu and placed inside the first '0' of the '0 > 0' block. A 'brightness' block is then taken from the 'Led...more' menu and placed inside the first '0' of the '0 > 0' block. The second '0' is changed to '10'." width="350"/>
+Verander de tweede `0` in `10`.
 
-Your code should look like this:
+--- /task ---
+
+Hier is een animatie die de bovenstaande stappen laat zien:
+
+![Animatie met het 'als' blok dat uit het Logisch menu wordt gehaald en over het 'stel helderheid in op'-blok wordt gehouden. Het wordt losgelaten, waardoor het blok 'stel helderheid in op' erin klikt. A '0  mark=](images/if-around-set-brightness.gif) 0' blok wordt vervolgens uit het Logisch menu gehaald en geplaatst in de eerste '0' van het '0 > 0' blok. Een 'helderheid' blok wordt vervolgens gehaald van het 'Lichtjes... meer' menu en geplaatst in het eerste '0' van het '0 > 0' blok. De tweede '0' wordt gewijzigd in '10'." width="350"/>
+
+Je code zou er als volgt uit moeten zien:
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -197,26 +197,26 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-**Tip:** There is no need to do this for the `on button B` block as the maximum brightness value the LEDs can be set to is `255`.
+**Tip:** Het is niet nodig om dit te doen voor het `wanneer knop B wordt ingedrukt` blok omdat de maximale helderheid waarde waarop de LED's kunnen worden ingesteld `255` is.
 
 --- task ---
 
-**Test your program**
+**Test je programma**
 
-+ Move over the edges of the micro:bit to record and display some movements
++ Beweeg over de randen van de micro:bit om enkele bewegingen vast te leggen en weer te geven
 
-+ Press the `A+B` button
++ Druk op de knop `A+B`
 
-+ Press the `A` button a few times
++ Druk een paar keer op de `A` knop
 
-The display should get less bright.
+Het display zou minder helder moeten worden.
 
-+ Press the `B` button a few times
++ Druk een paar keer op de knop `B`
 
-The display should get brighter.
+Het display zou helderder moeten worden.
 
-![Animation showing that when the the A button is pressed, the LED display brightness decreases and when the B button is pressed, the LED display brightness increases.](images/brightness-change.gif)
+![Animatie die laat zien dat wanneer de A-knop wordt ingedrukt, de helderheid van het LED-display afneemt en wanneer de B-knop wordt ingedrukt, de helderheid van het LED-display toeneemt.](images/brightness-change.gif)
 
 --- /task ---
 
-Next, you are going to set the sleepy zZ animation to run when the program starts and organise your code using a function!
+Vervolgens ga je instellen dat de slaperige zZ-animatie wordt uitgevoerd wanneer het programma start en organiseer je je code met behulp van een functie!
