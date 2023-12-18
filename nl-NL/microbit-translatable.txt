@@ -1,14 +1,14 @@
-movements
+bewegingen
 
-sleepHour
+slaapUur
 
-startsleep
+beginslapen
 
-restingPosition
+rustPositie
 
-Movements
+Bewegingen
 
 zZ
 
-second
+seconde
 
