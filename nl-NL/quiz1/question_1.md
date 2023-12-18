@@ -1,38 +1,38 @@
-## Quick quiz
+## Snelle quiz
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Beantwoord de drie vragen. Er zijn tips om je naar het juiste antwoord te leiden.
 
-When you have answered each question, click on **Check my answer**.
+Klik na het beantwoorden van elke vraag op **Controleer mijn antwoord**.
 
-Have fun!
+Veel plezier!
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Vraag 1 van 3
 ---
 
-Which one of these is the sensor the micro:bit uses to detect movement?
+Welke van deze is de sensor die de micro:bit gebruikt om beweging te detecteren?
 
 --- choices ---
 
 - (x)
 
-Accelerometer
+Versnellingsmeter
 
   --- feedback ---
 
-  Awesome! You have answered correctly, the accelerometer detects when the micro:bit has been moved by sensing changes in speed.
+  Geweldig! Je hebt het juiste antwoord gegeven: de versnellingsmeter detecteert wanneer de micro:bit wordt verplaatst door snelheidsveranderingen waar te nemen.
 
   --- /feedback ---
 
 - ( )
 
-Logic
+Logisch
 
   --- feedback ---
 
-  Logic is a type of block that can be used to check **if** something is True or False. It is not a sensor.
+  Logisch is een type blok dat kan worden gebruikt om te controleren **of** iets waar is of onwaar. Het is geen sensor.
 
   --- /feedback ---
 
@@ -42,7 +42,7 @@ LED
 
   --- feedback ---
 
-  LEDs are used to display text, numbers, or images.
+  LED's worden gebruikt om tekst, getallen of afbeeldingen weer te geven.
 
   --- /feedback ---
 
