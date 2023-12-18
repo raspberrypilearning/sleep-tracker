@@ -1,78 +1,78 @@
-## Push to reset
+## Druk om te resetten
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-It's time to make your sleep tracker even better! 
+Het is tijd om je slaapmonitor nog beter te maken! 
 
-When you press both the A and B buttons together, the micro:bit will show how much it moved and then start counting from zero again. 
+Wanneer je de A- en B-knop tegelijk indrukt, laat de micro:bit zien hoeveel bewegingen er zijn geregistreerd en begint vervolgens weer vanaf nul te tellen. 
 
-You'll also make a special sleepy animation to show that your sleep tracker is all set and ready to help you sleep!
+Je gaat ook een speciale slaapanimatie maken om te laten zien dat je slaapmonitor helemaal klaar is om je te helpen slapen!
 
 </div>
 <div>
 
-![Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z.](images/reset-test.gif)
+![Animatie waarbij de LED's ongeveer halverwege oplichten. Wanneer de A+B-knop wordt ingedrukt, scrolt het woord 'Bewegingen' over het scherm en wordt het getal 6 weergegeven. Er wordt dan twee keer een korte animatie herhaald, waarin een kleine z uitgroeit tot een grote Z.](images/reset-test.gif)
 
 </div>
 </div>
 
-The micro:bit has two buttons, the `A` button and the `B` button.
+De micro:bit heeft twee knoppen, de `A` knop en de `B` knop.
 
-You can program something to happen when only `A` is pressed, only `B` is pressed, or when `A+B` are pressed together.
+Je kunt iets programmeren als alleen `A` wordt ingedrukt, alleen `B` wordt ingedrukt, of wanneer `A+B` samen worden ingedrukt.
 
-### Show the total movements
+### Toon het totaal aantal bewegingen
 
 --- task ---
 
-From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block.
+Sleep vanuit het menu `Invoer`{:class='microbitinput'} een `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok.
 
-Place it in the code editor panel.
+Plaats het in het bewerkingspaneel.
 
-<img src="images/on-button-location.png" alt="The Input menu with the 'on button' block highlighted." width="350" />
+<img src="images/on-button-location.png" alt="Het invoermenu met het 'wanneer knop wordt ingedrukt' blok gemarkeerd." width="350" />
 
-Use the drop-down menu to change the button to `A+B`{:class='microbitinput'}.
+Gebruik het vervolgkeuzemenu om de knop te wijzigen in `A+B`{:class='microbitinput'}.
 
 --- /task ---
 
-Before the micro:bit displays the total number of recorded sleep movements, you will need to clear the screen.
+Voordat de micro:bit het totaal aantal geregistreerde slaapbewegingen weergeeft, moet je het scherm wissen.
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `clear screen`{:class='microbitbasic'} block and place it inside the `on button`{:class='microbitinput'} block.
+In het `Basis`{:class="microbitbasic"} menu, sleep het blok `Wis scherm`{:class="microbitbasic"} in het `wanneer knop wordt ingedrukt`{:class="microbitlogic"} blok.
 
-The clear screen block turns off all the LEDs.
+Het Wis scherm blok schakelt alle LED's uit.
 
 --- /task ---
 
-Next, you will want to see the total number of sleep movements the micro:bit has recorded.
+Vervolgens wil je het totale aantal slaapbewegingen zien dat de micro:bit heeft geregistreerd.
 
-Before you display the number, it is a good idea to show what the number is.
+Voordat je het nummer weergeeft, is het een goed idee om te laten zien wat het getal weergeeft.
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `show string`{:class='microbitbasic'} block.
+Sleep vanuit het menu `Basis`{:class="microbitbasic"} het blok `toon tekens`{:class="microbitbasic"}.
 
-Place it inside the `on button`{:class='microbitinput'} block, under the `clear screen`{:class='microbitbasic'} block.
+Plaats het in het `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok, onder het `wis scherm`{:class='microbitbasic'} blok.
 
-Replace the word `Hello` with `Movements`.
+Vervang het woord `Hello` door `Bewegingen`.
 
 --- /task ---
 
-Now it is time to display the total number of sleep movements recorded.
+Nu is het tijd om het totale aantal geregistreerde slaapbewegingen weer te geven.
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `show number`{:class='microbitbasic'} block.
+Sleep vanuit het menu `Basis`{:class="microbitbasic"} het blok `toon nummer`{:class="microbitbasic"}.
 
-Place it inside the `on button`{:class='microbitinput'} block, under the `show string`{:class='microbitbasic'} block.
+Plaats het in het `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok, onder het `toon tekens`{:class='microbitbasic'} blok.
 
 --- /task ---
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag out the `movements`{:class='microbitvariables'} block.
+Vanuit het menu `Variabelen`{:class='microbitvariables'} sleep je het blokje `bewegingen`{:class='microbitvariables'}.
 
-Place it over the `0` in the `show number`{:class='microbitbasic'} block.
+Plaats het op de `0` in blok `toon nummer`{:class='microbitbasic'}.
 
 ```microbit
 input.onButtonPressed(Button.AB, function () {
@@ -85,19 +85,19 @@ input.onButtonPressed(Button.AB, function () {
 
 --- /task ---
 
-You now need to reset the movements variable back to 0, ready to track again.
+Je moet nu de bewegingsvariabele opnieuw instellen op 0, zodat je opnieuw bewegingen kunt registeren.
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag a `set`{:class='microbitvariables'} block.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `stel in op`{:class="microbitvariables"}.
 
-Place it under the `show number`{:class='microbitbasic'} block.
+Plaats het onder het blok `toon nummer`{:class='microbitbasic'}.
 
 --- /task ---
 
 --- task ---
 
-Use the drop-down menu to select `movements`{:class='microbitvariables'} as the variable to set.
+Gebruik het vervolgkeuzemenu om `bewegingen`{:class='microbitvariables'} te selecteren als de in te stellen variabele.
 
 ```microbit
 let movements = 0
@@ -111,13 +111,13 @@ input.onButtonPressed(Button.AB, function () {
 
 --- /task ---
 
-To show the sleep tracker is ready, you can show an animation. As this is a sleep tracker, you will create an animation of some Z's. 😴
+Om te laten zien dat de slaapmonitor klaar is, kun je een animatie laten zien. Aangezien dit een slaapmonitor is, maak je een animatie van enkele Z's. 😴
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag **three** `show leds`{:class='microbitbasic'} blocks and place them under the `set movements`{:class='microbitvariables'} block.
+Van het `Basis`{:class='microbitbasic'} menu, sleep **drie** `toon lichtjes`{:class='microbitbasic'} blokken en plaats ze onder het `stel bewegingen in op`{:class='microbitvariables'} blok.
 
-Click the squares on each one to create these patterns:
+Klik op de vierkantjes om deze patronen te maken:
 
 ```microbit
 let movements = 0
@@ -150,38 +150,38 @@ input.onButtonPressed(Button.AB, function () {
 })
 ```
 
-**Tip:** If you hold down the mouse, you can select multiple LEDs as you move.
+**Tip:** Als je de muis ingedrukt houdt kun je meerdere LED's selecteren.
 
 --- /task ---
 
-To create an animation, you can put the 'show leds' blocks in a loop.
+Om een animatie te maken, kun je de 'toon lichtjes' blokken in een lus plaatsen.
 
 --- task ---
 
-From the `Loops`{:class='microbitloops'} menu, drag a `repeat`{:class='microbitloops'} block and place it around the three `show leds`{:class='microbitbasic'} blocks.
+Sleep vanuit het menu `Lussen`{:class='microbitloops'} een blok met `4 keer herhalen doe`{:class='microbitloops'} en plaats het rond de drie `toon lichtjes`{:class='microbitbasic'} blokken.
 
-Change the number of repeats from `4` to `2`.
+Wijzig het aantal herhalingen van `4` in `2`.
 
-<img src="images/repeat-around-leds.gif" alt="Animation showing the 'repeat' block taken from the Loops menu. The 'repeat' block is then held over the top 'show leds' block and released, making the three 'show leds' blocks snap inside it. The number is then changed from a '4' to a '2'." width="350" />
+<img src="images/repeat-around-leds.gif" alt="Animatie van het 'keer herhalen'-blok uit het Lussen-menu. Het 'keer herhalen'-blok wordt vervolgens over het bovenste 'toon lichtjes' blok gehouden en losgelaten, waardoor de drie 'toon lichtjes'-blokken erin klikken. Het getal wordt dan veranderd van een '4' naar een '2'." width="350" />
 
 --- /task ---
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+Als je een wijziging aanbrengt in een codeblok in het bewerkingspaneel zal de simulator opnieuw starten.
 
 --- task ---
 
-**Test** When the program runs, move over the left and right of the micro:bit to record some movements.
+**Test** Wanneer het programma draait, beweeg je over de linker- en rechterkant van de micro:bit om enkele bewegingen vast te leggen.
 
-Next, press the `A+B` button.
+Druk vervolgens op de knop `A+B`.
 
-The word 'Movements' will scroll across the display.
+Het woord 'Bewegingen' scrollt over het display.
 
-The number of movements will then be shown.
+Vervolgens wordt het aantal bewegingen weergegeven.
 
-The zZ animation will then loop twice.
+De zZ-animatie wordt dan twee keer herhaald.
 
-<img src="images/reset-test.gif" alt="Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z." width="350" />
+<img src="images/reset-test.gif" alt="Animatie waarbij de LED's ongeveer halverwege oplichten. Wanneer de A+B-knop wordt ingedrukt, scrolt het woord 'Bewegingen' over het scherm en wordt het getal 6 weergegeven. Er wordt dan twee keer een korte animatie herhaald, waarin een kleine z uitgroeit tot een grote Z." width="350" />
 
 --- /task ---
 
-Next, you are going to use the `A` button and `B` button to change the display brightness!
+Vervolgens ga je de `A` knop en `B` knop gebruiken om de helderheid van het display te wijzigen!
