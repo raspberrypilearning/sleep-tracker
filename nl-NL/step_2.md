@@ -1,91 +1,91 @@
-## Track and display
+## Bijhouden en weergeven
 
-### Open MakeCode
+### MakeCode openen
 
-To start creating your micro:bit project, you need to open the MakeCode editor.
+Om je micro:bit-project te maken, moet je eerst de MakeCode-editor openen.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
+Open de MakeCode editor in [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
 
 --- collapse ---
 
 ---
-title: Offline version of the editor
+title: Offline versie van de editor
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
+Er is ook een [downloadbare versie van de MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
 
 --- /collapse ---
 
 --- /task ---
 
-### First micro:bit project?
+### Is dit je eerste micro:bit-project?
 
 [[[makecode-tour]]]
 
-### Create your project
+### Maak je project
 
-Once the editor is open, you will need to create a new project and give your project a name.
+Zodra de editor is geopend, moet je een nieuw project aanmaken en je project een naam geven.
 
 --- task ---
 
-Click on the **New Project** button.
+Klik op de knop **Nieuw project**.
 
-![The new project button in MakeCode.](images/new-project-button.png)
+![De knop Nieuw project in MakeCode.](images/new-project-button.png)
 
 --- /task ---
 
 --- task ---
 
-Give your new project the name `Sleep tracker` and click **Create**.
+Geef je nieuwe project de naam `Slaap monitor` en klik op **Aanmaken**.
 
-![The name 'Sleep tracker' written in the New Project dialogue box.](images/sleep-tracker.png)
+![De naam 'Slaap monitor' in het dialoogvenster 'Een project maken'.](images/sleep-tracker.png)
 
-**Tip:** To make it easier to find your project later, give it a helpful name that relates to the activity you’re creating.
+**Tip:** Om het makkelijker te maken om je project later terug te vinden, geef je het een logische naam die gerelateerd is aan de activiteit die je aan doen bent.
 
 --- /task ---
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will program the micro:bit to sense if it moves and make the LEDs light if it does.
+In deze stap programmeer je de micro:bit om te detecteren of hij beweegt en de LED's te laten oplichten als dat gebeurt.
 </div>
 <div>
 
-![Animation showing the LEDs turning on as the micro:bit simulator is tilted left and right.](images/tilt-test.gif)
+![Animatie waarin de LED's worden ingeschakeld als de micro:bit-simulator naar links en rechts wordt gekanteld.](images/tilt-test.gif)
 
 </div>
 </div>
 
-The micro:bit uses a sensor called an accelerometer to sense when it has been rolled.
+De micro:bit gebruikt een sensor genaamd een versnellingsmeter om te zien wanneer deze is gekanteld.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 
-<span style="color: #0faeb0">Accelerometers</span> are used in many devices. They can tell if we're moving, like when you run or jump, and they help our tablets and smartphones know which way up they're being held. These clever sensors make games more fun, letting you control how a character moves by tilting a controller.
+<span style="color: #0faeb0">Versnellingsmeters</span> worden op veel apparaten gebruikt. Ze kunnen waarnemen of we bewegen, zoals wanneer je rent of springt, en ze helpen onze tablets en smartphones te bepalen op welke manier ze worden vastgehouden. Deze slimme sensoren maken games leuker, omdat je kunt bepalen hoe een personage beweegt door een controller te kantelen.
 
 </p>
 
-### Roll
+### Draaien
 
-You need to check **if** the micro:bit has been rolled right **or** left.
+Je moet zien **of** de micro:bit naar rechts **of** naar links is gedraaid.
 
-If this happens, you will assume there has been movement during sleep.
+Als dit gebeurt, ga je ervan uit dat er beweging is geweest tijdens de slaap.
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block and place it inside the `forever`{:class='microbitbasic'} block.
+Vanuit het `Logisch`{:class="microbitlogic"} menu, sleep je een `als`{:class="microbitlogic"} blok en plaats het in het `de hele tijd`{:class="microbitbasic"} blok.
 
-<img src="images/if-block-location.png" alt="The Logic menu with the 'if...then' block highlighted." width="350" />
+<img src="images/if-block-location.png" alt="Het geopende Logisch blokmenu met het 'als....anders' blok gemarkeerd." width="350" />
 
 --- /task ---
 
 --- task ---
 
-Open the `Logic`{:class='microbitlogic'} menu again and take an `or`{:class='microbitlogic'} block.
+Open het `Logisch`{:class='microbitlogic'} menu opnieuw en pak een `of`{:class='microbitlogic'} blok.
 
-<img src="images/or-block-location.png" alt="The bottom part of the Logic menu, showing the location of the 'or' block in the 'Boolean' section." width="150" />
+<img src="images/or-block-location.png" alt="Het onderste deel van het Logisch-menu, met de locatie van het 'of'-blok in de 'Booleaanse waarde'-sectie." width="150" />
 
-Place it in the `true` section of the `if`{:class='microbitlogic'} block.
+Plaats het in het `waar` gedeelte van het `als`{:class='microbitlogic'} blok.
 
 ```microbit
 basic.forever(function () {
@@ -97,15 +97,15 @@ basic.forever(function () {
 
 --- /task ---
 
-Now you need to add the **two** conditions either side of the **or**.
+Nu moet je de **twee** voorwaarden aan weerszijden van de **of** toevoegen.
 
-This will mean that the code inside your `if`{:class='microbitlogic'} block will run if **either** condition is met.
+Dit betekent dat de code in je `als`{:class='microbitlogic'} blok wordt uitgevoerd als **aan een van beide** voorwaarden wordt voldaan.
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag the `0 < 0`{:class='microbitlogic'} comparison block.
+Sleep vanuit het menu `Logisch`{:class='microbitlogic'} het vergelijkingsblok `0 < 0`{:class='microbitlogic'}.
 
-Place it on the left side of the `or`{:class='microbitlogic'} block.
+Plaats het aan de linkerkant van het `of`{:class='microbitlogic'} blok.
 
 ```microbit
 basic.forever(function () {
@@ -119,27 +119,27 @@ basic.forever(function () {
 
 --- task ---
 
-From the `Input...more`{:class='microbitinput'} menu, drag a `rotation`{:class='microbitinput'} block.
+Sleep vanuit het menu `Invoer...meer`{:class='microbitinput'} een `rotatie`{:class='microbitinput'} blok.
 
-<img src="images/rotation-location.png" alt="The 'Input...more' menu with the 'rotation' block highlighted." width="350" />
+<img src="images/rotation-location.png" alt="Het menu 'Invoer...meer' met het blok 'rotatie' gemarkeerd." width="350" />
 
-Place it inside the first `0` in the `0 < 0`{:class='microbitlogic'} comparison block.
-
---- /task ---
-
---- task ---
-
-Use the drop-down menu to change `pitch`{:class='microbitinput'} to `roll`{:class='microbitinput'}.
+Plaats het in de eerste `0` van het `0 < 0`{:class='microbitlogic'} vergelijkingsblok.
 
 --- /task ---
 
 --- task ---
 
-Change the `0` to `-10`. This will check if the micro:bit is rolled 10° to the **left**.
+Gebruik het vervolgkeuzemenu om `kantelen`{:class='microbitinput'} te wijzigen in `draaien`{:class='microbitinput'}.
 
 --- /task ---
 
-Your code should look like this:
+--- task ---
+
+Verander de `0` naar `-10`. Hiermee wordt gecontroleerd of de micro:bit 10° naar **links** is gedraaid.
+
+--- /task ---
+
+Je code zou er als volgt uit moeten zien:
 
 ```microbit
 basic.forever(function () {
@@ -151,82 +151,82 @@ basic.forever(function () {
 
 --- task ---
 
-**Debug**
+**Fouten oplossen (Debuggen)**
 
-Check you have:
+Controleer of je:
 
-+ Clicked on the Input **more** menu, not the normal Input menu
-+ Changed the second value from `0` to **`-10`**, not `10`
-
---- /task ---
-
---- task ---
-
-Right-click on the `<`{:class='microbitlogic'} comparison block and select **Duplicate**.
-
---- /task ---
-
-You will now have two comparison blocks.
-
---- task ---
-
-Drag the duplicated comparison block to the right of the `or`{:class='microbitlogic'} block.
++ Geklikt hebt op het menu Invoer **meer**, niet op het normale menu Invoer
++ De tweede waarde hebt veranderd van `0` naar **`-10`**, niet `10`
 
 --- /task ---
 
 --- task ---
 
-Use the drop-down menu to change the less than symbol (`<`{:class='microbitlogic'}) to a greater than symbol (`>`{:class='microbitlogic'}).
+Klik met de rechtermuisknop op het vergelijkingsblok `<`{:class='microbitlogic'} en selecteer **Dupliceren**.
+
+--- /task ---
+
+Je hebt nu twee vergelijkingsblokken.
+
+--- task ---
+
+Sleep het gedupliceerde vergelijkingsblok naar de rechterkant van het `of`{:class='microbitlogic'} blok.
 
 --- /task ---
 
 --- task ---
 
-Change the `-10` to `10`. This will check if the micro:bit is rolled 10° to the **right**.
-
-![A demo of duplicating the comparison block and making the changes.](images/duplicting-rotation-comparison.gif)
-
---- /task ---
-
-### Keep a count
-
-When either condition is met, the micro:bit will have been rolled left or right.
-
-You need to:
-+ Keep a count of sleep movements
-+ Light the LEDs
-
-To keep a count of sleep movements, you will use a variable.
-
---- task ---
-
-Open the `Variables`{:class='microbitvariables'} menu and click **Make a Variable**.
-
-<img src="images/variable-menu.png" alt="The Variables block menu with the 'Make a variable' button highlighted." width="350" />
+Gebruik het vervolgkeuzemenu om het kleiner dan-symbool (`<`{:class='microbitlogic'}) te wijzigen in een groter dan-symbool (`>`{:class='microbitlogic'}).
 
 --- /task ---
 
 --- task ---
 
-Name your new variable `movements`.
+Verander de `-10` naar `10`. Hiermee wordt gecontroleerd of de micro:bit 10° naar **rechts** is gedraaid.
 
-<img src="images/movements-variable-name.png" alt="The 'New variable name' window, with the name 'movements' written in the box." width="400" />
-
---- /task ---
-
-You will increase the `movements` variable by `1` each time a movement is detected.
-
---- task ---
-
-From the `Variables`{:class='microbitvariables'} menu, get the `change movements`{:class='microbitvariables'} block.
-
-<img src="images/change-movements.png" alt="The Variables menu with the 'change movements by 1' block highlighted." width="350" />
+![Een demo van het dupliceren van het vergelijkingsblok en het maken van de wijzigingen.](images/duplicting-rotation-comparison.gif)
 
 --- /task ---
 
+### Houd het aantal bij
+
+Wanneer aan een van beide voorwaarden is voldaan, is de micro:bit naar links of rechts gedraaid.
+
+Je moet:
++ Het aantal slaapbewegingen bijhouden
++ De LED's verlichten
+
+Om het aantal slaapbewegingen bij te houden, gebruik je een variabele.
+
 --- task ---
 
-Place it inside the `if`{:class='microbitlogic'} block.
+Open het `Variabelen`{:class="microbitvariables"} menu en klik op **Maak een variabele**.
+
+<img src="images/variable-menu.png" alt="Het menu Variabelen met de knop 'Maak een variabele' gemarkeerd." width="350" />
+
+--- /task ---
+
+--- task ---
+
+Noem je nieuwe variabele `bewegingen`.
+
+<img src="images/movements-variable-name.png" alt="Het dialoogvenster 'Voer een nieuwe variabelenaam in', met de naam 'bewegingen' in het vak." width="400" />
+
+--- /task ---
+
+Elke keer dat er een beweging wordt gedetecteerd, verhoog je de waarde van de variabele `bewegingen` met `1`.
+
+--- task ---
+
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `verander bewegingen met`{:class="microbitvariables"}.
+
+<img src="images/change-movements.png" alt="Het Variabelenblok menu met het blok 'verander bewegingen met 1' blok gemarkeerd." width="350" />
+
+--- /task ---
+
+--- task ---
+
+Plaats het in het `als`{:class="microbitlogic"} blok.
 
 ```microbit
 let movements = 0
@@ -239,41 +239,41 @@ basic.forever(function () {
 
 --- /task ---
 
-### Light the LEDS
+### De LED's verlichten
 
-You can use the LEDs on the micro:bit to show that there has been a movement.
+Je kunt de LED's op de micro:bit gebruiken om te laten zien dat er een beweging heeft plaatsgevonden.
 
-This will help you test your project.
+Dit helpt je om je project te testen.
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `show icon`{:class='microbitbasic'} block.
+Sleep vanuit het menu `Basis`{:class="microbitbasic"} het blok `toon pictogram`{:class="microbitbasic"}.
 
-<img src="images/show-icon-location.png" alt="The Basic menu with the 'show icon' block highlighted." width="350" />
+<img src="images/show-icon-location.png" alt="Het basis blok menu met het 'toon pictogram' blok gemarkeerd." width="350" />
 
 --- /task ---
 
 --- task ---
 
-Place it under the `change movements`{:class='microbitvariables'} block.
+Plaats het onder het blok `verander bewegingen met`{:class='microbitvariables'}.
 
 --- /task ---
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `pause`{:class='microbitbasic'} block.
+Sleep vanuit het menu `Basis`{:class="microbitbasic"} het blok `pauzeer (ms)`{:class="microbitbasic"}.
 
-Place it under the `show icon`{:class='microbitbasic'} block.
+Plaats het onder het `toon pictogram`{:class='microbitbasic'} blok.
 
 --- /task ---
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `clear screen`{:class='microbitbasic'} block.
+Sleep vanuit het menu `Basis`{:class="microbitbasic"} het blok `wis scherm`{:class="microbitbasic"}.
 
-Place it under the `pause`{:class='microbitbasic'} block.
+Plaats het onder het blok `pauzeer (ms)`{:class='microbitbasic'}.
 
-Your code should look like this:
+Je code zou er als volgt uit moeten zien:
 
 ```microbit
 let movements = 0
@@ -291,18 +291,18 @@ basic.forever(function () {
 
 --- task ---
 
-**Test your program**
+**Test je programma**
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+Als je een wijziging aanbrengt in een codeblok in het bewerkingspaneel zal de simulator opnieuw starten.
 
-+ Move over the right or left of the micro:bit
++ Beweeg over de rechter- of linkerkant van de micro:bit
 
-The LEDs will light up and show a heart icon.
+De LED's zullen oplichten en een hartpictogram tonen.
 
-+ Move away from the micro:bit
++ Stap eventjes weg van de micro:bit
 
-The LEDs will continue to flash until the micro:bit is in a level position.
+De LED's blijven knipperen totdat de micro:bit weer waterpas staat.
 
 --- /task ---
 
-Next, you are going to set different resting positions, because it is rare that someone will sleep in a perfectly level position all night!
+Vervolgens ga je verschillende rustposities instellen, omdat het zelden voorkomt dat iemand de hele nacht in een perfect vlakke positie slaapt!
