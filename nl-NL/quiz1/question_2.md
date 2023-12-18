@@ -2,12 +2,12 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Vraag 2 van 3
 ---
 
-You checked if the micro:bit had been moved.
+Je hebt gecontroleerd of de micro:bit was verplaatst.
 
-Which block did you use to do this?
+Welk blok heb je hiervoor gebruikt?
 
 --- choices ---
 
@@ -17,17 +17,17 @@ Which block did you use to do this?
 
   --- feedback ---
 
-  That's right! The accelerometer can detect if the micro:bit has been rolled left or right.
+  Dat klopt! De accelerometer kan detecteren of de micro:bit naar links of rechts is gedraaid.
 
   --- /feedback ---
 
 - ( )
 
-`set movements`{:class='microbitvariables'}
+`stel bewegingen in op`{:class='microbitvariables'}
 
   --- feedback ---
 
-  This is a block from the Variables menu. You used the movements variable to count the number of times the accelerometer detected rolls left or right.
+  Dit is een blok uit het menu Variabelen. Je hebt de bewegingsvariabele gebruikt om het aantal keren te tellen dat de versnellingsmeter naar links of rechts is gedraaid.
 
   --- /feedback ---
 
@@ -37,7 +37,7 @@ Which block did you use to do this?
 
   --- feedback ---
 
-  This is a block from the Basic menu and is used to add a time delay.
+  Dit is een blok uit het Basismenu en wordt gebruikt om een vertraging toe te voegen.
 
   --- /feedback ---
 
