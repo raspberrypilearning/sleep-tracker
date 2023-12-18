@@ -2,42 +2,42 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Vraag 3 van 3
 ---
 
-Which one of these can you use to tidy your code?
+Welke van deze kan je gebruiken om je code op te schonen?
 
 --- choices ---
 
 - (x)
 
-Functions
+Functies
 
   --- feedback ---
 
-  That's right! Functions contain code that you can call to be run from anywhere in your program. This stops you having to repeat blocks of code all over your program.
+  Dat klopt! Functies bevatten code die je kunt aanroepen om overal in je programma uit te voeren. Dit voorkomt dat je blokken code overal in je programma moet herhalen.
 
   --- /feedback ---
 
 - ( )
 
-Variables
+Variabelen
 
   --- feedback ---
 
-  A variable is a place where you can store and retrieve data.
+  Een variabele is een plek waar je gegevens kunt opslaan en ophalen.
 
   --- /feedback ---
 
 - ( )
 
-If ... then
+Als ... dan
 
   --- feedback ---
 
-  The code inside this block will run **if** the condition is true.
+  De code in dit blok wordt uitgevoerd **als** de voorwaarde waar is.
 
-  You can use these blocks to compare variables to values or variables to variables.
+  Je kunt deze blokken gebruiken om variabelen te vergelijken met waarden of variabelen met variabelen.
 
   --- /feedback ---
 
