@@ -185,7 +185,7 @@ Verander de tweede `0` in `10`.
 
 Hier is een animatie die de bovenstaande stappen laat zien:
 
-![Animatie met het 'als' blok dat uit het Logisch menu wordt gehaald en over het 'stel helderheid in op'-blok wordt gehouden. Het wordt losgelaten, waardoor het blok 'stel helderheid in op' erin klikt. A '0  mark=](images/if-around-set-brightness.gif) 0' blok wordt vervolgens uit het Logisch menu gehaald en geplaatst in de eerste '0' van het '0 > 0' blok. Een 'helderheid' blok wordt vervolgens gehaald van het 'Lichtjes... meer' menu en geplaatst in het eerste '0' van het '0 > 0' blok. De tweede '0' wordt gewijzigd in '10'." width="350"/>
+<img src="images/if-around-set-brightness.gif" alt="Animatie met het 'als' blok dat uit het Logisch menu wordt gehaald en over het 'stel helderheid in op'-blok wordt gehouden. Het wordt losgelaten, waardoor het blok 'stel helderheid in op' erin klikt. Een '0 > 0' blok wordt vervolgens uit het Logisch menu gehaald en geplaatst in de eerste '0' van het '0 > 0' blok. Een 'helderheid' blok wordt vervolgens gehaald van het 'Lichtjes... meer' menu en geplaatst in het eerste '0' van het '0 > 0' blok. De tweede '0' wordt gewijzigd in '10'." width="350"/>
 
 Je code zou er als volgt uit moeten zien:
 
