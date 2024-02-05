@@ -40,7 +40,7 @@ Als je code opnieuw moet gebruiken, is het soms beter om deze in een functie te 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 
-Een <span style="color: #0faeb0">-functie</span> is een groep blokken die je kunt maken en een naam kunt geven. Je kunt deze blokken uitvoeren door de naam van de functie 'aan te roepen'. Een ander woord voor een functie is een <span style="color: #0faeb0">subprogramma</span>, omdat het kan worden uitgevoerd vanuit het hoofdprogramma.
+Een <span style="color: #0faeb0">functie</span> is een groep blokken die je kunt maken en een naam kunt geven. Je kunt deze blokken uitvoeren door de naam van de functie 'aan te roepen'. Een ander woord voor een functie is een <span style="color: #0faeb0">subprogramma</span>, omdat het kan worden uitgevoerd vanuit het hoofdprogramma.
 </p>
 
 --- task ---
