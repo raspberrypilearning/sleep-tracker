@@ -3,8 +3,8 @@ title: Slaap monitor
 hero_image: images/banner.png
 description: Monitor je slaap om te zien hoe uitgerust je bent
 version: 4
-listed: false
-copyedit: false
+listed: true
+copyedit: true
 last_tested: '2023-08-18'
 steps:
   - 
