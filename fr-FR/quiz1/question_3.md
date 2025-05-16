@@ -2,20 +2,20 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Question 3 sur 3
 ---
 
-Which one of these can you use to tidy your code?
+Lesquels de ces éléments peux-tu utiliser pour organiser ton code ?
 
 --- choices ---
 
 - (x)
 
-Functions
+Fonctions
 
   --- feedback ---
 
-  That's right! Functions contain code that you can call to be run from anywhere in your program. This stops you having to repeat blocks of code all over your program.
+  C'est exact ! Les fonctions contiennent du code que tu peux appeler pour être exécuté à partir de n'importe où dans ton programme. Cela t'évite d’avoir à répéter des blocs de code dans tout ton programme.
 
   --- /feedback ---
 
@@ -25,19 +25,19 @@ Variables
 
   --- feedback ---
 
-  A variable is a place where you can store and retrieve data.
+  Une variable est un endroit où tu peux stocker et récupérer des données.
 
   --- /feedback ---
 
 - ( )
 
-If ... then
+Si ... alors
 
   --- feedback ---
 
-  The code inside this block will run **if** the condition is true.
+  Le code à l'intérieur de ce bloc s'exécutera **si** la condition est vraie.
 
-  You can use these blocks to compare variables to values or variables to variables.
+  Tu peux utiliser ces blocs pour comparer des variables à des valeurs ou des variables à des variables.
 
   --- /feedback ---
 
