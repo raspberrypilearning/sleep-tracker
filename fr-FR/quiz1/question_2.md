@@ -2,12 +2,12 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Question 2 sur 3
 ---
 
-You checked if the micro:bit had been moved.
+Tu as vérifié si le micro:bit avait été déplacé.
 
-Which block did you use to do this?
+Quel bloc as-tu utilisé pour faire ça ?
 
 --- choices ---
 
@@ -17,17 +17,17 @@ Which block did you use to do this?
 
   --- feedback ---
 
-  That's right! The accelerometer can detect if the micro:bit has been rolled left or right.
+  C'est exact ! L'accéléromètre peut détecter si le micro:bit a été tourné vers la gauche ou vers la droite.
 
   --- /feedback ---
 
 - ( )
 
-`set movements`{:class='microbitvariables'}
+`définir mouvements`{:class='microbitvariables'}
 
   --- feedback ---
 
-  This is a block from the Variables menu. You used the movements variable to count the number of times the accelerometer detected rolls left or right.
+  Il s'agit d'un bloc du menu Variables. Tu as utilisé la variable mouvements pour compter le nombre de fois où l'accéléromètre a détecté des rotations vers la gauche ou vers la droite.
 
   --- /feedback ---
 
@@ -37,7 +37,7 @@ Which block did you use to do this?
 
   --- feedback ---
 
-  This is a block from the Basic menu and is used to add a time delay.
+  Il s'agit d'un bloc du menu de base et est utilisé pour ajouter un délai.
 
   --- /feedback ---
 
