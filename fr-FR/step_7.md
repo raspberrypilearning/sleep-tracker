@@ -1,98 +1,98 @@
-## 1,2,3, sleep!
+## 1,2,3, dodo !
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-Counting is sometimes used as a way to get to sleep.
+Le comptage est parfois utilisé comme moyen de s’endormir.
 
-In this step, you will display a sequence of numbers before the zZs animation when the program starts.
+Dans cette étape, tu afficheras une séquence de nombres avant l'animation zZ au démarrage du programme.
 
 </div>
 </div>
 
-You can create a timer that counts from 1 to 3 using a `for`{:class='microbitloops'} loop.
+Tu peux créer un minuteur qui compte de 1 à 3 en utilisant une boucle `pour`{:class='microbitloops'}.
 
 --- task ---
 
-From the `Loops`{:class='microbitloops'} block menu, drag a `for index`{:class='microbitloops'} block.
+Dans le menu des blocs `Boucles`{:class='microbitloops'}, fais glisser un bloc `pour index`{:class='microbitloops'}.
 
-Place it inside the `function zZ`{:class='microbitfunctions'} block, above the `repeat`{:class='microbitloops'} block.
+Place-le à l'intérieur du bloc `fonction zZ`{:class='microbitfunctions'}, au-dessus du bloc `répéter`{:class='microbitloops'}.
 
-Change the `4` to `2`.
+Remplace le `4` par `2`.
 
 --- /task ---
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} block menu, drag a `show number`{:class='microbitbasic'} block.
+Dans le menu des blocs `Base`{:class='microbitbasic'}, fais glisser un bloc `montrer nombre`{:class='microbitbasic'}.
 
-Place it inside the `for index`{:class='microbitloops'} block.
-
---- /task ---
-
---- task ---
-
-From the `Basic`{:class='microbitbasic'} block menu, drag a `pause`{:class='microbitbasic'} block.
-
-Place it inside the `for index`{:class='microbitloops'} block, under the `show number`{:class='microbitbasic'} block.
-
-Change the `100` to `1 second`.
-
---- /task ---
-
-When you added the `for index`{:class='microbitloops'} block to your Workspace, the `index`{:class='microbitvariables'} variable was created.
-
-The `index`{:class='microbitvariables'} variable takes on each value from `0` to `2` (the end number in our example) and counts up by one each time.
-
-Rename the `index`{:class='microbitvariables'} variable `second` because your timer will increase each second.
-
---- task ---
-
-Click the arrow to the right of the `index`{:class='microbitvariables'} variable and select `Rename variable`.
-
-Replace the text `index` with `second` and click `Ok`.
+Place-le à l'intérieur du bloc `pour index`{:class='microbitloops'}.
 
 --- /task ---
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} blocks menu, drag a `second`{:class='microbitvariables'} variable.
+Dans le menu des blocs `Base`{:class='microbitbasic'}, fais glisser un bloc `pause`{:class='microbitbasic'}.
 
-Place it in the `0` of the `show number`{:class='microbitbasic'} block.
+Place-le à l'intérieur du bloc `pour index`{:class='microbitloops'}, sous le bloc `montrer nombre`{:class='microbitbasic'}.
+
+Modifie le `100` par `1 seconde`.
+
+--- /task ---
+
+Lorsque tu as ajouté le bloc `pour index`{:class='microbitloops'} à ton espace de travail, la variable `index`{:class='microbitvariables'} a été créée.
+
+La variable `index`{:class='microbitvariables'} prend sur chaque valeur de `0` à `2` (le nombre final dans notre exemple) et compte un par un.
+
+Renomme la variable `index`{:class='microbitvariables'} `seconde` car ton minuteur augmentera chaque seconde.
+
+--- task ---
+
+Clique sur la flèche à droite de la variable `index`{:class='microbitvariables'} et sélectionne `Renommer la variable`.
+
+Remplace le texte `index` par `seconde` et clique sur `Ok`.
 
 --- /task ---
 
 --- task ---
 
-**Test your program**
+Dans le menu des blocs `Variables`{:class='microbitvariables'}, fais glisser une variable `seconde`{:class='microbitvariables'}.
 
-+ The LEDs will display `0` then `1` then `2` with a one second pause between each.
+Place-le dans le `0` du bloc `montrer nombre`{:class='microbitbasic'}.
 
 --- /task ---
-
-It is more natural to see '1, 2, 3' than '0, 1, 2'.
-
-We can do this with some simple maths.
 
 --- task ---
 
-From the `Math`{:class='microbitmath'} blocks menu, drag a `+`{:class='microbitmath'} block.
+**Teste ton programme**
 
-Place it in the `show number`{:class='microbitbasic'} block, replacing the `second`{:class='microbitvariables'} variable.
++ Les LED afficheront `0` puis `1` puis `2` avec une pause d'une seconde entre chaque.
 
 --- /task ---
 
-The `second`{:class='microbitvariables'} variable will be pushed out, but you can still use it.
+Il est plus naturel de voir "1, 2, 3" que "0, 1, 2".
+
+Pour ce faire, il suffit d'effectuer quelques calculs simples.
 
 --- task ---
 
-Drag the `second`{:class='microbitvariables'} variable to the first `0` in the `+`{:class='microbitmath'} block.
+Dans le menu des blocs `Maths`{:class='microbitmath'}, fais glisser un bloc `+`{:class='microbitmath'}.
 
-Change the second `0` to `1`.
+Place-le dans le bloc `montrer nombre`{:class='microbitbasic'}, en remplaçant la variable `seconde`{:class='microbitvariables'}.
 
 --- /task ---
 
-Here are the blocks that have changed in this step:
+La variable `seconde`{:class='microbitvariables'} sera supprimée, mais tu peux toujours l'utiliser.
+
+--- task ---
+
+Fais glisser la variable `seconde`{:class='microbitvariables'} vers le premier `0` dans le bloc `+`{:class='microbitmath'}.
+
+Remplace le deuxième `0` par `1`.
+
+--- /task ---
+
+Voici les blocs qui ont changé à cette étape :
 
 ```microbit
 function zZ () {
@@ -128,20 +128,20 @@ function zZ () {
 
 --- task ---
 
-**Test your program**
+**Teste ton programme**
 
-+ The LEDs will now display `1` then `2` then `3` with a one second pause between each.
++ Les LED afficheront désormais `1` puis `2` puis `3` avec une pause d'une seconde entre chacune.
 
 --- /task ---
 
 --- task ---
 
-Download your program onto your micro:bit!
+Télécharge ton programme sur ton micro:bit !
 
 --- /task ---
 
 [[[download-to-microbit]]]
 
-Well done! You now have a fully working sleep tracker!
+Bien joué ! Tu as maintenant un tracker de sommeil entièrement fonctionnel !
 
-Next, it is time to check what you have learnt!
+Ensuite, il est temps de vérifier ce que tu as appris !
