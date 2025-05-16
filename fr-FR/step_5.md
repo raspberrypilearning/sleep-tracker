@@ -1,82 +1,82 @@
-## Change brightness
+## Modifier la luminosité
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-When it is late at night, the LEDs on your micro:bit might be too bright.
+Quand il est tard dans la nuit, les LED sur ton micro:bit peuvent être trop lumineuses.
 
-In this step, you will use the A button and B button to change the brightness of the micro:bit's LED display.
+Dans cette étape, tu utiliseras les boutons A et B pour modifier la luminosité de l'écran LED du micro:bit.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 
-To sleep better, try not to be around really <span style="color: #0faeb0">bright light</span> 2 hours before bedtime. If you can't sleep, make the lights less bright 2 hours before you want to sleep. And if you feel too sleepy in the mornings, go where the lights are bright to feel more awake.
+Pour mieux dormir, essaie de ne pas être exposé à une lumière <span style="color: #0faeb0">trop vive</span> 2 heures avant le coucher. Si tu n'arrives pas à dormir, diminue l'intensité des lumières 2 heures avant de vouloir dormir. Et si tu te sens trop endormi·e le matin, va là où les lumières sont lumineuses pour te sentir plus éveillé·e
 </p>
 
 </div>
 <div>
 
-![Animation showing that when the the A button is pressed, the LED display brightness decreases and when the B button is pressed, the LED display brightness increases.](images/brightness-change.gif)
+![Animation montrant que lorsque le bouton A est pressé, la luminosité de l'écran LED diminue et lorsque le bouton B est pressé, la luminosité de l'écran LED augmente.](images/brightness-change.gif)
 
 </div>
 </div>
 
-Because the A button is on the left, you will use it to turn the brightness down.
+Comme le bouton A est à gauche, tu l'utiliseras pour baisser la luminosité.
 
-### Brightness down
+### Réduire la luminosité
 
 --- task ---
 
-From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block.
+Dans le menu `Entrée`{:class='microbitinput'}, fais glisser un bloc `lorsque le bouton`{:class='microbitinput'}.
 
-Place it in the code editor panel.
+Place-le dans le panneau de l'éditeur de code.
 
-<img src="images/on-button-location.png" alt="The Input menu with the 'on button' block highlighted." width="350" />
+<img src="images/on-button-location.png" alt="Le menu Entrée avec le bloc &quot;lorsque le bouton&quot; en surbrillance." width="350" />
 
 --- /task ---
 
-Each time the A button is pressed, you will halve the brightness.
+Chaque fois que tu appuies sur le bouton A, tu réduis la luminosité de moitié.
 
 --- task ---
 
-From the `Led...more`{:class='microbitled'} menu, drag a `set brightness`{:class='microbitled'} block.
+Dans le menu `LED...plus`{:class='microbitled'}, fais glisser un bloc `spécifier la luminosité`{:class='microbitled'}.
 
-<img src="images/set-brightness-location.png" alt="The 'Led...more' menu with the 'set brightness' block highlighted." width="350" />
-
---- /task ---
-
---- task ---
-
-Place it inside the `on button`{:class='microbitinput'} block.
-
-**Debug:** Check you have clicked on the Led **more** menu, not the normal Led menu.
-
---- /task ---
-
-To halve the brightness, you will use a Math block.
-
---- task ---
-
-From the `Math`{:class='microbitmath'} menu, drag a `0 / 0`{:class='microbitmath'} divide block.
-
-Place it over the `255` value in the `set brightness`{:class='microbitled'} block.
+<img src="images/set-brightness-location.png" alt="Le menu &quot;LED...plus&quot; avec le bloc &quot;définir luminosité&quot; en surbrillance." width="350" />
 
 --- /task ---
 
 --- task ---
 
-From the `Led...more`{:class='microbitled'} menu, drag a `brightness`{:class='microbitled'} block.
+Place-le à l'intérieur du bloc `lorsque le bouton`{:class='microbitinput'}.
 
-Place it over the first `0` value in the `0 / 0`{:class='microbitmath'} block.
+**Débogage :** vérifie que tu as cliqué sur le menu LED **plus**, pas sur le menu LED normal.
+
+--- /task ---
+
+Pour diviser par deux la luminosité, tu utiliseras un bloc Math.
+
+--- task ---
+
+Dans le menu `Maths`{:class='microbitmath'}, fais glisser un bloc de division `0 / 0`{:class='microbitmath'}.
+
+Place-le sur la valeur `255` dans le bloc `spécifier la luminosité`{:class='microbitled'}.
 
 --- /task ---
 
 --- task ---
 
-Change the second `0` to a `2`.
+Dans le menu `LED...plus`{:class='microbitled'}, fais glisser un bloc `luminosité`{:class='microbitled'}.
 
-This will set the brightness to whatever value it currently is, divided by 2.
+Place-le sur le premier bloc `0` dans le bloc `0 / 0`{:class='microbitmath'}.
 
-Your code should look like this:
+--- /task ---
+
+--- task ---
+
+Remplace le deuxième `0` par `2`.
+
+Cela définira la luminosité sur la valeur actuelle, divisée par 2.
+
+Ton code devrait ressembler à ceci :
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -86,35 +86,35 @@ input.onButtonPressed(Button.A, function () {
 
 --- /task ---
 
-### Brightness up
+### Augmenter la luminosité
 
-Now, you will set up the B button to turn the brightness up.
+Maintenant, tu vas configurer le bouton B pour augmenter la luminosité.
 
 --- task ---
 
-Right-click on the entire `on button A`{:class='microbitinput'} block and click **Duplicate**.
+Fais un clic droit sur l'ensemble du bloc `lorsque le bouton A`{:class='microbitinput'} et clique sur **Reproduire**.
 
-There will now be two `on button A`{:class='microbitinput'} blocks in the code editor panel.
+Il y aura maintenant deux blocs `lorsque le bouton A`{:class='microbitinput'} dans le panneau de l'éditeur de code.
 
 --- /task ---
 
 --- task ---
 
-Click on the arrow next to `A`{:class='microbitinput'} on the duplicated block.
+Clique sur la flèche à côté de `A`{:class='microbitinput'} sur le bloc dupliqué.
 
-Choose `B`{:class='microbitinput'}.
+Choisis `B`{:class='microbitinput'}.
 
 --- /task ---
 
 --- task ---
 
-Click on the arrow next to `/`{:class='microbitmath'} on the duplicated block.
+Clique sur la flèche à côté de `/`{:class='microbitmath'} sur le bloc dupliqué.
 
-Choose `×`{:class='microbitmath'}.
+Choisis `×`{:class='microbitmath'}.
 
 --- /task ---
 
-You will now have these blocks for the A button and the B button:
+Tu auras maintenant ces blocs pour le bouton A et le bouton B :
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -127,67 +127,67 @@ input.onButtonPressed(Button.B, function () {
 
 --- task ---
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+Lorsque tu modifies un bloc de code dans le panneau de l'éditeur de code, le simulateur redémarrera.
 
-**Test your program**
+**Teste ton programme**
 
-+ Click the `A` button until the LEDs go out fully
++ Clique sur le bouton `A` jusqu'à ce que les LED s'éteignent complètement
 
-+ Click the `B` button and see what happens
++ Clique sur le bouton `B` et vois ce qui se passe
 
-If you have pressed the `A` button enough times, pressing the `B` button will not turn the LEDs back on.
+Si tu as appuyé suffisamment de fois sur le bouton `A`, appuyer sur le bouton `B` ne rallumera pas les LED.
 
-This is because the brightness value has reached `0`.
+C'est parce que la valeur de luminosité a atteint `0`.
 
-When you multiply `0` by `2` you get... `0`. You can press the `B` button as many times as you want, but you will keep setting the brightness to `0 × 2`, which is **always** `0`!
-
---- /task ---
-
-You need to stop the brightness value from being set to `0`.
-
-To do this, you will use a Logic block to halve the brightness value only **if** the brightness level is **more than 10**.
-
---- task ---
-
-From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block.
-
-Place it around the `set brightness`{:class='microbitled'} block in the `on button A`{:class='microbitinput'} block.
+Lorsque tu multiplies `0` par `2` tu obtiens... `0`. Tu peux appuyer sur le bouton `B` autant de fois que tu veux, mais tu continueras à régler la luminosité sur `0 × 2`, soit **toujours** `0` !
 
 --- /task ---
 
+Tu dois empêcher que la valeur de luminosité soit définie sur `0`.
+
+Pour cela, tu utiliseras un bloc logique pour réduire de moitié la valeur de luminosité seulement **si** le niveau de luminosité est **plus de 10**.
+
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag a `0 < 0`{:class='microbitlogic'} block
+Dans le menu `Logique`{:class='microbitlogic'}, fais glisser un bloc `si`{:class='microbitlogic'}.
 
-Place it over the `true`{:class='microbitlogic'} part.
+Place-le autour du bloc `spécifier la luminosité`{:class='microbitled'} dans le bloc `lorsque le bouton`{:class='microbitinput'}.
 
 --- /task ---
 
 --- task ---
 
-Change the `<`{:class='microbitlogic'} to a `>`{:class='microbitlogic'}.
+Dans le menu `Logique`{:class='microbitlogic'}, fais glisser un bloc `0 < 0`{:class='microbitlogic'}
+
+Place-le sur la partie `vrai`{:class='microbitlogic'}.
 
 --- /task ---
 
 --- task ---
 
-From the `Led...more`{:class='microbitled'} menu, drag a `brightness`{:class='microbitled'} block.
-
-Place it inside the first `0` in the `0 > 0`{:class='microbitlogic'} block.
+Remplace le `<`{:class='microbitlogic'} par un `>`{:class='microbitlogic'}.
 
 --- /task ---
 
 --- task ---
 
-Change the second `0` to `10`.
+Dans le menu `LED...plus`{:class='microbitled'}, fais glisser un bloc `luminosité`{:class='microbitled'}.
+
+Place-le à l'intérieur du premier bloc `0` dans le `0 > 0`{:class="microbitlogic"}.
 
 --- /task ---
 
-Here is an animation showing the above steps:
+--- task ---
 
-![Animation showing the 'if' block being taken from the Logic menu and held over the 'set brightness' block. It is released, making the 'set brightness' block snap inside it. A '0  mark=](images/if-around-set-brightness.gif) 0' block is then taken from the Logic menu and placed inside the first '0' of the '0 > 0' block. A 'brightness' block is then taken from the 'Led...more' menu and placed inside the first '0' of the '0 > 0' block. The second '0' is changed to '10'." width="350"/>
+Remplace le deuxième `0` par `10`.
 
-Your code should look like this:
+--- /task ---
+
+Voici une animation montrant les étapes ci-dessus :
+
+![Animation montrant le bloc "si" extrait du menu Logique et maintenu sur le bloc "définir luminosité". Il est relâché, ce qui fait que le bloc "définir la luminosité" s'enclenche à l'intérieur. Une marque "0" =](images/if-around-set-brightness.gif) Un bloc 0 > 0 est ensuite extrait du menu Logique et placé à l'intérieur du premier "0" du bloc "0 > 0". Un bloc "luminosité" est ensuite pris dans le menu "LED...plus" et placé à l'intérieur du premier "0" du bloc "0 > 0". Le deuxième "0" est remplacé par "0". width="350"/>
+
+Ton code devrait ressembler à ceci :
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -197,26 +197,26 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-**Tip:** There is no need to do this for the `on button B` block as the maximum brightness value the LEDs can be set to is `255`.
+**Astuce :** il n'est pas nécessaire de faire cela pour le bloc `lorsque le bouton B` car la valeur de luminosité maximale sur laquelle les LED peuvent être réglées est `255`.
 
 --- task ---
 
-**Test your program**
+**Teste ton programme**
 
-+ Move over the edges of the micro:bit to record and display some movements
++ Déplace-toi sur les bords du micro:bit pour enregistrer et afficher certains mouvements
 
-+ Press the `A+B` button
++ Appuie sur le bouton `A+B`
 
-+ Press the `A` button a few times
++ Appuie plusieurs fois sur le bouton `A`
 
-The display should get less bright.
+L'affichage devrait être moins lumineux.
 
-+ Press the `B` button a few times
++ Appuie plusieurs fois sur le bouton `B`
 
-The display should get brighter.
+L'écran devrait devenir plus lumineux.
 
-![Animation showing that when the the A button is pressed, the LED display brightness decreases and when the B button is pressed, the LED display brightness increases.](images/brightness-change.gif)
+![Animation montrant que lorsque le bouton A est pressé, la luminosité de l'écran LED diminue et lorsque le bouton B est pressé, la luminosité de l'écran LED augmente.](images/brightness-change.gif)
 
 --- /task ---
 
-Next, you are going to set the sleepy zZ animation to run when the program starts and organise your code using a function!
+Ensuite, tu vas définir l’animation zZ d'endormissement pour qu’elle s’exécute au démarrage du programme et organiser ton code à l’aide d’une fonction !
