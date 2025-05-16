@@ -1,78 +1,78 @@
-## Push to reset
+## Appuyer pour réinitialiser
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-It's time to make your sleep tracker even better! 
+Il est temps d’améliorer encore ton tracker de sommeil ! 
 
-When you press both the A and B buttons together, the micro:bit will show how much it moved and then start counting from zero again. 
+Lorsque tu appuies simultanément sur les boutons A et B, le micro:bit indique le nombre de mouvements enregistrés et recommence à compter à partir de zéro. 
 
-You'll also make a special sleepy animation to show that your sleep tracker is all set and ready to help you sleep!
+Tu feras également une animation spéciale de sommeil pour montrer que ton tracker de sommeil est prêt à t'aider à dormir !
 
 </div>
 <div>
 
-![Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z.](images/reset-test.gif)
+![Animation montrant les LED allumées à moitié. Lorsque le bouton A+B est pressé, le mot "Mouvements" défile sur l'écran et le chiffre 6 s'affiche. Une courte animation tourne ensuite en boucle deux fois, montrant un petit z se transformant en un grand Z.](images/reset-test.gif)
 
 </div>
 </div>
 
-The micro:bit has two buttons, the `A` button and the `B` button.
+Le micro:bit possède deux boutons, le bouton `A` et le bouton `B`.
 
-You can program something to happen when only `A` is pressed, only `B` is pressed, or when `A+B` are pressed together.
+Tu peux programmer quelque chose qui se produit lorsque tu appuies uniquement sur `A`, uniquement sur `B` ou lorsque tu appuies simultanément sur `A+B`.
 
-### Show the total movements
+### Afficher les mouvements totaux
 
 --- task ---
 
-From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block.
+Dans le menu `Entrée`{:class='microbitinput'}, fais glisser un bloc `lorsque le bouton`{:class='microbitinput'}.
 
-Place it in the code editor panel.
+Place-le dans le panneau de l'éditeur de code.
 
-<img src="images/on-button-location.png" alt="The Input menu with the 'on button' block highlighted." width="350" />
+<img src="images/on-button-location.png" alt="Le menu Entrée avec le bloc &quot;lorsque le bouton&quot; en surbrillance." width="350" />
 
-Use the drop-down menu to change the button to `A+B`{:class='microbitinput'}.
+Utilise le menu déroulant pour changer le bouton en `A+B`{:class='microbitinput'}.
 
 --- /task ---
 
-Before the micro:bit displays the total number of recorded sleep movements, you will need to clear the screen.
+Avant que le micro:bit n'affiche le nombre total de mouvements de sommeil enregistrés, tu devras effacer l'écran.
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `clear screen`{:class='microbitbasic'} block and place it inside the `on button`{:class='microbitinput'} block.
+À partir du menu `Base`{:class='microbitbasic'}, fais glisser un bloc `effacer l'écran`{:class='microbitbasic'} et place-le à l'intérieur du bloc `lorsque le bouton`{:class='microbitinput'}.
 
-The clear screen block turns off all the LEDs.
+Le bloc effacer l'écran éteint toutes les LED.
 
 --- /task ---
 
-Next, you will want to see the total number of sleep movements the micro:bit has recorded.
+Ensuite, tu veux voir le nombre total de mouvements de sommeil enregistrés par le micro:bit.
 
-Before you display the number, it is a good idea to show what the number is.
+Avant d’afficher le nombre, c’est une bonne idée de montrer de quel nombre il s’agit.
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `show string`{:class='microbitbasic'} block.
+Dans le menu `Base`{:class='microbitbasic'}, fais glisser un bloc `afficher texte`{:class='microbitbasic'}.
 
-Place it inside the `on button`{:class='microbitinput'} block, under the `clear screen`{:class='microbitbasic'} block.
+Place-le à l'intérieur du bloc `lorsque le bouton`{:class='microbitinput'}, sous le bloc `effacer l'écran`{:class='microbitbasic'}.
 
-Replace the word `Hello` with `Movements`.
+Remplace le mot `Hello` par `Mouvements`.
 
 --- /task ---
 
-Now it is time to display the total number of sleep movements recorded.
+Il est maintenant temps d’afficher le nombre total de mouvements de sommeil enregistrés.
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `show number`{:class='microbitbasic'} block.
+Dans le menu `Base`{:class='microbitbasic'}, fais glisser un bloc `montrer nombre`{:class='microbitbasic'}.
 
-Place it inside the `on button`{:class='microbitinput'} block, under the `show string`{:class='microbitbasic'} block.
+Place-le à l'intérieur du bloc `lorsque le bouton`{:class='microbitinput'}, sous le bloc `afficher texte`{:class='microbitbasic'}.
 
 --- /task ---
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag out the `movements`{:class='microbitvariables'} block.
+Dans le menu `Variables`{:class='microbitvariables'}, fais glisser le bloc `mouvements`{:class='microbitvariables'}.
 
-Place it over the `0` in the `show number`{:class='microbitbasic'} block.
+Place-le sur le bloc `0` dans le bloc `montrer nombre`{:class='microbitbasic'}.
 
 ```microbit
 input.onButtonPressed(Button.AB, function () {
@@ -85,19 +85,19 @@ input.onButtonPressed(Button.AB, function () {
 
 --- /task ---
 
-You now need to reset the movements variable back to 0, ready to track again.
+Tu dois maintenant réinitialiser la variable de mouvements à 0, prêt à suivre à nouveau.
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag a `set`{:class='microbitvariables'} block.
+Dans le menu `Variables`{:class='microbitvariables'}, fais glisser un bloc `définir`{:class='microbitvariables'}.
 
-Place it under the `show number`{:class='microbitbasic'} block.
+Place-le sous le bloc `montrer nombre`{:class='microbitbasic'}.
 
 --- /task ---
 
 --- task ---
 
-Use the drop-down menu to select `movements`{:class='microbitvariables'} as the variable to set.
+Utilise le menu déroulant pour sélectionner `mouvements`{:class='microbitvariables'} comme variable à définir.
 
 ```microbit
 let movements = 0
@@ -111,13 +111,13 @@ input.onButtonPressed(Button.AB, function () {
 
 --- /task ---
 
-To show the sleep tracker is ready, you can show an animation. As this is a sleep tracker, you will create an animation of some Z's. 😴
+Pour montrer que le tracker de sommeil est prêt, tu peux afficher une animation. Comme il s'agit d'un outil de suivi du sommeil, tu vas créer une animation de quelques Z. 😴
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag **three** `show leds`{:class='microbitbasic'} blocks and place them under the `set movements`{:class='microbitvariables'} block.
+Dans le menu `Base`{:class='microbitbasic'}, fais glisser **trois** blocs `montrer LEDs`{:class='microbitbasic'} et place-les sous le bloc `définir mouvements`{:class='microbitvariables'}.
 
-Click the squares on each one to create these patterns:
+Clique sur les carrés de chacun pour créer ces motifs :
 
 ```microbit
 let movements = 0
@@ -150,38 +150,38 @@ input.onButtonPressed(Button.AB, function () {
 })
 ```
 
-**Tip:** If you hold down the mouse, you can select multiple LEDs as you move.
+**Astuce :** si tu maintiens la souris enfoncée, tu peux sélectionner plusieurs LED au fur et à mesure de tes déplacements.
 
 --- /task ---
 
-To create an animation, you can put the 'show leds' blocks in a loop.
+Pour créer une animation, tu peux mettre les blocs "monter LEDs" dans une boucle.
 
 --- task ---
 
-From the `Loops`{:class='microbitloops'} menu, drag a `repeat`{:class='microbitloops'} block and place it around the three `show leds`{:class='microbitbasic'} blocks.
+Dans le menu `Boucles`{:class='microbitloops'}, fais glisser un bloc `répéter`{:class='microbitloops'} et place-le autour des blocs `montrer LEDs`{:class='microbitbasic'}.
 
-Change the number of repeats from `4` to `2`.
+Modifie le nombre de répétitions de `4` par `2`.
 
-<img src="images/repeat-around-leds.gif" alt="Animation showing the 'repeat' block taken from the Loops menu. The 'repeat' block is then held over the top 'show leds' block and released, making the three 'show leds' blocks snap inside it. The number is then changed from a '4' to a '2'." width="350" />
+<img src="images/repeat-around-leds.gif" alt="Animation montrant le bloc &quot;répéter&quot; extrait du menu Boucles. Le bloc &quot;répéter&quot; est ensuite maintenu au-dessus du bloc &quot;montrer LEDs&quot; et relâché, ce qui fait que les trois blocs &quot;montrer LEDs&quot; s'alignent à l'intérieur. Le numéro passe alors de &quot;4&quot; à &quot;2&quot;." width="350" />
 
 --- /task ---
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+Lorsque tu modifies un bloc de code dans le panneau de l'éditeur de code, le simulateur redémarrera.
 
 --- task ---
 
-**Test** When the program runs, move over the left and right of the micro:bit to record some movements.
+**Test** Lorsque le programme s'exécute, déplace-toi sur la gauche et la droite du micro:bit pour enregistrer certains mouvements.
 
-Next, press the `A+B` button.
+Ensuite, appuie sur le bouton `A+B`.
 
-The word 'Movements' will scroll across the display.
+Le mot "Mouvements" défilera sur l’écran.
 
-The number of movements will then be shown.
+Le nombre de mouvements sera alors affiché.
 
-The zZ animation will then loop twice.
+L'animation zZ sera alors bouclée deux fois.
 
-<img src="images/reset-test.gif" alt="Animation showing the LEDs lit up about half way. When the A+B button is pressed, the word 'Movements' scrolls across the display and the number 6 is shown. A short animation then loops twice, showing a small z growing into a large Z." width="350" />
+<img src="images/reset-test.gif" alt="Animation montrant les LED allumées à moitié. Lorsque le bouton A+B est pressé, le mot &quot;Mouvements&quot; défile sur l'écran et le chiffre 6 s'affiche. Une courte animation tourne ensuite en boucle deux fois, montrant un petit z se transformant en un grand Z." width="350" />
 
 --- /task ---
 
-Next, you are going to use the `A` button and `B` button to change the display brightness!
+Ensuite, tu vas utiliser les boutons `A` et `B` pour modifier la luminosité de l'écran !
