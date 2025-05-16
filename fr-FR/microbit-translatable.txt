@@ -1,14 +1,14 @@
-movements
+mouvements
 
-sleepHour
+heureSommeil
 
-startsleep
+debutSommeil
 
-restingPosition
+positionRepos
 
-Movements
+Mouvements
 
 zZ
 
-second
+seconde
 
