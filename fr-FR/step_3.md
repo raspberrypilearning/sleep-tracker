@@ -1,54 +1,54 @@
-### Different resting head positions
+### Différentes positions de repos de la tête
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-At the moment, the micro:bit records a movement whenever the micro:bit is **not** level.
+Pour le moment, le micro:bit enregistre un mouvement chaque fois que le micro:bit n'est **pas** à niveau.
 
-For this project, the micro:bit will be placed under a pillow as it would be uncomfortable to wear it on your head!
+Pour ce projet, le micro:bit est placé sous un oreiller, car il serait inconfortable de le porter sur la tête !
 
-When you lie down, the weight of your head on your pillow will probably roll the micro:bit so that it is not completely level.
+Lorsque tu t'allonges, le poids de ta tête sur ton oreiller fera probablement rouler le micro:bit de sorte qu'il ne sera pas complètement à niveau.
 
-This will be the **resting position**. 
+Ce sera la **position de repos**. 
 
-You need to record a movement only if the micro:bit is rolled away from the resting position. 
+Tu ne dois enregistrer un mouvement que si le micro:bit est déplacé de sa position de repos. 
 
 </div>
 </div>
 
-### Check for movement to the LEFT from the resting position
+### Vérifier le mouvement vers la GAUCHE à partir de la position de repos
 
-You need to know if there is a difference between the resting position and the current roll position.
+Tu dois savoir s'il existe une différence entre la position de repos et la position de rotation actuelle.
 
 --- task ---
 
-From the `Math`{:class='microbitmath'} menu, get a `0 - 0`{:class='microbitmath'} block.
+Dans le menu `Maths`{:class='microbitmath'}, prends un bloc `0 - 0`{:class='microbitmath'}.
 
-Place it in the `-10` of the `<`{:class='microbitlogic'} comparison block.
+Place-le dans le bloc de comparaison `-10` du `<`{:class='microbitlogic'}.
 
 --- /task ---
 
 --- task ---
 
-Open the `Variables`{:class='microbitvariables'} menu and click **Make a Variable**.
+Ouvre le menu `Variables`{:class='microbitvariables'} et clique sur **Créer une variable**.
 
-Name your new variable `restingPosition`.
-
---- /task ---
-
---- task ---
-
-From the `Variables`{:class='microbitvariables'} menu, get the `restingPosition`{:class='microbitvariables'} block.
-
-Place it in the first `0` on the left of the `0 - 0`{:class='microbitmath'} block.
+Nomme ta nouvelle variable `positionRepos`.
 
 --- /task ---
 
 --- task ---
 
-Change the `0` on the right of the `-`{:class='microbitmath'} to `10`.
+Dans le menu `Variables`{:class='microbitvariables'}, prends le bloc `positionRepos`{:class='microbitvariables'}.
 
-Your code should look like this:
+Place-le dans le premier bloc `0` à gauche du bloc `0 - 0`{:class='microbitmath'}.
+
+--- /task ---
+
+--- task ---
+
+Remplace le `0` à droite du `-`{:class='microbitmath'} par `10`.
+
+Ton code devrait ressembler à ceci :
 
 ```microbit
 let movements = 0
@@ -65,29 +65,29 @@ basic.forever(function () {
 
 --- /task ---
 
-### Check for movement to the RIGHT from the resting position
+### Vérifier le mouvement vers la DROITE à partir de la position de repos
 
 --- task ---
 
-From the `Math`{:class='microbitmath'} menu, get a `0 + 0`{:class='microbitmath'} block.
+Dans le menu `Maths`{:class='microbitmath'}, prends un bloc `0 + 0`{:class='microbitmath'}.
 
-Place it in the `10` of the `>`{:class='microbitlogic'} comparison block.
+Place-le dans le bloc de comparaison `10` du `>`{:class='microbitlogic'}.
 
 --- /task ---
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, get another `restingPosition`{:class='microbitvariables'} block.
+Dans le menu `Variables`{:class='microbitvariables'}, prends un autre bloc `positionRepos`{:class='microbitvariables'}.
 
-Place it in the first `0` on the left of the `0 + 0`{:class='microbitmath'} block.
+Place-le dans le premier bloc `0` à gauche du bloc `0 + 0`{:class='microbitmath'}.
 
 --- /task ---
 
 --- task ---
 
-Change the `0` on the right of the `+`{:class='microbitmath'} to `10`.
+Remplace le `0` à droite du `+`{:class='microbitmath'} par `10`.
 
-Your code should look like this:
+Ton code devrait ressembler à ceci :
 
 ```microbit
 let movements = 0
@@ -104,23 +104,23 @@ basic.forever(function () {
 
 --- /task ---
 
-### Set a new resting position after each movement
+### Définir une nouvelle position de repos après chaque mouvement
 
-Each time the micro:bit is rolled to a new resting position, you need to set the current position as the new resting position, so you can use it in your comparison.
+Chaque fois que le micro:bit est déplacé vers une nouvelle position de repos, tu dois définir la position actuelle comme nouvelle position de repos, afin de pouvoir l'utiliser dans ta comparaison.
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, get the `set`{:class='microbitvariables'} block.
+Dans le menu `Variables`{:class='microbitvariables'}, prends le bloc `définir`{:class='microbitvariables'}.
 
-Place it under the `pause`{:class='microbitbasic'} block.
+Place-le sous le bloc `pause`{:class='microbitbasic'}.
 
 --- /task ---
 
 --- task ---
 
-Duplicate the `rotation`{:class='microbitinput'} block and place it in the `0` of the `set`{:class='microbitvariables'} block.
+Duplique le bloc `rotation`{:class='microbitinput'} et place-le dans le `0` du bloc `définir`{:class='microbitvariables'}.
 
-Your code should look like this:
+Ton code devrait ressembler à ceci :
 
 ```microbit
 let restingPosition = 0
@@ -140,29 +140,29 @@ basic.forever(function () {
 
 --- task ---
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+Lorsque tu modifies un bloc de code dans le panneau de l'éditeur de code, le simulateur redémarrera.
 
-**Test your program**
+**Teste ton programme**
 
-+ Move from the centre of the micro:bit to the right or left.
++ Déplace-toi du centre du micro:bit vers la droite ou la gauche.
 
-The LEDs will light up and stay on for a short time. **Keep your mouse still until the LEDs turn off.**
+Les LED s'allumeront et resteront allumées pendant un court instant. **Garde ta souris immobile jusqu'à ce que les LED s'éteignent.**
 
-+ When the LEDs turn off, move from the new position (your resting position) to the right or left again.
++ Lorsque les LED s'éteignent, déplace-toi de la nouvelle position (ta position de repos) vers la droite ou vers la gauche à nouveau.
 
-The LEDs will light up and stay on for **a short time**.
+Les LED s'allumeront et resteront allumées **pendant un court instant**.
 
-Repeat this process to check that the LEDs only turn on when there is movement away from the resting position.
+Répète ce processus pour vérifier que les LED ne s'allument que lorsqu'elles s'éloignent de la position de repos.
 
 --- /task ---
 
-### Let the micro:bit come to rest
+### Laisser le micro:bit se reposer
 
-You should give the micro:bit some time to come to rest before setting the new `restingPosition`{:class='microbitvariables'} to the variable.
+Tu dois laisser au micro:bit le temps de se reposer avant de définir la nouvelle `positionRepos`{:class='microbitvariables'} sur la variable.
 
 --- task ---
 
-Change the value in `pause`{:class='microbitbasic'} from `100` to `5 seconds`.
+Modifie la valeur dans `pause`{:class='microbitbasic'} de `100` à `5 secondes`.
 
 ```microbit
 let restingPosition = 0
@@ -182,15 +182,15 @@ basic.forever(function () {
 
 --- task ---
 
-**Test your program**
-+ Move from the centre of the micro:bit to the right or left.
+**Teste ton programme**
++ Déplace-toi du centre du micro:bit vers la droite ou la gauche.
 
-The LEDs will light up and stay on for **five seconds**. **Keep your mouse still until the LEDs turn off.**
+Les LED s'allumeront et resteront allumées pendant **5 secondes**. **Garde ta souris immobile jusqu'à ce que les LED s'éteignent.**
 
-+ When the LEDs turn off, move from the new position (your resting position) to the right or left again.
++ Lorsque les LED s'éteignent, déplace-toi de la nouvelle position (ta position de repos) vers la droite ou vers la gauche à nouveau.
 
-The LEDs will light up and stay on for five seconds again.
+Les LED s'allumeront et resteront de nouveau allumées pendant 5 secondes.
 
 --- /task ---
 
-Next, you are going to use the `A+B` button press event to **reset** your sleep tracker!
+Ensuite, tu vas utiliser l'événement d'appui sur le bouton `A+B` pour **réinitialiser** ton tracker de sommeil !
