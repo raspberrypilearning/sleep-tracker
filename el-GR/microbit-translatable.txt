@@ -2,7 +2,7 @@ movements
 
 sleepHour
 
-startsleep
+startSleep
 
 restingPosition
 
