@@ -1,38 +1,38 @@
-## Quick quiz
+## Questionnaire rapide
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Réponds aux trois questions. Il y a des indices pour te guider vers la bonne réponse.
 
-When you have answered each question, click on **Check my answer**.
+Lorsque tu as répondu à chaque question, clique sur **Vérifier ma réponse**.
 
-Have fun!
+Amuse-toi bien !
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Question 1 sur 3
 ---
 
-Which one of these is the sensor the micro:bit uses to detect movement?
+Lequel de ces capteurs le micro:bit utilise-t-il pour détecter les mouvements ?
 
 --- choices ---
 
 - (x)
 
-Accelerometer
+Accéléromètre
 
   --- feedback ---
 
-  Awesome! You have answered correctly, the accelerometer detects when the micro:bit has been moved by sensing changes in speed.
+  Super ! Tu as répondu correctement, l'accéléromètre détecte quand le micro:bit a été déplacé en détectant les changements de vitesse.
 
   --- /feedback ---
 
 - ( )
 
-Logic
+Logique
 
   --- feedback ---
 
-  Logic is a type of block that can be used to check **if** something is True or False. It is not a sensor.
+  Logique est un type de bloc qui peut être utilisé pour vérifier **si** quelque chose est vrai ou faux. Ce n'est pas un capteur.
 
   --- /feedback ---
 
@@ -42,7 +42,7 @@ LED
 
   --- feedback ---
 
-  LEDs are used to display text, numbers, or images.
+  Les LED sont utilisées pour afficher du texte, des chiffres ou des images.
 
   --- /feedback ---
 
