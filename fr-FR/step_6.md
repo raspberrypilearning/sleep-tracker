@@ -1,93 +1,93 @@
-## Show some Zs
+## Afficher quelques Z
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-When the program starts, it is good to know that it is ready to start tracking.
+Lorsque le programme démarre, il est bon de savoir qu'il est prêt à commencer le suivi.
 
-In this step, you will display the zZs animation again when the program starts and use a function to organise your code.
+Dans cette étape, tu afficheras à nouveau l'animation zZ au démarrage du programme et utiliseras une fonction pour organiser ton code.
 
 </div>
 </div>
 
-### Re-use code
+### Réutiliser le code
 
-You can reuse the animation code.
-
---- task ---
-
-Right-click on the `repeat`{:class='microbitloops'} block and click **Duplicate**.
-
---- /task ---
-
-There will now be two `repeat`{:class='microbitloops'} blocks in the code editor panel. Each will contain three `show led`{:class='microbitbasic'} blocks.
+Tu peux réutiliser le code d'animation.
 
 --- task ---
 
-Put the duplicated `repeat`{:class='microbitloops'} block inside the `on start`{:class='microbitbasic'} block.
-
-<img src="images/repeat-in-on-start.png" alt="The duplicated code inside the 'on start' block." width="350" />
+Fais un clic droit sur le bloc `répéter`{:class='microbitloops'} et clique sur **Reproduire**.
 
 --- /task ---
 
-### Tidy with a function
+Il y aura maintenant deux blocs `répéter`{:class='microbitloops'} dans le panneau de l'éditeur de code. Chacun contiendra trois blocs `montrer LEDs`{:class='microbitbasic'}.
 
-The animation is a large group of code blocks.
+--- task ---
 
-Repeating a large group of blocks makes our code untidy.
+Place le bloc `répéter`{:class='microbitloops'} dans le bloc `au démarrage`{:class='microbitbasic'}.
 
-If you need to re-use code, it is sometimes better to put it in a function and then 'call' the function to run.
+<img src="images/repeat-in-on-start.png" alt="Le code dupliqué à l'intérieur du bloc &quot;au démarrage&quot;." width="350" />
+
+--- /task ---
+
+### Organiser avec une fonction
+
+L'animation est un grand groupe de blocs de code.
+
+La répétition d’un grand groupe de blocs rend notre code désordonné.
+
+Si tu dois réutiliser du code, il est parfois préférable de le placer dans une fonction, puis d'« appeler » la fonction pour l'exécuter.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 
-A <span style="color: #0faeb0">function</span> is a group of blocks that you can create and name. You can run those blocks by 'calling' the name of the function. Another word for a function is a <span style="color: #0faeb0">subprogram</span>, because it can be called to run from the main program.
+Une <span style="color: #0faeb0">fonction</span> est un groupe de blocs que tu peux créer et nommer. Tu peux exécuter ces blocs en « appelant » le nom de la fonction. Un autre mot pour une fonction est un <span style="color: #0faeb0">sous-programme</span>, car il peut être appelé pour s'exécuter à partir du programme principal.
 </p>
 
 --- task ---
 
-Click the `Advanced` menu to reveal the Functions menu.
+Clique sur le menu `Avancé` pour afficher le menu Fonctions.
 
-Click the **Functions** menu and then click **Make a Function**.
+Clique sur le menu **Fonctions** puis clique sur **Créer une fonction**.
 
-Name the function `zZ`.
+Nomme la fonction `zZ`.
 
-![Animation showing how to make a function.](images/make-a-function.gif)
-
---- /task ---
-
---- task ---
-
-From the `on button A+B`{:class='microbitinput'} block, drag the `repeat`{:class='microbitloops'} block.
-
-Place it inside your new `function zZ`{:class='microbitfunctions'} block.
+![Animation montrant comment créer une fonction.](images/make-a-function.gif)
 
 --- /task ---
 
 --- task ---
 
-Delete the code inside the `on start`{:class='microbitbasic'} block.
+Dans le bloc `lorsque le bouton A+B`{:class='microbitinput'}, fais glisser le bloc `répéter`{:class='microbitloops'}.
 
---- /task ---
-
-When a `call zZ`{:class='microbitfunctions'} block is executed, it runs the code in the `function zZ`{:class='microbitfunctions'}.
-
---- task ---
-
-From the Advanced > Functions menu, drag a `call zZ`{:class='microbitfunctions'} block.
-
-Place it inside the `on start`{:class='microbitbasic'} block.
+Place-le à l'intérieur de ton nouveau bloc `fonction zZ`{:class='microbitfunctions'}.
 
 --- /task ---
 
 --- task ---
 
-Drag out another `call zZ`{:class='microbitfunctions'} block.
-
-Place it inside the `on button A+B`{:class='microbitinput'} block, under the `set movements`{:class='microbitvariables'} block.
+Supprime le code à l'intérieur du bloc `au démarrage`{:class='microbitbasic'}.
 
 --- /task ---
 
-Here are the blocks that have changed in this step:
+Lorsqu'un bloc `appel zZ`{:class='microbitfunctions'} est exécuté, il exécute le code dans la fonction `zZ`{:class='microbitfunctions'}.
+
+--- task ---
+
+Dans le menu Avancé > Fonctions, fais glisser un bloc `appel zZ`{:class='microbitfunctions'}.
+
+Place-le à l'intérieur du bloc `au démarrage`{:class='microbitbasic'}.
+
+--- /task ---
+
+--- task ---
+
+Fais glisser un autre bloc `appel zZ`{:class='microbitfunctions'}.
+
+Place-le à l'intérieur du bloc `lorsque le bouton A+B`{:class='microbitinput'}, sous le bloc `définir mouvements`{:class='microbitvariables'}.
+
+--- /task ---
+
+Voici les blocs qui ont changé à cette étape :
 
 ```microbit
 function zZ () {
@@ -128,13 +128,13 @@ zZ()
 
 --- task ---
 
-**Test your program**
+**Teste ton programme**
 
-+ Check that your zZ animation plays when the simulator starts
-+ Check that your zZ animation also plays when the `A+B` button is pressed (after the number of movements is displayed)
++ Vérifie que ton animation zZ est jouée au démarrage du simulateur
++ Vérifie que ton animation zZ est également jouée lorsque le bouton `A+B` est pressé (après l'affichage du nombre de mouvements)
 
 --- /task ---
 
-Now you have a function, you can add to it and the code will run every time it is called!
+Tu as maintenant une fonction, tu peux y ajouter des éléments et le code s'exécutera à chaque fois qu'il sera appelé !
 
-Next you will add a countdown timer to your function.
+Ensuite, tu ajouteras un compte à rebours à ta fonction.
