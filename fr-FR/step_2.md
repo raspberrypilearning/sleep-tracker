@@ -1,91 +1,91 @@
-## Track and display
+## Suivre et afficher
 
-### Open MakeCode
+### Ouvrir MakeCode
 
-To start creating your micro:bit project, you need to open the MakeCode editor.
+Pour commencer à créer ton projet micro:bit, tu dois ouvrir l'éditeur MakeCode.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
+Ouvre l'éditeur MakeCode sur [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
 
 --- collapse ---
 
 ---
-title: Offline version of the editor
+title: Version hors ligne de l'éditeur
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
+Il y a aussi une version [téléchargeable de l'éditeur MakeCode](https://makecode.microbit.org/offline-app){:target="_blank"}.
 
 --- /collapse ---
 
 --- /task ---
 
-### First micro:bit project?
+### Premier projet sur micro:bit ?
 
 [[[makecode-tour]]]
 
-### Create your project
+### Créer ton projet
 
-Once the editor is open, you will need to create a new project and give your project a name.
+Une fois que l'éditeur est ouvert, tu devras créer un nouveau projet et donner un nom à ton projet.
 
 --- task ---
 
-Click on the **New Project** button.
+Clique sur le bouton **Nouveau projet**.
 
-![The new project button in MakeCode.](images/new-project-button.png)
+![Le bouton Nouveau projet dans MakeCode.](images/new-project-button.png)
 
 --- /task ---
 
 --- task ---
 
-Give your new project the name `Sleep tracker` and click **Create**.
+Nomme-le `Suivi du sommeil` et clique sur **Créer**.
 
-![The name 'Sleep tracker' written in the New Project dialogue box.](images/sleep-tracker.png)
+![Le nom "Suivi du sommeil" écrit dans la boîte de dialogue Nouveau projet.](images/sleep-tracker.png)
 
-**Tip:** To make it easier to find your project later, give it a helpful name that relates to the activity you’re creating.
+**Astuce :** pour faciliter la recherche de ton projet plus tard, donne-lui un nom utile qui se rapporte à l'activité que tu crées.
 
 --- /task ---
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will program the micro:bit to sense if it moves and make the LEDs light if it does.
+Dans cette étape, tu programmeras le micro:bit pour qu'il détecte s'il se déplace et allume les LED s'il le fait.
 </div>
 <div>
 
-![Animation showing the LEDs turning on as the micro:bit simulator is tilted left and right.](images/tilt-test.gif)
+![Animation montrant les LED s'allumant lorsque le simulateur micro:bit est incliné à gauche et à droite.](images/tilt-test.gif)
 
 </div>
 </div>
 
-The micro:bit uses a sensor called an accelerometer to sense when it has been rolled.
+Le micro:bit utilise un capteur appelé accéléromètre pour déterminer s'il est incliné.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 
-<span style="color: #0faeb0">Accelerometers</span> are used in many devices. They can tell if we're moving, like when you run or jump, and they help our tablets and smartphones know which way up they're being held. These clever sensors make games more fun, letting you control how a character moves by tilting a controller.
+<span style="color: #0faeb0">Les accéléromètres</span> sont utilisés dans de nombreux appareils. Ils peuvent savoir si nous bougeons, comme lorsque nous courons ou sautons, et ils aident nos tablettes et nos smartphones à savoir dans quel sens ils sont tenus. Ces capteurs intelligents rendent les jeux plus amusants, te permettant de contrôler la façon dont un personnage se déplace en inclinant une manette.
 
 </p>
 
-### Roll
+### Rotation
 
-You need to check **if** the micro:bit has been rolled right **or** left.
+Tu dois voir **si** le micro:bit a été tourné vers la droite **ou** vers la gauche.
 
-If this happens, you will assume there has been movement during sleep.
+Si cela se produit, tu supposeras qu’il y a eu du mouvement pendant le sommeil.
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block and place it inside the `forever`{:class='microbitbasic'} block.
+Dans le menu `Logique`{:class='microbitlogic'}, fais glisser un bloc `si`{:class='microbitlogic'} et place-le à l'intérieur du bloc `toujours`{:class='microbitbasic'}.
 
-<img src="images/if-block-location.png" alt="The Logic menu with the 'if...then' block highlighted." width="350" />
+<img src="images/if-block-location.png" alt="Le menu Logique avec le bloc &quot;si...alors&quot; en surbrillance." width="350" />
 
 --- /task ---
 
 --- task ---
 
-Open the `Logic`{:class='microbitlogic'} menu again and take an `or`{:class='microbitlogic'} block.
+Ouvre à nouveau le menu `Logique`{:class='microbitlogic'} et prends un bloc `ou`{:class='microbitlogic'}.
 
-<img src="images/or-block-location.png" alt="The bottom part of the Logic menu, showing the location of the 'or' block in the 'Boolean' section." width="150" />
+<img src="images/or-block-location.png" alt="La partie inférieure du menu Logique, montrant l'emplacement du bloc &quot;ou&quot; dans la section &quot;Booléen&quot;." width="150" />
 
-Place it in the `true` section of the `if`{:class='microbitlogic'} block.
+Place-le dans la section `vrai` du bloc `si`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -97,15 +97,15 @@ basic.forever(function () {
 
 --- /task ---
 
-Now you need to add the **two** conditions either side of the **or**.
+Tu dois maintenant ajouter les **deux** conditions de chaque côté du **ou**.
 
-This will mean that the code inside your `if`{:class='microbitlogic'} block will run if **either** condition is met.
+Cela signifie que le code contenu dans ton bloc `si`{:class=“microbitlogic”} sera exécuté si **l'une ou l'autre** condition est remplie.
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag the `0 < 0`{:class='microbitlogic'} comparison block.
+Dans le menu `Logique`{:class='microbitlogic'}, fais glisser le bloc de comparaison `0 < 0`{:class='microbitlogic'}.
 
-Place it on the left side of the `or`{:class='microbitlogic'} block.
+Place-le sur le côté gauche du bloc `ou`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -119,27 +119,27 @@ basic.forever(function () {
 
 --- task ---
 
-From the `Input...more`{:class='microbitinput'} menu, drag a `rotation`{:class='microbitinput'} block.
+Dans le menu `Entrée...plus`{:class='microbitinput'}, fais glisser un bloc `rotation`{:class='microbitinput'}.
 
-<img src="images/rotation-location.png" alt="The 'Input...more' menu with the 'rotation' block highlighted." width="350" />
+<img src="images/rotation-location.png" alt="Le menu &quot;Entrée...plus&quot; avec le bloc &quot;rotation&quot; en surbrillance." width="350" />
 
-Place it inside the first `0` in the `0 < 0`{:class='microbitlogic'} comparison block.
-
---- /task ---
-
---- task ---
-
-Use the drop-down menu to change `pitch`{:class='microbitinput'} to `roll`{:class='microbitinput'}.
+Place-le à l'intérieur du premier bloc de comparaison `0` dans le `0 < 0`{:class='microbitlogic'}.
 
 --- /task ---
 
 --- task ---
 
-Change the `0` to `-10`. This will check if the micro:bit is rolled 10° to the **left**.
+Utilise le menu déroulant pour modifier `pitch`{:class='microbitinput'} par `rouleau`{:class='microbitinput'}.
 
 --- /task ---
 
-Your code should look like this:
+--- task ---
+
+Remplace le `0` par `-10`. Cela vérifiera si le micro:bit est tourné de 10° vers la **gauche**.
+
+--- /task ---
+
+Ton code devrait ressembler à ceci :
 
 ```microbit
 basic.forever(function () {
@@ -151,82 +151,82 @@ basic.forever(function () {
 
 --- task ---
 
-**Debug**
+**Déboguer**
 
-Check you have:
+Vérifie que tu as :
 
-+ Clicked on the Input **more** menu, not the normal Input menu
-+ Changed the second value from `0` to **`-10`**, not `10`
-
---- /task ---
-
---- task ---
-
-Right-click on the `<`{:class='microbitlogic'} comparison block and select **Duplicate**.
-
---- /task ---
-
-You will now have two comparison blocks.
-
---- task ---
-
-Drag the duplicated comparison block to the right of the `or`{:class='microbitlogic'} block.
++ Cliqué sur le menu Entrée **plus**, pas dans le menu d'entrée normal
++ Modifié la deuxième valeur de `0` à **`-10`**, et non `10`
 
 --- /task ---
 
 --- task ---
 
-Use the drop-down menu to change the less than symbol (`<`{:class='microbitlogic'}) to a greater than symbol (`>`{:class='microbitlogic'}).
+Fais un clic droit sur le bloc de comparaison `<`{:class='microbitlogic'} et sélectionne **Reproduire**.
+
+--- /task ---
+
+Tu as maintenant deux blocs de comparaison.
+
+--- task ---
+
+Fais glisser le bloc de comparaison dupliqué à droite du bloc `ou`{:class='microbitlogic'}.
 
 --- /task ---
 
 --- task ---
 
-Change the `-10` to `10`. This will check if the micro:bit is rolled 10° to the **right**.
-
-![A demo of duplicating the comparison block and making the changes.](images/duplicting-rotation-comparison.gif)
-
---- /task ---
-
-### Keep a count
-
-When either condition is met, the micro:bit will have been rolled left or right.
-
-You need to:
-+ Keep a count of sleep movements
-+ Light the LEDs
-
-To keep a count of sleep movements, you will use a variable.
-
---- task ---
-
-Open the `Variables`{:class='microbitvariables'} menu and click **Make a Variable**.
-
-<img src="images/variable-menu.png" alt="The Variables block menu with the 'Make a variable' button highlighted." width="350" />
+Utilise le menu déroulant pour changer le symbole "plus petit que" (`<`{:class='microbitlogic'}) par "plus grand que" (`>`{:class='microbitlogic'}).
 
 --- /task ---
 
 --- task ---
 
-Name your new variable `movements`.
+Remplace le `-10` par `10`. Cela vérifiera si le micro:bit est tourné de 10° vers la **droite**.
 
-<img src="images/movements-variable-name.png" alt="The 'New variable name' window, with the name 'movements' written in the box." width="400" />
-
---- /task ---
-
-You will increase the `movements` variable by `1` each time a movement is detected.
-
---- task ---
-
-From the `Variables`{:class='microbitvariables'} menu, get the `change movements`{:class='microbitvariables'} block.
-
-<img src="images/change-movements.png" alt="The Variables menu with the 'change movements by 1' block highlighted." width="350" />
+![Une démo pour dupliquer le bloc de comparaison et faire les changements.](images/duplicting-rotation-comparison.gif)
 
 --- /task ---
 
+### Garder un nombre
+
+Lorsque l'une ou l'autre des conditions est remplie, le micro:bit aura été tourné vers la gauche ou vers la droite.
+
+Tu dois :
++ Garder un nombre de mouvements de sommeil
++ Allumer les LED
+
+Pour garder un nombre de mouvements de sommeil, tu utiliseras une variable.
+
 --- task ---
 
-Place it inside the `if`{:class='microbitlogic'} block.
+Ouvre le menu `Variables`{:class='microbitvariables'} et clique sur **Créer une variable**.
+
+<img src="images/variable-menu.png" alt="Le menu Variables avec le bouton &quot;Créer une variable&quot; en surbrillance." width="350" />
+
+--- /task ---
+
+--- task ---
+
+Nomme ta nouvelle variable `mouvements`.
+
+<img src="images/movements-variable-name.png" alt="La fenêtre &quot;Nom de la nouvelle variable&quot; avec le nom &quot;mouvements&quot; écrit dans la case." width="400" />
+
+--- /task ---
+
+Tu augmenteras la variable `mouvements` de `1` chaque fois qu'un mouvement est détecté.
+
+--- task ---
+
+Dans le menu `Variables`{:class='microbitvariables'}, prends le bloc `modifier mouvements`{:class='microbitvariables'}.
+
+<img src="images/change-movements.png" alt="Le menu Variables avec le bloc &quot;modifier mouvements de 1&quot; en surbrillance." width="350" />
+
+--- /task ---
+
+--- task ---
+
+Place-le à l'intérieur du bloc `si`{:class='microbitlogic'}.
 
 ```microbit
 let movements = 0
@@ -239,41 +239,41 @@ basic.forever(function () {
 
 --- /task ---
 
-### Light the LEDS
+### Allumer les LED
 
-You can use the LEDs on the micro:bit to show that there has been a movement.
+Tu peux utiliser les LED du micro:bit pour montrer qu'il y a eu un mouvement.
 
-This will help you test your project.
+Cela t'aidera à tester ton projet.
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `show icon`{:class='microbitbasic'} block.
+Dans le menu `Base`{:class='microbitbasic'}, fais glisser un bloc `montrer l'icône`{:class='microbitbasic'}.
 
-<img src="images/show-icon-location.png" alt="The Basic menu with the 'show icon' block highlighted." width="350" />
+<img src="images/show-icon-location.png" alt="Le menu de base avec le bloc &quot;montrer l'icône&quot; en surbrillance." width="350" />
 
 --- /task ---
 
 --- task ---
 
-Place it under the `change movements`{:class='microbitvariables'} block.
+Place-le sous le bloc `modifier mouvements`{:class='microbitvariables'}.
 
 --- /task ---
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `pause`{:class='microbitbasic'} block.
+Dans le menu `Base`{:class='microbitbasic'}, fais glisser un bloc `pause`{:class='microbitbasic'}.
 
-Place it under the `show icon`{:class='microbitbasic'} block.
+Place-le sous le bloc `montrer l'icône`{:class='microbitbasic'}.
 
 --- /task ---
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `clear screen`{:class='microbitbasic'} block.
+Dans le menu `Base`{:class='microbitbasic'}, fais glisser un bloc `effacer l'écran`{:class='microbitbasic'}.
 
-Place it under the `pause`{:class='microbitbasic'} block.
+Place-le sous le bloc `pause`{:class='microbitbasic'}.
 
-Your code should look like this:
+Ton code devrait ressembler à ceci :
 
 ```microbit
 let movements = 0
@@ -291,18 +291,18 @@ basic.forever(function () {
 
 --- task ---
 
-**Test your program**
+**Teste ton programme**
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+Lorsque tu modifies un bloc de code dans le panneau de l'éditeur de code, le simulateur redémarrera.
 
-+ Move over the right or left of the micro:bit
++ Déplace-toi à droite ou à gauche du micro:bit
 
-The LEDs will light up and show a heart icon.
+Les LED s'allumeront et afficheront une icône en forme de cœur.
 
-+ Move away from the micro:bit
++ Éloigne-toi du micro:bit
 
-The LEDs will continue to flash until the micro:bit is in a level position.
+Les LED continuent de clignoter jusqu'à ce que le micro:bit soit de nouveau à niveau.
 
 --- /task ---
 
-Next, you are going to set different resting positions, because it is rare that someone will sleep in a perfectly level position all night!
+Ensuite, tu vas définir différentes positions de repos, car il est rare que quelqu'un dorme dans une position parfaitement horizontale toute la nuit !
