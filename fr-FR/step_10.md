@@ -1,33 +1,33 @@
-## What next?
+## Et ensuite ?
 
-If you are following the [Introduction to micro:bit](https://projects.raspberrypi.org/en/raspberrypi/microbit-intro) path, you can move on to the [How's your day](https://projects.raspberrypi.org/en/projects/hows-your-day) project. In this project, you will make a program that helps you get active in whichever way you like most!
+Si tu suis le parcours [Introduction à micro:bit](https://projects.raspberrypi.org/en/raspberrypi/microbit-intro), tu peux passer au projet [Comment se passe ta journée](https://projects.raspberrypi.org/en/projects/hows-your-day). Dans ce projet, tu créeras un programme qui t'aidera à être actif·ve de la manière qui te convient le mieux !
 
 --- no-print ---
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1">  
 
-### Karaoke machine
+### Machine à karaoké
 
-This is a **karaoke mood checker** - for people who like singing! 
+Il s'agit d'un **vérificateur d'humeur karaoké** - pour les personnes qui aiment chanter ! 
 
-The program has three modes:
-+ Start up screen
-+ Choosing / Setting your mood
-+ Singing along to the melody played based on your mood
+Le programme dispose de trois modes :
++ Écran de démarrage
++ Choisir/Régler ton humeur
++ Chanter sur la mélodie jouée en fonction de ton humeur
 
-1. Press Logo to reset the program
-2. Watch the start up animation and instructions
-3. Use a gesture to choose your mood for the day
-4. Press the Button A to log your mood and start the response
+1. Appuyer sur le logo pour réinitialiser le programme
+2. Regarder l'animation de démarrage et les instructions
+3. Utiliser un geste pour choisir ton humeur du jour
+4. Appuyer sur le bouton A pour enregistrer ton humeur et démarrer la réponse
 
 </div>
 <div>
-[👀 See the code 👀](https://makecode.microbit.org/_FAH00716zAaa){:target="_blank"}
+[👀 Voir le code 👀](https://makecode.microbit.org/_FAH00716zAaa){:target="_blank"}
 <div style="position:relative;height:0;padding-bottom:125%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_FAH00716zAaa" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
 
 </div>
 
 --- /no-print ---
 
-If you want to have more fun exploring micro:bit, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?hardware%5B%5D=microbit).
+Si tu souhaites t'amuser encore plus en explorant micro:bit, tu peux essayer l'un de ces [projets](https://projects.raspberrypi.org/en/projects?hardware%5B%5D=microbit).
