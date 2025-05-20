@@ -185,7 +185,7 @@ Remplace le deuxième `0` par `10`.
 
 Voici une animation montrant les étapes ci-dessus :
 
-![Animation montrant le bloc "si" extrait du menu Logique et maintenu sur le bloc "définir luminosité". Il est relâché, ce qui fait que le bloc "définir la luminosité" s'enclenche à l'intérieur. Un bloc 0 > 0 est ensuite extrait du menu Logique et placé à l'intérieur du premier "0" du bloc "0 > 0". Un bloc "luminosité" est ensuite pris dans le menu "LED...plus" et placé à l'intérieur du premier "0" du bloc "0 > 0". Le deuxième "0" est remplacé par "10".](images/if-around-set-brightness.gif){width:="350"}
+![Animation montrant le bloc "si" extrait du menu Logique et maintenu sur le bloc "définir luminosité". Il est relâché, ce qui fait que le bloc "définir la luminosité" s'enclenche à l'intérieur. Un bloc 0 > 0 est ensuite extrait du menu Logique et placé à l'intérieur du premier "0" du bloc "0 > 0". Un bloc "luminosité" est ensuite pris dans le menu "LED...plus" et placé à l'intérieur du premier "0" du bloc "0 > 0". Le deuxième "0" est remplacé par "10".](images/if-around-set-brightness.gif){:width="350"}
 
 Ton code devrait ressembler à ceci :
 
